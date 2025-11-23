@@ -10,6 +10,14 @@ public class C07_isEmpty {
           length()==0 demek isEmpty() true verir demektir.
          */
 
+        String str1 = "";
+        String str2 = " Hello";
+        String str3 = " "; // string with a space
+
+        System.out.println(str1.isEmpty()); // true
+        System.out.println(str2.isEmpty()); // false
+
+        System.out.println(str1.length() == 0);
 
     }
 }
