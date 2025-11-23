@@ -1,0 +1,8 @@
+package j08_Loops.Loop02_WhileLoop;
+
+public class C04_WhileLoop {
+    public static void main(String[] args) {
+        //task-> 3 basamaklı 4 ile tam bölünen sayıları print eden code create ediniz
+
+    }
+}
