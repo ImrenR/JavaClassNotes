@@ -10,6 +10,20 @@ public class C01_WhileLopp {
          */
         //Task01-> 3'den 20'ye kadar olan tamsayıları print eden code create ediniz.
         // System.out.println("   ***   Task01   ***   ");
+        for (int i = 3; i < 21; i++) {
+            System.out.print(i + " ");
+
+        }
+
+        System.out.println();
+        int basla=3;
+
+        while (basla<= 20){
+            System.out.println("basla = " + basla);
+            basla++;
+        }
+
+
 
         // task02-> 7 kere javaCAN print eden code create ediniz
         // System.out.println("   ***   Task02   ***   ");
@@ -23,6 +37,28 @@ public class C01_WhileLopp {
 
         // task05->girilen ifadeyi tersten  print eden code create ediniz
         // System.out.println("   ***   Task05   ***   ");
+
+Scanner input = new Scanner(System.in);
+        System.out.println("String giriniz");
+        String str = input.nextLine();
+         int harfSayisi = str.length();
+
+        while(harfSayisi>0) { // str nin karakter sayisi kadar tekrar taniimlandi loop
+            System.out.print(str.charAt(harfSayisi-1)); // looptaki str nin son harfini verir.
+
+            harfSayisi--;
+
+
+        }
+
+
+
+
+
+
+
+
+
 
 
 
