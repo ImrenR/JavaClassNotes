@@ -20,9 +20,28 @@ public class C01_doWhileLoop {
         yanlis bir deger verirsek, loop bodys'si hic calismayabilir
         2- loop condition'i loop body'sinden bir kez fazla calisir
         bu negatif yonler onu kullanilmaz yapacak buyuklukte degildir
-        ancak bu negatifliklerden kurtulmak istersek do-while loop kullanabiliriz
+        ancak bu negatifliklerden kurtulmak istersek do-while loop kullanabiliriz.
 
          */
+
+int age = 50;
+
+
+while(age>50){
+    System.out.println("Imren haniim" + age+" developer team lead while block execute edildi...");
+    age++;
+}  // age > 50 false zero execute loop
+        do {
+            System.out.println("Imren haniim" + age+" developer team lead while block execute edildi...");
+            age++;
+        }while(age<50) ;
+
+
+
+
+
+
+
 
 
     }

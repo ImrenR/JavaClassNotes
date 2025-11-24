@@ -13,6 +13,16 @@ public class C02_Continue {
         // Task-> girilen bir mail hesabındaki ' ' karakterlerini handle ederek print eden code cerate ediniz.
 
         Scanner input = new Scanner(System.in);
+        System.out.println("bir email adresi giriniz");
+        String email = input.nextLine();
+       String yeniMail = "";
 
+        for (int i = 0; i < email.length(); i++) {
+            if(email.charAt(i)== ' '){
+                continue;
+            }
+            yeniMail += email.charAt(i);
+        }
+        System.out.println("yeniemail : " + yeniMail);
     }
 }

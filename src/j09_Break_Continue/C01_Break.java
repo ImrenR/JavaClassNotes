@@ -18,7 +18,16 @@ public class C01_Break {
         //Task-> girilen bir mail hesabı @ karakterine kadar olan karakterleri print eden code create ediniz...
        // ebikgabık@cimeyıl.com
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir email giriniz:");
+        String emailS = input.nextLine();
 
+        for (int i = 0; i < emailS.length(); i++) {
+            if (emailS.charAt(i)== '@') {
+                break;
+            }
+            System.out.println(emailS.charAt(i) + " ");
+        }
 
 
 
