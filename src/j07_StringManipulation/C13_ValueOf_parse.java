@@ -72,8 +72,8 @@ parseInt() metodu primitive veri tipi döndürdüğü için daha hızlı çalı�
         String a = "25";
         String b = "35";
 
-        int toplam = Integer.valueOf(a) + Integer.valueOf(b);
-        System.out.println(toplam);
+        int toplam3 = Integer.valueOf(a) + Integer.valueOf(b);
+        System.out.println(toplam3);
         // Toplam : 60
     }
 }
