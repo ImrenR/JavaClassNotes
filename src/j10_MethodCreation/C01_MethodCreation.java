@@ -24,7 +24,33 @@ public class C01_MethodCreation {// Class level
 
     public static void main(String[] args) {//main level
 
+  // topla(); // method call edildi. Toplam : 66 print eder
+  // topla1(); // bir metodu yan yana call edebilirsin:
+        topla();topla1();
+    // topla1().sout;  => return type olmayan void meth south ile kullanilmaz ama meth void oldugu icin sout comutu girilir.
+topla2(25, 25);
+//topla2("ali",23); CTE verir p1 data type int olmali String olamaz.
+
+
     }//main sonu
+
+   public static void topla2(int ebik, int gabik){// 2 int parametreli bir method yaptik return typi void olan bir metottur
+       System.out.println(ebik+gabik);
+    }
+
+    private static void topla1() {
+        int a= 45;
+        int b= 45;
+        int toplam = a+b;
+    }
+
+    private static void topla() { // p siz return type olmayan meth -> void bir ciktisi olmayan
+        int a=31;
+        int b=35;
+        System.out.println("Toplam :" + ( a + b));
+
+
+    }
 
 
 }//Class sonu
