@@ -16,7 +16,14 @@ public class C11_equals_equalsIgnoreCase {
          * equals() ile ayni islevi gorur, tek farki buyuk kucuk harfe duyarliligi yoktur. Sonuc boolean dir.
          */
 
+String str1 = "Hello";
+String str2 = "Hello";
+String str3 = "hello";
 
+        System.out.println(str1.equals(str2)); // true
+        System.out.println(str1.equals(str3)); // false
+
+        System.out.println(str1.equalsIgnoreCase(str2));   // true case ignored
 
  /*
  String s1 = “text”; kullanımı, eğer varsa, string sabit havuzunda (string constant pool) bir örneği yeniden kullanır.
@@ -30,6 +37,15 @@ public class C11_equals_equalsIgnoreCase {
  için farklı adreslerde tutulurlar.  Bu yüzden s3 == s4 ifadesi ekrana FALSE yazdırır.
  s3.equals(s4) ifadesi ise, nesneler içerisindeki değerleri (clarusway) karşılaştırdığı için ekrana TRUE yazdırır.
          */
+
+String s1 = "text"; // constant pool
+String s2 = "text"; // constant pool
+String s3 = new String ("text"); // heap, yeni nesne
+ String s4 = new String("text"); // heap yeni nesne
+
+ System.out.println(s1 == s3); // false
+ System.out.println(s3 == s4); // false
+
 
     }
 }
