@@ -8,7 +8,8 @@ public class _11_String_methods08 {
             String'in içinde app olup olmadığını doğrula.   */
 
         //Kodu aşağıya yazınız.
-
+String kelime = "apple";
+        System.out.println("kelime containes app ?= " + kelime.contains("app"));
 
     }
 }

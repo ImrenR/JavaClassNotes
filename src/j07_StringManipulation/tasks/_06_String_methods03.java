@@ -9,7 +9,8 @@ public class _06_String_methods03 {
           örn: apple > APPLE   */
 
         //Kodu aşağıya yazınız.
-
+String a = "paper";
+        System.out.println("a nin buyukharf karsiligi = " + a.toUpperCase());
 
     }
 }

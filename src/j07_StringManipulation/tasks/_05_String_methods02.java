@@ -9,6 +9,7 @@ public class _05_String_methods02 {
 
         //Kodu aşağıya yazınız.
 
-
+String plann = "Sprint planning";
+        System.out.println("plann karakter sayisi = " + plann.length());
     }
 }

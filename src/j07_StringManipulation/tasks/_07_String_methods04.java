@@ -10,7 +10,8 @@ public class _07_String_methods04 {
 
         //Kodu aşağıya yazınız.
 
-
+String b = "OraNge";
+        System.out.println("b nin kucuk harf versiyonu= " + b.toLowerCase());
 
 
     }
