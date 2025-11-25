@@ -15,6 +15,12 @@ public class Task09 {
 
 		 */
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a word:");
+        String name= input.nextLine();
+
+        String newWord = name.substring(0,name.length()/2);
+        System.out.println(newWord);
 
 
     }
