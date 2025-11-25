@@ -9,7 +9,7 @@ public class Task02 {
         plindrome:her iki yönde okundugunda eşit olan ifadeler :ece, ada etc.
 
          */
-        Scanner input = new Scanner(System.in);
+
 
     }
 

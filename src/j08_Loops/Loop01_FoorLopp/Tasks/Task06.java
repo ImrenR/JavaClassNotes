@@ -14,7 +14,10 @@ public class Task06 {
         // 1 x 10 = 10
         // Yuarıdaki çarpım tablosunu 10 a kadar print eden code create ediniz.
 
-
+        int sayi = 1; // sabit bir sayi var ve yaninda degiskenler
+        for (int i = 1; i <=10; i++) {
+            System.out.println( sayi + "x" + i + "=" + i); // ya da sondaki i yerine (sayi*i)
+        }
 
     }
 }
