@@ -1,6 +1,9 @@
 package j08_Loops.Loop01_FoorLopp.Tasks;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
+
+
 
 public class Task01 {
     public static void main(String[] args) {
@@ -14,6 +17,23 @@ public class Task01 {
        		- Sayi hem 3’un hem 5’in kati ise sayi yerine “JavaCAN” print eden code create ediniz
         */
         Scanner input = new Scanner(System.in);
+        System.out.println("Bir tam sayi giriniz :");
+        int sayi = input.nextInt();
+
+        if (sayi >=100 || sayi <1) {
+            System.out.println("Please enter a valid number. (Between 1-99)");
+        }else {
+            for (int i = 1; i < sayi; i++) {
+                if (i%3 == 0 && i%5 == 0) {
+                    System.out.println("JavaCan");
+                } else if (i%3 == 0) {
+                    System.out.println("Java");
+                } else if (i%5 == 0) {
+                    System.out.println("CAN'dir");
+                }
+                }
+            }
+        }
 
     }
-}
+

@@ -14,20 +14,18 @@ public class Task12 {
         String name= input.nextLine();
 
 
-int ilkBosluk = name.indexOf(" "); //
-int ikinciBosluk =name.indexOf(" ",ilkBosluk+1);
+// diyelim ki Imren Rahbay Java yazacagim
+        int firstSpace = name.indexOf(" "); // firstspace index number
+        int secondSpace = name.indexOf(" ",firstSpace +1); // second space index number
 
-String ad = name.substring(0,ilkBosluk);
-String ikinciAd = name.substring(ilkBosluk+1, ikinciBosluk);
-String ucuncuAd = name.substring(ikinciBosluk+1);
+        String firstWord = name.substring(0,firstSpace);
+        String secondWord = name.substring(firstSpace +1, secondSpace);
+        String thirdWord = name.substring(secondSpace+1);
 
-        String initials =
-                Character.toUpperCase(ad.charAt(0)) + "." +
-                        Character.toUpperCase(ikinciAd.charAt(0)) + "." +
-                        Character.toUpperCase(ucuncuAd.charAt(0)) + ".";
+        String initials = Character.toUpperCase(firstWord.charAt(0)) + "."
+                +Character.toUpperCase(secondWord.charAt(0)) + "." +
+                Character.toUpperCase(thirdWord.charAt(0)) + ".";
 
         System.out.println(initials);
-
-
     }
 }
