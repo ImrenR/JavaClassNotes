@@ -9,6 +9,7 @@ public class _15_String_methods17 {
 
         //Kodu aşağıya yazınız.
 
-
+String kelime = "apple";
+        System.out.println("kelime = " + kelime.toUpperCase()); //APPLE
     }
 }

@@ -9,7 +9,7 @@ public class _11_String_methods08 {
 
         //Kodu aşağıya yazınız.
 String kelime = "apple";
-        System.out.println("kelime containes app ?= " + kelime.contains("app"));
+        System.out.println("kelime containes app ?= " + kelime.contains("app")); // True
 
     }
 }

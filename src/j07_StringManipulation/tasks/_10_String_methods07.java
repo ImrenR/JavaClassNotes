@@ -10,6 +10,6 @@ public class _10_String_methods07 {
         //Kodu aşağıya yazınız.
 
 String word = "PADDLE";
-        System.out.println(word.toLowerCase());
+        System.out.println(word.toLowerCase()); // paddle
     }
 }

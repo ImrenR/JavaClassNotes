@@ -10,6 +10,6 @@ public class _09_String_methods06 {
         //Kodu aşağıya yazınız.
 
 String h = "New York";
-        System.out.println("h nin kucuk harf karsiligi = " + h.toLowerCase());
+        System.out.println("h nin kucuk harf karsiligi = " + h.toLowerCase()); // new york
     }
 }

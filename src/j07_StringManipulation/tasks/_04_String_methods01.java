@@ -12,7 +12,7 @@ public class _04_String_methods01 {
 
 
 String kelime = "I love java";
-        System.out.println(kelime.length());
+        System.out.println(kelime.length()); // 11
 
     }
 }

@@ -12,5 +12,5 @@ public class _14_String_methods11 {
 
 String kelime = "apple";
         System.out.println("kelime equals Apple?= " + kelime.equalsIgnoreCase("Apple"));
-    }
+    } //true
 }

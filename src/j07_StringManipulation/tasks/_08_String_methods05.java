@@ -9,7 +9,7 @@ public class _08_String_methods05 {
 
         //Kodu aşağıya yazınız.
 String c = "New Jersey";
-        System.out.println("c nin buyuk harf karsiligi= " + c.toUpperCase());
+        System.out.println("c nin buyuk harf karsiligi= " + c.toUpperCase()); // new jersey
 
 
     }

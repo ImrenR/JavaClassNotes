@@ -10,7 +10,7 @@ public class _06_String_methods03 {
 
         //Kodu aşağıya yazınız.
 String a = "paper";
-        System.out.println("a nin buyukharf karsiligi = " + a.toUpperCase());
+        System.out.println("a nin buyukharf karsiligi = " + a.toUpperCase()); // PAPER
 
     }
 }
