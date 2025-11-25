@@ -17,6 +17,18 @@ public class Task08 {
          */
         Scanner input = new Scanner(System.in);
 
+        System.out.println("Bir sayi giriniz:");
+        int sayi=input.nextInt();
 
+        for (int i = 1; i <=sayi ; i++) {
+            for (int j = 1; j <=sayi ; j++) {
+
+                    System.out.print((j*i) + "\t");
+
+
+            }
+            System.out.println();
+
+        }
     }
 }
