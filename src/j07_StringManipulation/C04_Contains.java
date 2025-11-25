@@ -12,6 +12,7 @@ public class C04_Contains {
 String cumle = "JAVACAN COK GUZELSIN";
         System.out.println(cumle.contains("JAVA"));
 
-
+String bootcamp = "Clarusway ile java gayet iyi";
+        System.out.println(bootcamp.contains("java"));
           }
 }
