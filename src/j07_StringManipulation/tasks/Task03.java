@@ -7,7 +7,9 @@ public class Task03 {
 
         String str = "Alamanya";
 
-
+        int ilkHarf = str.indexOf('a');
+        System.out.println(ilkHarf); // 2
+        System.out.println(str.indexOf('a', 3)); // 4
 
     }
 }
