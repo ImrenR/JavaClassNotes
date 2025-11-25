@@ -10,7 +10,8 @@ public class _20_String_methods16 {
 
         //Kodu buraya yazınız.
 
-
+        String s1 = "    javaCAN     ";
+        System.out.println("s1 = " + s1.trim());
 
     }
 }

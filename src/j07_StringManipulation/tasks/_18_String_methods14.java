@@ -10,9 +10,9 @@ public class _18_String_methods14 {
 
         //Kodu aşağıya yazınız.
 
+  String s1 = "      Clarusway           ";
 
-
-
+        System.out.println("s1 = " + s1.trim());
 
     }
 }
