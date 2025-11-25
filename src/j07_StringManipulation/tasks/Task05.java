@@ -10,8 +10,15 @@ public class Task05 {
               */
 
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your name:");
+        String name= input.nextLine();
+        System.out.println("Enter your surname:");
+        String surname = input.nextLine();
 
+        String newName = Character.toUpperCase(name.charAt(0)) + name.substring(1);
+        String newSurname = Character.toUpperCase(surname.charAt(0)) + surname.substring(1);
 
-
+        System.out.println(newName +" "+ newSurname);
     }
 }
