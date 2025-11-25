@@ -31,7 +31,7 @@ public class Task01 {
                 } else if (i%5 == 0) {
                     System.out.println("CAN'dir");
                 }
-                }
+                } // we dont use else here not to print the numbers
             }
         }
 
