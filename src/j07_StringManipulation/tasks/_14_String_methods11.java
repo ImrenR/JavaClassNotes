@@ -10,6 +10,7 @@ public class _14_String_methods11 {
 
         //Kodu aşağıya yazınız.
 
-
+String kelime = "apple";
+        System.out.println("kelime equals Apple?= " + kelime.equalsIgnoreCase("Apple"));
     }
 }
