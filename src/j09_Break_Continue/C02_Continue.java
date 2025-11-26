@@ -24,5 +24,6 @@ public class C02_Continue {
             yeniMail += email.charAt(i);
         }
         System.out.println("yeniemail : " + yeniMail);
+
     }
 }
