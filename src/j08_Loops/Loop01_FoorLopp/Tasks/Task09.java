@@ -16,10 +16,10 @@ public class Task09 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("bir karakter giriniz");
-        int a= input.nextInt();
+        int n= input.nextInt();
 
-        for (int i = 1; i <=a ; i++) {
-            for (int j = 1; j <=i ; j++) {
+        for (int i = 1; i <=n ; i++) { // satirlar
+            for (int j = 1; j <=i; j++) { // i kadar yildiz yazar
                 System.out.print("* ");
             }
             System.out.println();
