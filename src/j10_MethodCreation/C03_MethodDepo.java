@@ -17,6 +17,11 @@ public static void gecmeNotu(int not){ //int p'li komsu koy method
         System.out.println("gecmis olsun belgesi kazandiniz");
 
     }else System.out.println("kaldiniz");
+
+
+//    public void staticOlmayanMeth1(){
+//        System.out.println("static yok  alamazsin bu sayfadan disariya");
+//    }
 }
 
 

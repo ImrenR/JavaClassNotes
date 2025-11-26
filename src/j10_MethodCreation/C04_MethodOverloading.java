@@ -32,12 +32,17 @@ public class C04_MethodOverloading {
            methodu kullanir)
            Eger kapsayan bir method da bulamazsa Java CTE verir
 
-
         */
 
+        String str="Bahanesi olanin basarisi olmaz:(";
+//toplam(2,3);
+//toplam(3,14,45);
+//toplam(2,3,4);
     }//main sonu
 
-
+    private static void toplam(int a, int b) {
+        System.out.println();
+    }
 
 
 }//Class sonu
