@@ -21,14 +21,14 @@ public class Task08 {
         int sayi=input.nextInt();
 
         for (int i = 1; i <=sayi ; i++) {
-            for (int j = 1; j <=sayi ; j++) {
-
-                    System.out.print((j*i) + "\t");
-
-
+            for (int j = 1; j <=sayi; j++) {
+                System.out.print((i*j) + "\t");
             }
             System.out.println();
+        }
+
+
 
         }
     }
-}
+

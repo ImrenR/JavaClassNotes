@@ -32,15 +32,15 @@ public class Task07 {
         System.out.println("enter a number:");
         int num = input.nextInt();
 
-        for (int i = 1; i <=num; i++) {
-            for (int j = 1; j <=num ; j++) {
-                if (i == j) {
-                    System.out.print("1 ");
-                }else{
-                    System.out.print("0");
-                }
+
+        for (int i = 1; i <=num ; i++) {      // satirlar
+            for (int j = 1; j <=num ; j++) { // sutunlar
+              if (i == j){                   // kosegen kontrolu
+                  System.out.println("1 ");
+              }else {
+                  System.out.println("0 ");
+              }
             }
-            System.out.println();
         }
 
 

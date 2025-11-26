@@ -14,10 +14,10 @@ public class Task06 {
         // 1 x 10 = 10
         // Yuarıdaki çarpım tablosunu 10 a kadar print eden code create ediniz.
 
-        int sayi = 1; // sabit bir sayi var ve yaninda degiskenler
-        for (int i = 1; i <=10; i++) {
-            System.out.println( sayi + "x" + i + "=" + i); // ya da sondaki i yerine (sayi*i)
-        }
+       int sayi =1; // carpim tablosunda sabit bir sayi vardir o da 1 dir bu sebeple degisken olmadigindan bunu tanimlamak gerekir.
 
+        for (int i = 1; i <=10; i++) {
+            System.out.println(sayi + "x" + i + "=" + i);
+        }
     }
 }
