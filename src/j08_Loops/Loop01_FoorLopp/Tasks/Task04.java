@@ -12,13 +12,13 @@ public class Task04 {
         int sayi = input.nextInt();
         int sayi1 = input.nextInt();
 
-
-
-        for (int i = sayi; i <= sayi1 ; i++) {
-            if (i%2 == 0) {
-                System.out.println(i);
+        for (int i = sayi; i <sayi1 ; i++) {
+            if (i % 2 == 0) {
+                System.out.println("Cift sayilar : " + i);
             }
         }
+        }
+        }
 
-    }
-}
+
+
