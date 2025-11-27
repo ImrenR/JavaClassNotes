@@ -14,5 +14,15 @@ public class Task01 {
         Tanimlanmamis evre
          */
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir yas giriniz : ");
+        int age = input.nextInt();
+
+        String result = (age>=0 && age<=4) ? "bebo" :
+                     (age>=5 && age<=12) ? "cocuk" :
+                      (age>=13 && age<=20) ? "genc" :
+                      (age>=21 && age<=30) ? "yetiskin" : "tanimlanmamis evre";
+
+        System.out.println("Result :" + result);
     }
 }
