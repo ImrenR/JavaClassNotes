@@ -10,11 +10,11 @@ public class C04_MethodOverloading {
            method Overloading icin Method Signature'larinin farkli olmasi gerekir
            Method Signature = method name + parametre sayisi + parametre data type
 
-          ahan da TRICK_01 : Access Modifier'lari degistirmek de method'lari Java  farkli methodlar olarak derlemez
+          TRICK_01 : Access Modifier'lari degistirmek de method'lari Java  farkli methodlar olarak derlemez
            aynı method olarak derler   Cunku access modifier'lar method signature'a dahil degildir.
-          ahan da TRICK_02 : Method'larin body'sini degistirmek de method'lari Java  farkli methodlar olarak derlemez
+          TRICK_02 : Method'larin body'sini degistirmek de method'lari Java  farkli methodlar olarak derlemez
            aynı method olarak derler. Cunku body'ler method signature'a dahil degildir.
-          ahan da TRICK_03 : Overloading "Compile Time Error" verir.
+           TRICK_03 : Overloading "Compile Time Error" verir.
 
           Overloading :
           1)Parametrelerin sayisi degistirilerek method overloading tanımlanabilir.
@@ -35,14 +35,30 @@ public class C04_MethodOverloading {
         */
 
         String str="Bahanesi olanin basarisi olmaz:(";
-//toplam(2,3);
-//toplam(3,14,45);
-//toplam(2,3,4);
+
+toplam(2,3.76);
+toplam(2,5);
+toplam(3,14, 45);
+toplam(2,3,5);
+toplam(2,3.14,4.56,5);
+
+
+
+
+
+
     }//main sonu
 
     private static void toplam(int a, int b) {
-        System.out.println();
+        System.out.println("int-int data type meth run edildi" + (a+b));
     }
-
-
+    private static void toplam(int a, double b) {
+        System.out.println("int-double data type meth run edildi" + (a+b));
+    }
+    private static void toplam(int a, double b, double c, int d) {
+        System.out.println("int-double-double-int data type meth run edildi" + (a+b+c+d));
+    }
+    private static void toplam(int a, int b, int c) {
+        System.out.println("int-double data type meth run edildi" + (a+b+c));
+    }
 }//Class sonu
