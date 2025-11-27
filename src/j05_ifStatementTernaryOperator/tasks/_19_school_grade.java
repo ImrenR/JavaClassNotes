@@ -25,6 +25,23 @@ public class _19_school_grade {
 
         // Code start here DO NOT CHANGE THE CODE BEFORE THIS LINE
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Enter your Quiz Score :");
+       int quizScore = input.nextInt();
+        System.out.println("Enter your Mid term score :");
+        int midScore = input.nextInt();
+        System.out.println("Enter your Final Score :");
+        int finalScore = input.nextInt();
+
+        int avargE = (quizScore + midScore + finalScore)/3;
+
+        String result = (avargE>=90) ? "your note is A" :
+                (avargE>=70 && avargE<=90) ? "your note is B" :
+                     (avargE>=50 && avargE<=70) ? "your note is C" :
+                                                 "your note is F" ;
+
+        System.out.println("Your result :" + result);
+
 
     }
 }

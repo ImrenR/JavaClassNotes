@@ -13,8 +13,11 @@ public class _17_if_else_if_statement_find_max {
          Tüm farklı senaryolarda maksimum sayıyı yazdırmalıdır  */
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("Number 1 :");
         int i1 = scan.nextInt();
+        System.out.println("Number 2 :");
         int i2 = scan.nextInt();
+        System.out.println("Number 3 :");
         int i3 = scan.nextInt();
         //Kodu aşağıya yazınız. BU SATIRIN YUKARISINI DEĞİŞTİRMEYİNİZ.
 

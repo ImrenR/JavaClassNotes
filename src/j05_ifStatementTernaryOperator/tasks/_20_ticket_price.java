@@ -7,7 +7,8 @@ public class _20_ticket_price {
     public static void main(String[] args) {
 
         /* Task->
-        Trafik cezasının değerini hesaplayın code create ediniz
+        Trafik cezasının değerini hesaplayın code create ediniz.
+
 45 hız sınırıdır.
 
 Eğer hızınız 55-74 arasında ise:
@@ -44,17 +45,21 @@ ve isDriverLicenceAvailable(Ehliyeti var mı?) = false;
 sonuç 300 olmalıdır.  */
 
         Scanner scan = new Scanner(System.in);
-
+        System.out.println("Hiziniz :");
         int currentSpeed = scan.nextInt();
-
+        System.out.println("Ehliyetiniz var mi ?");
         boolean isDriverLicenceAvailable = scan.nextBoolean();
 
 //Kodu aşağıya yazınız. BU SATIRIN YUKARISINI DEĞİŞTİRMEYİNİZ.
 
 
+        int ceza = (currentSpeed>=55 && currentSpeed<=74) ? 100 :
+                (currentSpeed>=75 && currentSpeed<=84) ? 150 :
+                (currentSpeed>=85 && currentSpeed<=94) ? 320 :
+                 (currentSpeed>=94) ? 500 : 0;
 
-
-
+       ceza = isDriverLicenceAvailable ? ceza : ceza + 200; // ceza = ile update edildi yeniiu ceza tanimlandi
+        System.out.println("Cezaniz : " + ceza + "$");
     }
 }
 
