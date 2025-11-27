@@ -1,6 +1,7 @@
 package j10_MethodCreation;
 
 public class C01_MethodCreation {// Class level
+
  /*
        code okunabilirliği ve sadeliği için sürekli kullanılan aksiyonlar için method create edip
        main method'a call edip run etmek uygulamanın test edilmesi maintanance ve reusable açısından tercih edilir.
@@ -21,6 +22,7 @@ public class C01_MethodCreation {// Class level
           method call edildiğinde  Parametre olarak
           declare edilen data tiplerine uygun value'ler (ARGUMENT)  girilmeli.
    */
+
 
     public static void main(String[] args) {//main level
 
