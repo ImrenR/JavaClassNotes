@@ -9,6 +9,10 @@ public class C06_Practice {
         printNumber(50);
         System.out.println();
          printNumber(50,60);
+        System.out.println();
+       int sum =  sumNumberss(4); // bunun dondurdugu degeri yazmam lazim yoksa calismaz yani string se string int ise int cunku method da return type varsa yani void degilse burda da tanimlana gerekyito
+        System.out.println(sum);
+
     } // main sonu
 
     //Class icinde metodu yazdik.
@@ -36,6 +40,14 @@ public class C06_Practice {
             System.out.print(i + " ");
         }
 
+    }
+
+    public static int sumNumberss(int number){ //sayi donen bir metod yapmak isterem
+        int sum=0;
+        for (int i = 0; i <=number ; i++) {
+            sum += i;
+        }
+        return  sum; // toplami donecek
     }
 }
 
