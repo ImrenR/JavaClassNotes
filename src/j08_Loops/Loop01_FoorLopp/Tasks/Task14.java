@@ -8,5 +8,12 @@ public class Task14 {
         //Not: 0 ve 100 dahildir.
 
 
+        for (int i = 0; i <=100; i++) {
+            if(i%2==1){
+                continue; // butun tek sayilari ignore eder yazdirmaz
+            }
+            System.out.print(i + " ");
+        }
+
     }
 }
