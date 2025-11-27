@@ -14,7 +14,14 @@ public class Task13 {
 
         */
 
+// this pattern has 6 column and A=65 in ASCII
 
+        for (int i = 0; i <6 ; i++) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print((char) ( 65 + i) + " ");
+            }
+            System.out.println();
+        }
 
 
     }

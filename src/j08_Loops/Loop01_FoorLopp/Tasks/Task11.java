@@ -14,7 +14,16 @@ public class Task11 {
 
         */
         int harf=65;
+       // i =1 -> sadece A -> j=0
+        //i =2 -> j=0,1 -> A, B
+        // char -> sayiyi harfe cevirir bu yuzden (char) kullandik ! A + 1 = B - A +2 = C
 
+        for (int i = 0; i <=6; i++) { // satirlar
+            for (int j = 0; j <=i; j++) { // her satirda hac harf yazilacak
+                System.out.print((char) (harf +j) + " ");
+            }
+            System.out.println(); // alt satira gecis
+        }
 
 
 

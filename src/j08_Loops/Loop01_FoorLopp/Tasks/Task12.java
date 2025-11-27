@@ -11,6 +11,19 @@ public class Task12 {
 
         Scanner input = new Scanner(System.in);
 
+      // totalde 5 sayi girilecek bu sayilar dondukce toplanmali bu yuzden for loop dong kullanirim
 
+        int toplam = 0; // initial value of toplam
+
+        for (int i = 1; i <=5; i++) {
+            System.out.println(i + ". sayiyi giriniz: ");
+            int number = input.nextInt();
+            if (number>=10 && number<=20) {
+                continue;
+            }
+            toplam += number;
+        }
+
+        System.out.println("toplam = " + toplam);
     }
 }
