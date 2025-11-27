@@ -6,33 +6,40 @@ public class C02_MethodCreation {//Class level
     // task-> girilen 3 sayının ortalamasını print eden METHOD create ediniz
 
     public static void main(String[] args) {// main level
-
-        System.out.println("ortalamaAl() = " + ortalamaAl());
-         ortalamaAl1(); // istedigin yerde call edebilirim bu da ikinci yontem bu sekilde
-        //yapildigin method da return yazilmaz ama double void ile degistirilir.
-
+// method main icinde call edilir.
+       double sayi = ortalamaAl();
+        System.out.println(sayi);
+        System.out.println(" *********** ");
+        ortalamaAl1(); // direkt sonucu versin dersek bu metotta void kullanir soutu asagida atarim.
     }//main sonu
 
-    private static double ortalamaAl() {
+   // class icinde method yazilir.
+    public static double ortalamaAl(){
         Scanner input = new Scanner(System.in);
-        double toplam=0; // bos-> girilen sayilarin toplanacagi container tanimlandi.
-        for (int i = 1; i <=3 ; i++) { // 3 tekrar ile kullanicidan deger alip toplayan loop
-            System.out.println(i + ". sayi giriniz:");
+        double toplam = 0 ; // bos -> girilen sayilarin toplanacagi container tanimlandi.
 
-            toplam+=input.nextDouble();
+        for (int i = 1; i <=3 ; i++) {
+            System.out.println(i + ". sayi giriniz :");
+
+            toplam += input.nextDouble();
+
         }
-      return toplam/3;
+        return toplam/3;
     }
-    private static void ortalamaAl1() {
+
+    public static void ortalamaAl1(){
         Scanner input = new Scanner(System.in);
-        double toplam=0; // bos-> girilen sayilarin toplanacagi container tanimlandi.
-        for (int i = 1; i <=3 ; i++) { // 3 tekrar ile kullanicidan deger alip toplayan loop
-            System.out.println(i + ". sayi giriniz:");
+        double toplam = 0 ; // bos -> girilen sayilarin toplanacagi container tanimlandi.
 
-            toplam+=input.nextDouble();
+        for (int i = 1; i <=3 ; i++) {
+            System.out.println(i + ". sayi giriniz :");
+
+            toplam += input.nextDouble();
+
         }
-       System.out.println("toplam:" + toplam/3);
+        System.out.println("toplam/3 = " + toplam / 3);
     }
+
 
 
 }//Class sonu
