@@ -13,7 +13,7 @@ public class C06_Practice {
        int sum =  sumNumberss(4); // bunun dondurdugu degeri yazmam lazim yoksa calismaz yani string se string int ise int cunku method da return type varsa yani void degilse burda da tanimlana gerekyito
         System.out.println(sum);
         C07_AddNumbers addNumbers = new C07_AddNumbers();
-       int sum2= addNumbers.sumNumberss(1,5);
+       int sum2= addNumbers.sumNumberss(1,5) + 20;
         System.out.print(sum2);
 
 
