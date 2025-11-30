@@ -36,5 +36,17 @@ public class _01_arraylist1 {
        // clone lanacagi zaman obje klasinin icine alinmak zorundadair ve array komutlari burada
         // kullanilmaz get sort gibi
         System.out.println("clonedList = " + clonedList);
+        //ensureCapacity();
+        // Bu metot arrayList in kapasitesini belirtilen degere yukseltir.
+        // Bu sayede gelecekte eleman ekleme islemleri daha hizli gerceklesebilir.
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.ensureCapacity(10);
+        // Increases the capacity of ArrayList to 10 ;
+        //
+
+
+
+
     }
 }
