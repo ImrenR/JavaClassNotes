@@ -20,6 +20,10 @@ public class _01_arraylist1 {
 
     public static void main(String[] args) {
 
-
+       ArrayList<Integer> list = new ArrayList<>();
+       list.add(45);
+       list.add(55);
+       list.add(0);
+        System.out.println(list);
     }
 }
