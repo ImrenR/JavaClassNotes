@@ -29,7 +29,10 @@ public class C01_ArrayList {
         String[] arr = {"A", "B", "C"};
         System.out.println(Arrays.toString(arr)); // obje icinde olanlari array icinde verir.
 
-
+        ArrayList<String> list =new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        System.out.println(list);
 
         /*
 
