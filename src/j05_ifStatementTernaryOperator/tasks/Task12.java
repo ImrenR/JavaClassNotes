@@ -14,7 +14,8 @@ public class Task12 {
         System.out.println("Bir kelime giriniz :");
         String harf = input.nextLine();
 
-        char ch =harf.charAt(0);
+        char ch =harf.charAt(0); // ilk karakteri al
+
         if (Character.isLetter(ch)) {
             System.out.println("Evet harftir");
         }else System.out.println("Harf degildir");
