@@ -22,6 +22,17 @@ public class C01_ArrayList {
 
             2.  - Arrayler degistirilemez sabit bir .length;'de tanimlanir.
                 - ArrayList'ler degistirilebilir size(); belirleme zorunlulugu olmadan tanimlanır.
+
+
+                */
+
+        String[] arr = {"A", "B", "C"};
+        System.out.println(Arrays.toString(arr)); // obje icinde olanlari array icinde verir.
+
+
+
+        /*
+
             3.  Intellij sonda bos biralikan <> yerine <~> seklinde ifade yazabilir bu ifade tanimdaki tür ile ayni anlamindadir.
 
     List declarations(tanımlama) :
