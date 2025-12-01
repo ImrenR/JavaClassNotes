@@ -10,5 +10,9 @@ public class Task12 {
 
          */
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir kelime giriniz :");
+        String harf = input.nextLine();
+
     }
 }
