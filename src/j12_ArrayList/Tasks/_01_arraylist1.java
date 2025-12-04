@@ -13,6 +13,7 @@ public class _01_arraylist1 {
 
         ArrayList'teki bir değerin kaç kez tekrarlandığını belirtin ve döndürün.
         Örneğin;
+
         ArrayList = Orange , Kiwi , Peach , Banana , Orange
         String Orange:
         Count = 2 olmalı. (Orange 2 kez yazılmış)

@@ -36,14 +36,14 @@ public class C01_ArrayList {
 
         /*
 
-            3.  Intellij sonda bos biralikan <> yerine <~> seklinde ifade yazabilir bu ifade tanimdaki tür ile ayni anlamindadir.
+         3.  Intellij sonda bos biralikan <> yerine <~> seklinde ifade yazabilir bu ifade tanimdaki tür ile ayni anlamindadir.
 
-    List declarations(tanımlama) :
-    Array den farki boyut esnekleğidir.Array'lerde length sabittir, degistirilemez. ArrayList'lerde (List) length esnektir.
-     eleman ekledikce List size'ini artirir,  eleman sildikce List size'ini azaltir.
+         List declarations(tanımlama) :
+         Array den farki boyut esnekleğidir.Array'lerde length sabittir, degistirilemez. ArrayList'lerde (List) length esnektir.
+        eleman ekledikce List size'ini artirir,  eleman sildikce List size'ini azaltir.
 
 
-    key word: List<Wrapper Class> name=
+         key word: List<Wrapper Class> name=
 
     List'e assaign etme(atama) :
     List'ler data type olarak primitive'leri kabul etmez. Primitive'lerde data type'ini non-primitive yapmak icin wrapper class'lari kullanilir.

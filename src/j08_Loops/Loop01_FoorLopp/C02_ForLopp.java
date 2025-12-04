@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class C02_ForLopp {
     public static void main(String[] args) {
-        // Task-> girlen sayıdan 100'e kadar 4'un katı olan tamsayıları yan yana print eden code create ediniz
+        // Task-> girlen sayıdan 100'e kadar 4'un katı olan tamsayıları yan yana print eden code create ediniz.
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("Bir tam sayi giriniz: Hatta 100 den kucuk bir tamsayi giriniz");
+
         int sayi = input.nextInt();
 
  int i; //  if-loop scope disi tanimlama ypilirsa if ve loop call edebilir. int i disarda tanimlarsak for
@@ -20,6 +22,7 @@ public class C02_ForLopp {
                 System.out.println(i + "selam");
             }
             System.out.println( i +" selam"); // her horoz kendi coplugunda oter i for loopunun icinde disari cikamaz o yuzden i hata verir
-        }else System.out.println("Hatali giris yaptiniz tekrar deneyin");
+        }
+        else System.out.println("Hatali giris yaptiniz tekrar deneyin");
     }
 }
