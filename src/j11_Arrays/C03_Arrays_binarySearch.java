@@ -8,8 +8,16 @@ public class C03_Arrays_binarySearch {
 
         int sayiArr[] ={23,44,2,11,55,60,32,34,59,22,9,64,43};
 
+        int sayi1 =44;
+        int sayi2 = 25;
 
-
+        boolean flag=false; // bayrak asagi
+        for (int i = 0; i < sayiArr.length; i++) {
+            if (sayiArr[i] == sayi1) {
+                flag = true; // sarti saglayan case olusturuldugunda flag yukari
+                break;
+            }
+        }
 
     }
 }

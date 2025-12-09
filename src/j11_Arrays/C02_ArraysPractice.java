@@ -28,14 +28,11 @@ public class C02_ArraysPractice {
         //Task03-> isimArray de 6 karakterden az olan elemanı depolayan(store eden) arrayı print eden code create ediniz..
         System.out.println("   ***   task03   ***   ");
 
-        int yeniArrBound = 0; // 6 karakterden az olan elemanlari depolayacak arrrayin boundu icin ttanimlandi
-        String yeniArr[]=new String[yeniArrBound];
+       // 6 karakterden az olan elemanlari depolayacak arrrayin boundu icin ttanimlandi
 
 
-        for (int i = 0; i < isimArr.length; i++) {
-            if (isimArr[i].length()<6) {
-                yeniArrBound ++;
-            }
+
+
         }
     }
-}
+
