@@ -9,15 +9,33 @@ public class C02_ArraysPractice {
         //Task01-> sayıArr cift index elemanlarını print eden code create ediniz...
         System.out.println("   ***   task01   ***   ");
 
-
-
+        for (int i = 0; i < sayiArr.length; i++) {
+            if (i%2 == 0){
+                System.out.println(sayiArr[i]);
+            }
+            
+        }
         System.out.println("   ***   task02   ***   ");
         //Task02-> isimArray de 5 karakterden fazla olan elemanları print eden code create ediniz...
 
+        for (int i = 0; i < isimArr.length ; i++) {
+            if (isimArr[i].length()>5) {
+                System.out.println(isimArr[i]);
+            }
+        }
 
 
         //Task03-> isimArray de 6 karakterden az olan elemanı depolayan(store eden) arrayı print eden code create ediniz..
         System.out.println("   ***   task03   ***   ");
 
+        int yeniArrBound = 0; // 6 karakterden az olan elemanlari depolayacak arrrayin boundu icin ttanimlandi
+        String yeniArr[]=new String[yeniArrBound];
+
+
+        for (int i = 0; i < isimArr.length; i++) {
+            if (isimArr[i].length()<6) {
+                yeniArrBound ++;
+            }
+        }
     }
 }
