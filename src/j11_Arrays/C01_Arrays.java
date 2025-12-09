@@ -54,21 +54,23 @@ sayiArr1[1]= 28; // 2 . elaman 35 olan deger 28 olarak update edildi.
         for (int i = 0; i < isimArr.length; i++) {
             System.out.print(isimArr[i] + " ");
         }
+        System.out.println();
         // onemli not ! 1.yontem bize array yazdirir ikinci yontem de array i kaldirir
 
         // Array son index eleman  -> arr[arr.length-1]
-
+        System.out.println("son index :" + isimArr[isimArr.length-1]);
         // Array ilk index eleman -> arr[0]
-
+        System.out.println("ilk index :" + isimArr[0]);
 
         // Array olmayan index eleman
 
+       // System.out.println("olmayan index elemani:" + isimArr[33]);
 
+        // Array elemanları print etme -> bad practice --> loop ile array elemanlari print edilir.
 
-        // Array elemanları print etme -> bad practice
-
-
-
-        //Arrays elaman natural ordering(doğal sırlamaa->alphabetic a-z n numerik ascending k-b)
+        //Arrays elaman natural ordering(doğal sıralama->alphabetic a-z n numerik ascending k-b)
+        System.out.println("Sort etmek = " + Arrays.toString(isimArr));
+        Arrays.sort(isimArr); // arr alphabetic naturel order yapildi
+        System.out.println("sort etti su an :" + Arrays.toString(isimArr));
      }
 }

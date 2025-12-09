@@ -7,7 +7,7 @@ public class Task28 {
 
         // task-> girilen  bir char karakterden sonra gelen 10 karakteri print eden code create ediniz
 
-Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Bit char giriniz: ?");
         char harf = input.next().charAt(0);
 
