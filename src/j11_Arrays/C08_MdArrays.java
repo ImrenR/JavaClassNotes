@@ -9,6 +9,6 @@ public class C08_MdArrays {
         //        };
         //        array elamanları toplamını print eden code create ediniz.
 
-
+// iki adet for kullanacagiz burada
     }
 }
