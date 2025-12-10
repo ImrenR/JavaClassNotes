@@ -16,6 +16,8 @@ public class C12_replaceAll_fill {
 
         //fill()-> list'tin tum elemanlarını istenen değere update eder...
 
+        Collections.fill(ulkeList, "JavaCan"); // sout olmaz void cunku
+        System.out.println("Fill sonrasi ulkeList = " + ulkeList);
 
     }
 }
