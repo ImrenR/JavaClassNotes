@@ -15,6 +15,7 @@ public class C11_remove {
         System.out.println("ulkeList.remove(\"Cuba\") = " + ulkeList.remove("Cuba"));
         System.out.println("Remove sonrasi ulkeList = " + ulkeList); // cikarilmis listeyi verir bastaki liste gelmez.
 
+    // removeAll()
 
     }
 }

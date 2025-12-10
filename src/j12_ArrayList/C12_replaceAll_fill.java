@@ -9,6 +9,11 @@ public class C12_replaceAll_fill {
         //replaceAll();-> List'te belirli bir elemanı belirli bir elemana update eder.treu/ false return eder
 
 
+        ArrayList<String> ulkeList =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere"));
+        System.out.println("ulkeList = " + ulkeList);
+        System.out.println("Collections.replaceAll(ulkeList, \"almanya\", \"alamanya\") = " + Collections.replaceAll(ulkeList, "almanya", "alamanya"));
+        System.out.println("ulkeList = " + ulkeList);
+
         //fill()-> list'tin tum elemanlarını istenen değere update eder...
 
 
