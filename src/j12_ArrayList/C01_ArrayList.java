@@ -89,11 +89,17 @@ ArrayList<String> yList = new ArrayList<>(Arrays.asList("kusleme", "kuzuGerdan",
         ArrayList<String> ulkeList = new ArrayList<>(Arrays.asList("Almanya", "Portekiz","Ispanya")); //asList i initialize etmek icin kullanilir, bir listi tanimlarken declare etmek icin kullanilir
         System.out.println(ulkeList);
 
-
-
-
         // list print etme..
 
+        ArrayList<Integer> rakamList = new ArrayList<>(){
+            {
+                for (int i = 0; i < 10; i++) {
+                    add(i);
+                }
+            }
 
+        };
+
+        System.out.println(rakamList);
     }
 }
