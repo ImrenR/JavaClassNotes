@@ -82,8 +82,14 @@ public class C01_ArrayList {
         sayiList.add(91);
         System.out.println(sayiList);
         //2. yol -> Arrays.asList(); meth:Çuval
+ArrayList<String> yList = new ArrayList<>(Arrays.asList("kusleme", "kuzuGerdan","antepAcili")); //asList i initialize etmek icin kullanilir, bir listi tanimlarken declare etmek icin kullanilir
+        System.out.println(yList);
 
         //3. yol -> List.of(); meth:Çuval
+        ArrayList<String> ulkeList = new ArrayList<>(Arrays.asList("Almanya", "Portekiz","Ispanya")); //asList i initialize etmek icin kullanilir, bir listi tanimlarken declare etmek icin kullanilir
+        System.out.println(ulkeList);
+
+
 
 
         // list print etme..
