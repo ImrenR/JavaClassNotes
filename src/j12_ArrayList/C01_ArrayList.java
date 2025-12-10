@@ -68,8 +68,12 @@ public class C01_ArrayList {
 
         //List tanımlama ve değer atama
 
+        ArrayList<Integer> sayiList =new ArrayList<>(); // integer data store eden bos list declare edildi.
+
         // 1. yol -> add(); meth
 
+        sayiList.add(43);
+        System.out.println(sayiList.add(43)); // methodun ciktisi boolean verir
         //2. yol -> Arrays.asList(); meth:Çuval
 
         //3. yol -> List.of(); meth:Çuval
