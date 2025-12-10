@@ -7,6 +7,12 @@ public class C08_set {
     public static void main(String[] args) {
         //set()-> listin istenen index'e istenen elemanını  update set eder-> şu indexin şu elelmanını şununla değiştir...
 
+        ArrayList<String> ulkeList =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere"));
 
+        System.out.println("Set oncesi ulkeList = " + ulkeList);
+
+        System.out.println("ulkeList = " + ulkeList.set(1, "Tanzanya"));
+
+        System.out.println("ulkeList set sonrasi= " + ulkeList);
     }
 }
