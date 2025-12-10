@@ -18,6 +18,11 @@ ArrayList<String>yeniList = new ArrayList<>(Collections.nCopies(7, "JavaCan")); 
 
         //addAll(list);-> girilen liste istene liste ekler..
 
+ulkeList.addAll(isimList); //ulkeList isimListe tamamen eklendi.
+        System.out.println("ulkeList = " + ulkeList);
+
+        isimList.addAll(3, yeniList);
+        System.out.println("isimList = " + isimList); //isimList 3. index ten itibaren yeniListe eklendi.
 
     }
 }
