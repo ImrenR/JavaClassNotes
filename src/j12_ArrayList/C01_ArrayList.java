@@ -74,6 +74,13 @@ public class C01_ArrayList {
 
         sayiList.add(43);
         System.out.println(sayiList.add(43)); // methodun ciktisi boolean verir
+        sayiList.add(31);
+        sayiList.add(31); // Ayni eleman birden cok insert edilebilir.
+        sayiList.add(11);
+        sayiList.add(21);
+        sayiList.add(71);
+        sayiList.add(91);
+        System.out.println(sayiList);
         //2. yol -> Arrays.asList(); meth:Çuval
 
         //3. yol -> List.of(); meth:Çuval
