@@ -9,7 +9,7 @@ public class C02_MethodCreation {//Class level
     public static void main(String[] args) {// main level
 
         System.out.println("ortlmAl1() = " + ortlmAl1());
-
+ortlmAl2();
 
     }
 

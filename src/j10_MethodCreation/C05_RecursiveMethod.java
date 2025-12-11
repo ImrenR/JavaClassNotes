@@ -16,10 +16,12 @@ public class C05_RecursiveMethod {
 
 
     public static void main(String[] args) {
+
  /*     Faktoriyel girilen sayıdan 1 e kadar olan tamsayıların çarpımına denir
         1!=1 0!=1 2!=2*1... 6!=6*5*4*3*2*1
         Task : girilen sayının faktöriyelini hesaplayan method create ediniz.
          */
+
         System.out.println("Bir tam sayi giriniz :");
         System.out.println(faktoriyelHesaplama(input.nextInt()));
 
@@ -30,7 +32,7 @@ public static int faktoriyelHesaplama(int sayi){
 
 
 if (sayi>=1){
-    return sayi * faktoriyelHesaplama(sayi-1);
+    return sayi * faktoriyelHesaplama(sayi-1); // 35 in yaninda olan simge recursive dir
 }else{
     return 1;
 }
