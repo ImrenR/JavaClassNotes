@@ -13,12 +13,26 @@ public class C02_MethodCreation {//Class level
 
     }
 
+    //1. method void ile :
+    private static void ortlmAl2() {
+
+        Scanner input = new Scanner(System.in);
+        double toplam = 0;
+        for (int i = 1; i <= 3 ; i++) {
+            System.out.println(i + ".  sayiyi giriniz");
+            toplam += input.nextDouble();
+        }
+        System.out.println("toplam/3 = " + toplam / 3); // sadece bir deger versin istiyorsak (void) sout u buraya atarim
+    }
+
+    //2. method double ile:
     private static double ortlmAl1() {
-        System.out.println("Bir sayi gir");
+
       Scanner input = new Scanner(System.in);
       double toplam = 0;
-        for (int i = 1; i <= 3 ; i++) {
 
+        for (int i = 1; i <= 3 ; i++) {
+            System.out.println(i + ".  sayiyi giriniz");
             toplam += input.nextDouble();
         }
         return toplam/3;
