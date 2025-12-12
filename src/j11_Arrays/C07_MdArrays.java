@@ -61,6 +61,6 @@ public class C07_MdArrays {
         };
         System.out.println("Arrays.toString(arr2) = " + Arrays.toString(arr2)); // referanslarini verir array vermez
         System.out.println("Arrays.deepToString(arr2) = " + Arrays.deepToString(arr2)); //[[12,15],[123,354,567], ...
- // cok boyutlu oldugu icin deepToString metodunu kullanmamiz lazim
+ // cok boyutlu oldugu icin deepToString metodunu kullanmamiz lazim, birden cok array varsa
     }
 }
