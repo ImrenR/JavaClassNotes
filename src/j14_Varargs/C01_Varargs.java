@@ -42,12 +42,28 @@ public class C01_Varargs {
         System.out.println("topla5(1,3,67,89,sayi4) = " + topla5(1, 3, 67, 89, sayi4));
         System.out.println("topla(45,45,67,45,67,45,34,34) = " + topla(45, 45, 67, 45, 67, 45, 34, 34));
 
-        // task04-> .verilen String variable'rın  en fazal karakter bulunduranı  print eden METHOD create ediniz..
+
+        // task04-> .verilen String variable'rın  en fazla karakter bulunduranı  print eden METHOD create ediniz..
         System.out.println("   ***  task04   ***   ");
+enUzunString("Abuzittin","Ali", "Haluk", "Elvan");
+
+
+
+
 
 
 
     }// main sonu
+
+    private static String enUzunString(String...a) {
+        String uzunIsim = "";
+        for (String avuc: a){
+            if(avuc.length()>uzunIsim.length()){
+                uzunIsim = avuc;
+            }
+        }
+        return uzunIsim;
+    }
 
     private static int topla5(int a, int b, int c, int d, int e) {
         return(a+b+c+d+e);
