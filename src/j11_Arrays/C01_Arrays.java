@@ -19,11 +19,13 @@ public class C01_Arrays {
 
         //Array declaration
 
- int a; //declere edilmis ama assignment edilmemit primitive data
- int [] arr; // declare edilmis ama assignment edilmemis non-primitive int data type array
+ // int a; //declere edilmis ama assignment edilmemis primitive data
+ // int [] arr; // declare edilmis ama assignment edilmemis non-primitive int data type array
  // Trick => declare edilmis ama assignment edilmemeis array herhangi bir actiona a alinirsa CTE verir.
 
+
         String isimArr[]= {"imren", "haluk", "tulin", "erdem", "hidayet", "ali haydar", "mehmet"};
+
         int sayiArr1[]=new int[5]; //eleman sayisi 5 declare edilen bos int data type array
         int sayiArr2[]=new int[7]; // eleman sayisi 7 decalre edilen bos int data type array
 
@@ -48,27 +50,36 @@ sayiArr1[1]= 28; // 2 . elaman 35 olan deger 28 olarak update edildi.
 
         System.out.println("isimArr = " + isimArr); // isimArr =[Ljava.lang.String;@8efb846
         // array bir obj oldugu icin bize bir referans degeri donderir.
+
        // 1.yontem : System.out.println("isimArr = " + Arrays.toString(isimArr)); // isimArr = [imren, haluk, tulin, erdem, hidayet, ali haydar, mehmet]
-// butun elemanlarina ulasmak istiyorsan Arrays.toString() metoduyla ulasirsin.
+      // butun elemanlarina ulasmak istiyorsan Arrays.toString() metoduyla ulasirsin.
+
       // 2. yontem :
         for (int i = 0; i < isimArr.length; i++) {
             System.out.print(isimArr[i] + " ");
         }
         System.out.println();
-        // onemli not ! 1.yontem bize array yazdirir ikinci yontem de array i kaldirir
+
+        // ONEMLI NOT ! 1.yontem bize array yazdirir ikinci yontem de array'i kaldirir
 
         // Array son index eleman  -> arr[arr.length-1]
         System.out.println("son index :" + isimArr[isimArr.length-1]);
+
+
         // Array ilk index eleman -> arr[0]
         System.out.println("ilk index :" + isimArr[0]);
 
         // Array olmayan index eleman
 
-       // System.out.println("olmayan index elemani:" + isimArr[33]);
+       // System.out.println("olmayan index elemani:" + isimArr[33]); // RTE
 
         // Array elemanları print etme -> bad practice --> loop ile array elemanlari print edilir.
 
+
+
+
         //Arrays elaman natural ordering(doğal sıralama->alphabetic a-z n numerik ascending k-b)
+
         System.out.println("Sort etmek = " + Arrays.toString(isimArr));
         Arrays.sort(isimArr); // arr alphabetic naturel order yapildi
         System.out.println("sort etti su an :" + Arrays.toString(isimArr));

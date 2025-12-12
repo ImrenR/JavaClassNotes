@@ -20,7 +20,7 @@ public class C02_ArraysPractice {
 
         for (int i = 0; i < isimArr.length ; i++) {
             if (isimArr[i].length()>5) {
-                System.out.println(isimArr[i]);
+                System.out.println(isimArr[i]);// toString yapmaya gerek yok bu artik bir eleman
             }
         }
 
@@ -30,9 +30,28 @@ public class C02_ArraysPractice {
 
        // 6 karakterden az olan elemanlari depolayacak arrrayin boundu icin ttanimlandi
 
+int yeniArrBound = 0; // 6 karakterden az olan elemanlari buraya depolayacagiz.
+
+        for (int i = 0; i < isimArr.length; i++) {// IsimArr her bir elemani tekrarlayan loop
+            if (isimArr[i].length()<6) { // isimArr loopan gelen herbir eleman 6 karakterden az olma sarti
+                 yeniArrBound++; // sart saglandiginda bir artan count : yeni array in boundu olarak tanimladi
+            }
+        }// Bu blok yeniArr kac bound olacagini hesaplar.
+
+            String yeniArr []= new String[yeniArrBound]; // 6 karakterden kucuk elemanlarin depolanacagi bos arr i tanimladik
+       
+       
+       int yeniArrindex = 0;
+        for (int i = 0; i < isimArr.length ; i++) {
+          if (isimArr[i].length()<6){
+              yeniArr[yeniArrindex] = isimArr[i]; // atama islemini gerceklestirdik. yeniArr[0] = "Ali" gibi
+              yeniArrindex ++;
+          }
+
+        } // yeni array e 6 karakterden az olan array elemanlari atandi.
+        System.out.println("Arrays.toString(yeniArr) = " + Arrays.toString(yeniArr));
 
 
-
-        }
+    }
     }
 
