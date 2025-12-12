@@ -1,5 +1,8 @@
 package j14_Varargs;
 
+
+
+
 public class C01_Varargs {
     public static void main(String[] args) {// main level
         /*
@@ -18,16 +21,21 @@ public class C01_Varargs {
            Method'da  argument sayisi sabitse standart normal  method tanımlanmalı..
            ancak argument sayisi belirli değilse  VARARGS ifade tercih edilmeli...
   */
+        int sayi1 =15;
+        int sayi2 =35;
+        int sayi3 =31;
+        int sayi4 =34;
 
 
 
         // task01-> verilen 2 int variable toplamını print eden METHOD create ediniz..
         System.out.println("   ***  task01   ***   ");
-
+        System.out.println("topla22(sayi1,sayi3) = " + topla22(sayi1, sayi3));
 
 
         // task02-> verilen 3 int variable toplamını print eden METHOD create ediniz..
         System.out.println("   ***  task02   ***   ");
+        System.out.println("topla32(12,sayi1,sayi2) = " + topla32(12, sayi1, sayi2));
 
         // task03-> verilen 5 int variable toplamını print eden METHOD create ediniz.
         System.out.println("   ***  task03   ***   ");
@@ -40,6 +48,13 @@ public class C01_Varargs {
 
     }// main sonu
 
+    private static int topla32(int a, int b, int c) {
+        return (a+b+c);
+    }
+
+    private static int topla22(int sayi1, int sayi3) {
+        return  sayi1 + sayi3;
+    }
 
 
 }// Class sonu
