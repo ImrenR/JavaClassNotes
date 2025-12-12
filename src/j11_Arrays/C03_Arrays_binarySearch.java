@@ -20,5 +20,8 @@ public class C03_Arrays_binarySearch {
             }
         }
         System.out.println(flag?"aranan sayi arrayde mevcut" : "aranan sayi mevcut degil");
+       Arrays.sort(sayiArr); // siralama yapmazsan binarysearch calismaz
+        System.out.println("Arr de 44 var mi:" + Arrays.binarySearch(sayiArr,44));
+
     }
 }
