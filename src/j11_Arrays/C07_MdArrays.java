@@ -43,7 +43,7 @@ public class C07_MdArrays {
 
         arr1[2][23] = 31;
         arr1[1][0]= 35;
-        arr1[10][2]= 25;
+      //  arr1[10][2]= 25; // RTE
         //  bunlari nerede kullanacagim -> mesela bir satis app dusunelim :
         //  her musteriye id verildi, 2 numarali id nin 23 siparisi var
         // ya da il ilce girildi, 2. ildeki 23 nolu musteri, 1. ildeki 0 nolu musterimiz
@@ -51,6 +51,16 @@ public class C07_MdArrays {
 
         // MdArray print etme
 
+        System.out.println("arr1[2][23] = " + arr1[2][23]);
 
+
+        int arr2[][]= {
+                {12,15},   // 0. kat 2 daireli
+                {123,354,567}, // 1. kat 3 daireli
+                {1001}, // 2. kat 1 daireli
+        };
+        System.out.println("Arrays.toString(arr2) = " + Arrays.toString(arr2)); // referanslarini verir array vermez
+        System.out.println("Arrays.deepToString(arr2) = " + Arrays.deepToString(arr2)); //[[12,15],[123,354,567], ...
+ // cok boyutlu oldugu icin deepToString metodunu kullanmamiz lazim
     }
 }
