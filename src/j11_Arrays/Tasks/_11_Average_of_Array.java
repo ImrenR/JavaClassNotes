@@ -10,6 +10,13 @@ public class _11_Average_of_Array {
          */
 
         //Kodu aşağıya yazınız.
+int [] numbers = {12,14,21,23,10,4};
+int toplam = 0;
+
+        for (int i = 0; i < numbers.length; i++) {
+            toplam += numbers[i];
+        }
+        System.out.println("toplam/numbers.length = " + toplam / numbers.length);
 
     }
 }
