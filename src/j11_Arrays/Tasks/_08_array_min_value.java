@@ -10,8 +10,16 @@ public class _08_array_min_value {
          */
 
         // Kodu aşağıya yazınız..
+int[]sayilar = {14,19,5,21};
 
+int min = sayilar[0];
 
+        for (int i = 0; i < sayilar.length; i++) {
+            if (sayilar[i]<min){
+                min =sayilar[i];
+            }
+        }
+        System.out.println("min sayi = " + min);
     }
 }
 
