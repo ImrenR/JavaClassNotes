@@ -11,6 +11,10 @@ public class C03_LocalDateTime {
 
         // Local Date time variable atama yapılmazsa değişmediği için immutable 'dır
 
+LocalDateTime ldt1 = LocalDateTime.now();
+        System.out.println("ldt1 = " + ldt1);
+        System.out.println("ldt1.getHour() = " + ldt1.getHour());
+        System.out.println("ldt1.getDayOfYear() = " + ldt1.getDayOfYear());
 
     }
 }
