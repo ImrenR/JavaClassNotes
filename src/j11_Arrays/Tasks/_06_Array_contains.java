@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _06_Array_contains {
 
     public static void main(String[] args) {
@@ -13,6 +15,17 @@ public class _06_Array_contains {
 
         //Kodu aşağıya yazınız..
 
+String [] elmn = {"Apple", "Orange", "Banana", "Pineapple"};
+boolean bulundu = false;
 
+// For each dongusuyle check etme
+
+for (String eleman :elmn){
+    if (eleman.equals("Apple")){
+        bulundu =true;
+        break;
+    }
+        }
+        System.out.println(bulundu);
     }
 }
