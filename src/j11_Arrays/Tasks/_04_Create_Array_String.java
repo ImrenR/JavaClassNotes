@@ -11,8 +11,13 @@ public class _04_Create_Array_String {
          */
 
         // Kodu aşağıya yazınız..
+String[] city = {"New Jersey", "New york", "Boston", "California"};
 
+int elemanSayisi = 0;
 
-
+        for (int i = 0; i < city.length; i++) {
+            elemanSayisi++; //count : elemanlari saydirma yontemi
+        }
+        System.out.println(elemanSayisi);
     }
 }
