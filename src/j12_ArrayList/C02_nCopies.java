@@ -9,20 +9,19 @@ public class C02_nCopies {
 
 
 ArrayList<String> ulkeList =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere"));
-ArrayList<String> isimList =new ArrayList<>(Arrays.asList("imren" , "elvan", "haluk"));
+ArrayList<String> isimList =new ArrayList<>(Arrays.asList("imren" , "elvan", "haluk", "ali"));
 
-        //nCopies(int n, Obj)-> n elemanlı sabit obj'den oluşan list tanımlar
-ArrayList<String>yeniList = new ArrayList<>(Collections.nCopies(7, "JavaCan")); // 7 JavaCan elemanli list tanimlandi.
-        System.out.println(yeniList);
+        // nCopies(int n, Obj)-> n elemanlı sabit obj'den oluşan list tanımlar.
 
-
+ArrayList<String> yeniList = new ArrayList<>(Collections.nCopies(7,"Javacim"));
+        System.out.println("yeniList: " + yeniList); // listeye 7 adet javacim ekler
         //addAll(list);-> girilen liste istene liste ekler..
 
-ulkeList.addAll(isimList); //ulkeList isimListe tamamen eklendi.
+ulkeList.addAll(isimList); //ulkeList in sonuna isimList i ekler.
         System.out.println("ulkeList = " + ulkeList);
 
         isimList.addAll(3, yeniList);
-        System.out.println("isimList = " + isimList); //isimList 3. index ten itibaren yeniListe eklendi.
+        System.out.println("isimList in 3. indexine yenilist ekle = " + isimList); //isimList 3. index ten itibaren yeniListe eklendi.
 
     }
 }
