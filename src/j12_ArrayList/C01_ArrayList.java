@@ -14,25 +14,22 @@ public class C01_ArrayList {
      Array List genel Tanimi:
 
             ArrayList<Type> arrayListName  =new ArrayList<Type>();
-                 List<Type> arrayListName = new ArrayList<>();
+                 List<Type> arrayListName = new ArrayList<>(); // bos bir array listtir
 
              1. Type : String, Integer, Double, Long, Byte, Short, Boolean, Object, .... seklinde Class olmalidir
                 - ArrayList<int> hatali bir tanimlamadir. Type Wrapper Class gibi object türünden olmalidir
 
 
-            2.  - Arrayler degistirilemez sabit bir .length;'de tanimlanir.
-                - ArrayList'ler degistirilebilir size(); belirleme zorunlulugu olmadan tanimlanır.
+            2.  ONEMLI 1- Arrayler degistirilemez sabit bir .length;'de tanimlanir.
+                ONEMLI 2- ArrayList'ler degistirilebilir size(); belirleme zorunlulugu olmadan tanimlanır.
 
 
                 */
 
-        String[] arr = {"A", "B", "C"};
-        System.out.println(Arrays.toString(arr)); // obje icinde olanlari array icinde verir.
-
-        ArrayList<String> list =new ArrayList<>();
-        list.add("A");
-        list.add("B");
-        System.out.println(list);
+              Integer sayi [] = {1,2,3,4,5};
+              List<Integer>listNums=Arrays.asList(sayi); //sayi listesini listNums a atadim.
+              // Benim listNums in kaynagi(sayi) Array oldugu icin o da array gibi davranir
+        // Dolayisiyla ben bunu yazdirdigim zaman listNums.add() metodu kullanamam
 
         /*
 
@@ -52,14 +49,14 @@ public class C01_ArrayList {
     List<wrapper Class> name = new ArrayList<Wrapper Class>() *****doğru->best practice
     ArrayList<wrapper Class> name = new ArrayList<>()  *****doğru
 
-    List'e ilk değer atama (initialize):....
+    LISTE ILK DEGER ATAMA !!!!! => (initialize):....
     1.yol : asList();
     ArrayList<Integer> sayı= new ArrayList<>(Arrays.asList(1,2,3)) demek 1,2,3 elemanlarini array olarak al demektir.
     2.yol : Listof();
     ArrayList<String> ulkeler= new ArrayList<String>( List.of("Almanya", "Fransa", "Ingiltere", "Ispanya", "Italya") );
 
-    ArrayList ler array'lerin aksine direkt olarak ekrana yazdirilabilirler-->  print için:  System.out.println(name);
-    Array'ler Arrays.toString(arrayAdi); ile print edilir.
+    PRINT ETME ARRAYLIST=> ArrayList ler array'lerin aksine direkt olarak ekrana yazdirilabilirler-->  print için:  System.out.println(name);
+    PRINT ETME ARRAYLIST=> Array'ler Arrays.toString(arrayAdi); ile print edilir.
 
 
     Collections ==> Bir araya getirilmis parcalar anlamına gelir. ArrayList, Set, Vector, Queue ler java collections sınıfı nesneleridir.
@@ -68,38 +65,18 @@ public class C01_ArrayList {
 
         //List tanımlama ve değer atama
 
-        ArrayList<Integer> sayiList =new ArrayList<>(); // integer data store eden bos list declare edildi.
+      // integer data store eden bos list declare edildi.
 
         // 1. yol -> add(); meth
 
-        sayiList.add(43);
-        System.out.println(sayiList.add(43)); // methodun ciktisi boolean verir
-        sayiList.add(31);
-        sayiList.add(31); // Ayni eleman birden cok insert edilebilir.
-        sayiList.add(11);
-        sayiList.add(21);
-        sayiList.add(71);
-        sayiList.add(91);
-        System.out.println(sayiList);
+
         //2. yol -> Arrays.asList(); meth:Çuval
-ArrayList<String> yList = new ArrayList<>(Arrays.asList("kusleme", "kuzuGerdan","antepAcili")); //asList i initialize etmek icin kullanilir, bir listi tanimlarken declare etmek icin kullanilir
-        System.out.println(yList);
+
 
         //3. yol -> List.of(); meth:Çuval
-        ArrayList<String> ulkeList = new ArrayList<>(Arrays.asList("Almanya", "Portekiz","Ispanya")); //asList i initialize etmek icin kullanilir, bir listi tanimlarken declare etmek icin kullanilir
-        System.out.println(ulkeList);
 
         // list print etme..
 
-        ArrayList<Integer> rakamList = new ArrayList<>(){
-            {
-                for (int i = 0; i < 10; i++) {
-                    add(i);
-                }
-            }
 
-        };
-
-        System.out.println(rakamList);
     }
 }
