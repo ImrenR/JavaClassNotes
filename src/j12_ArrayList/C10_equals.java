@@ -12,6 +12,8 @@ public class C10_equals {
         ArrayList<String> ulkeList3 =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere", "Portekiz"));
 
 
-
+        System.out.println(ulkeList2.equals(ulkeList1)); // false
+        System.out.println(ulkeList1.equals(ulkeList3)); // true
+        System.out.println(ulkeList2.equals(ulkeList3)); // false
     }
 }
