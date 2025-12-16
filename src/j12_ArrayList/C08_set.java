@@ -9,10 +9,10 @@ public class C08_set {
 
         ArrayList<String> ulkeList =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere"));
 
-        System.out.println("Set oncesi ulkeList = " + ulkeList);
+        System.out.println("Set oncesi ulkeList = " + ulkeList); //  [almanya, Cuba, Ingiltere]
 
-        System.out.println("ulkeList = " + ulkeList.set(1, "Tanzanya"));
+        System.out.println("ulkeList = " + ulkeList.set(1, "Tanzanya")); // degistirecegi elemanin ciktisini verir : Cuba
 
-        System.out.println("ulkeList set sonrasi= " + ulkeList);
+        System.out.println("ulkeList set sonrasi= " + ulkeList); // [almanya, Tanzanya, Ingiltere]
     }
 }
