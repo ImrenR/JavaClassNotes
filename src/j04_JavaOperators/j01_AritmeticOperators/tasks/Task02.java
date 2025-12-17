@@ -22,8 +22,24 @@ public class Task02 {
 		int n1 = 2;
 		int n2 = 1;
 
+        System.out.println(n2 + "x" + n2 + "=" + n2);
 
-
-
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
+        n1++;
+        System.out.println(n2 + "x" + n1 + "=" + n1);
 	}
 }
