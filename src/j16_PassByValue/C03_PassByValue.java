@@ -13,11 +13,17 @@ public class C03_PassByValue {
         //      update edip print eden METHOD create ediniz.
         //1. method-> with for each 2. method-> set(index,value)
 
-    }//main sonu
+        ArrayList<Integer> sayiList = new ArrayList<>(List.of(24, 20, 87));//main sonu
+        System.out.println("sayiList = " + sayiList);
 
+    }// main sonu
 
-
-
+public static void listUpdate(ArrayList<Integer> a){
+        for (Integer avuc: a){
+            avuc+=31;
+        }
+    System.out.println("listUpdatemethod run edildi =" + a);
+}
 } //Class sonu
 
 
