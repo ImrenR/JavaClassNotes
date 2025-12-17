@@ -11,10 +11,14 @@ public class _07_ArithmeticOperator_division2 {
             int sonucu yazdırın. */
 
         Scanner dp = new Scanner(System.in);
-
+        System.out.println("num1 sayisini giriniz :");
         int num1 = dp.nextInt();
+        System.out.println("num2 sayisini giriniz :");
         int num2 = dp.nextInt();
 
+        int sonuc = num1/num2;
+
+        System.out.println("sonuc = " + sonuc);
         //Kodu aşağıya yazınız.
 
 
