@@ -12,11 +12,19 @@ public class _09_ArithmeticOperator_multiply2 {
 
         Scanner dp = new Scanner(System.in);
 
+
+        System.out.println("num1 sayisini giriniz :");
         double num1 = dp.nextDouble();
+        System.out.println("num2 sayisini giriniz :");
         double num2 = dp.nextDouble();
+        System.out.println("num2 sayisini giriniz :");
         double num3 = dp.nextDouble();
+        System.out.println("num3 sayisini giriniz :");
         double num4 = dp.nextDouble();
 
+
+        double sonuc = num1*num2*num3*num4;
+        System.out.println("sonuc = " + sonuc);
         //Kodu aşağıya yazınız.
 
 
