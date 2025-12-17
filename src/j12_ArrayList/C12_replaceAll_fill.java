@@ -10,14 +10,14 @@ public class C12_replaceAll_fill {
 
 
         ArrayList<String> ulkeList =new ArrayList<>(Arrays.asList("almanya" , "Cuba", "Ingiltere"));
-        System.out.println("ulkeList = " + ulkeList);
-        System.out.println("Collections.replaceAll(ulkeList, \"almanya\", \"alamanya\") = " + Collections.replaceAll(ulkeList, "almanya", "alamanya"));
-        System.out.println("ulkeList = " + ulkeList);
+        System.out.println("replaceAll oncesi = " + ulkeList);
+        System.out.println("replaceAll yapildiktan sonra= " + Collections.replaceAll(ulkeList, "almanya", "Sacmalamanca"));
+        System.out.println("replaceAll sonrasi= " + ulkeList);
 
         //fill()-> list'tin tum elemanlarını istenen değere update eder...
 
         Collections.fill(ulkeList, "JavaCan"); // sout olmaz void cunku
-        System.out.println("Fill son              rasi ulkeList = " + ulkeList);
+        System.out.println("Fill sonrasi ulkeList = " + ulkeList);
 
     }
 }

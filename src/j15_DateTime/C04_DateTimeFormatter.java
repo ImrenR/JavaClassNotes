@@ -15,6 +15,16 @@ public class C04_DateTimeFormatter {
 		 E, EE, EEE : gun isminin ilk 3 harfi
 		 EEEE : gun isminin tamamini
 
+*/
+
+        LocalDateTime bugun = LocalDateTime.now(); //sistemden mevcut yil-ay-gun-saat-saniye
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("dd * MMM * YY"); // baridircagi sekli update edersin => tarihi print edecek format tanimlandi.
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh / mm / ss"); // zaman print edecek format format tnaimlandi
+        System.out.println("dtf2.format(bugun) = " + dtf2.format(bugun));
+        System.out.println(dtf1.format(bugun)); // format metodu ile zaman ya da date i bize verir.
+        /*
+
+
 		 AY (Ay icin M, dakika icin m kullanilir)
 		 M : basta 0 varsa 0 yazmadan ay numarasi yazılır
 		 MM: tek haneli aylari 01 gibi basina sifir yazarak ay numarasi yazılır
