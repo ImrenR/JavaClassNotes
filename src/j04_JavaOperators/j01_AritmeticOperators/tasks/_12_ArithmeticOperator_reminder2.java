@@ -11,11 +11,17 @@ public class _12_ArithmeticOperator_reminder2 {
             int sonuc'u yazdırınız.  */
 
         Scanner dp = new Scanner(System.in);
-
+        System.out.println("Enter num1 :");
         int num1 = dp.nextInt();
+        System.out.println("Enter num2 :");
         int num2 = dp.nextInt();
 
+
+        int sonuc = num1%num2; // % kalani bu sekilde buluruz
+
+        System.out.println("sonuc = " + sonuc);
         //Kodu aşağıya yazınız.
+
 
 
 
