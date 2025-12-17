@@ -12,5 +12,12 @@ public class _24_ComparisonOperators_bigger {
 
         // Kodu aşağıya yazınız.
 
+        int sayi1 = 120;
+        int sayi2 = 158;
+
+        boolean sonuc = sayi1 > sayi1 ;
+
+        System.out.println("sonuc = " + sonuc); // false
+
     }
 }
