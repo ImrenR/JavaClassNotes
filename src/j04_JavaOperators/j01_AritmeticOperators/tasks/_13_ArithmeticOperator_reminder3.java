@@ -10,13 +10,14 @@ public class _13_ArithmeticOperator_reminder3 {
             num1'in num2'ye bölümünden kalanı yazdırınız.  */
 
         Scanner dp = new Scanner(System.in);
-
+        System.out.println("Enter num1 :");
         int num1 = dp.nextInt();
+        System.out.println("Enter num2 :");
         int num2 = dp.nextInt();
-
         //Kodu aşağıya yazınız.
 
-
+         int sonuc = num1%num2;
+        System.out.println("sonuc = " + sonuc);
 
     }
 }
