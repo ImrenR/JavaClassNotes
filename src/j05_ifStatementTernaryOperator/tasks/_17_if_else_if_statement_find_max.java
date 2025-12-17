@@ -21,7 +21,11 @@ public class _17_if_else_if_statement_find_max {
         int i3 = scan.nextInt();
         //Kodu aşağıya yazınız. BU SATIRIN YUKARISINI DEĞİŞTİRMEYİNİZ.
 
-
+        if (i1 > i2 && i1>i3) {
+            System.out.println("Max sayi i1 dir");
+        } else if (i2 >i1 && i2 >i3) {
+            System.out.println("Max sayi i2 dir");
+        }else System.out.println("Max sayi i3 tur");
 
     }
 }
