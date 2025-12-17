@@ -7,8 +7,13 @@ public class Task07 {
 		/* Task->
 		 * 120 yi 60 a bolunuz, sonucu 10 ile carpip 20 ile toplayiniz, cikan sonuctan 40 cikariniz.
 		 */
+int sayi = 120;
+int bol = 60;
+int sonuc = sayi/bol;
 
 
-	}
+        System.out.println("Sonuc = " + ((sonuc * 10) + 20));
+
+    }
 
 }
