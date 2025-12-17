@@ -16,8 +16,12 @@ public class Task06 {
 
     public static void main(String[] args) {
 
-
-
+Scanner input = new Scanner(System.in);
+        System.out.println("Uc basamakli bir sayi giriniz : ");
+        int sayi = input.nextInt();
+        System.out.println("Girdiginiz sayinin onlar basamagi =" + (sayi / 10) % 10);
+        System.out.println("Girdiginiz sayinin birler basamagi =" + sayi % 10);
+        System.out.println("Girdiginiz sayinin yuzler masamagi =" + sayi /100 );
 
 
     }
