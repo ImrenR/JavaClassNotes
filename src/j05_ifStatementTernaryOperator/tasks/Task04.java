@@ -11,8 +11,18 @@ public class Task04 {
 		 Bu character kucuk harf ise "Kucuk Harf"
 		 Bu character harf degil ise "Harf Degil"  print eden code create ediniz.
 		*/
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir charcater giriniz : ");
+        char eleman = input.next().charAt(0);
 
+        if (Character.isUpperCase(eleman)) {
+            System.out.println("buyuk harf");
 
+        } else if (Character.isLowerCase(eleman)) {
+            System.out.println("Kucuk harf");
+        } else {
+            System.out.println("Harf degil");
+        }
 		/*
 		 Logical Operator (Mantik Islemleri)
 		 1) And Islemi : Sembolu & veya && dir.&& sembolu daha hizli calisir.Bu yuzden genellikle && kullaniriz
