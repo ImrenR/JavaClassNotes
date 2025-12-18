@@ -8,7 +8,12 @@ public class Task22 {
         99-98-97-96....
         100 ve 0 dahil değildir.*/
 
+        for (int i = 99; i >0 ; i--) {
+            if (i % 2 != 0) {
+                System.out.print( i + "-");
 
+            }
+        }
 
     }
 }
