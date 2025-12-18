@@ -13,13 +13,17 @@ public class Task10 {
          =80’nin uzerinde ise “A”->80,81..100
          */
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a number less than 100 :");
+        int rakam = input.nextInt();
 
-
-
-
-
-
-
+        if (rakam <50 ) {
+            System.out.println("D");
+        } else if (rakam>=50 && rakam <=60) {
+            System.out.println("C");
+        } else if (rakam >=60 && rakam<=80) {
+            System.out.println("B");
+        }else System.out.println("A");
 
 
     }
