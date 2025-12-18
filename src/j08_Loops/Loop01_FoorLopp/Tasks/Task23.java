@@ -13,7 +13,14 @@ public class Task23 {
         Kareler toplamı=30
      */
         Scanner input = new Scanner(System.in);
+        System.out.println("Bir tam sayi giriniz :");
+        int sayi = input.nextInt();
 
+        int toplam = 0;
 
+        for (int i = 0; i <= sayi; i++) {
+            toplam += (i * i);
+        }
+        System.out.println(toplam);
     }
 }
