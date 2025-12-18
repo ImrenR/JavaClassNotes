@@ -13,8 +13,19 @@ Girdiği büyük harf ise harfin “Z” olup olmadığını kontrol edin. Harf 
 “Z” değil ise ekrana “Son büyük harf değil” yazdırın.
 		 */
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir karakter giriniz :");
+       char ch = input.next().charAt(0);
 
-
-}
+        if (ch >= 'a' && ch<= 'z') {
+            if (ch == 'a') {
+                System.out.println("ilk kucuk harf");
+            }else System.out.println("Ilk kucuk harf degil");
+        } else if (ch >= 'A' && ch<= 'Z') {
+            if (ch == 'Z') {
+                System.out.println("Son buyuk harf");
+            }else System.out.println("Son buyuk harf degil");
+        }else System.out.println("hicbiri degil");
+    }
 }
 
