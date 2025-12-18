@@ -12,7 +12,15 @@ public class Task02 {
 		yazdırın. Tüm kenar uzunlukları birbirinden farklı ise “Çeşitkenar üçgen" print eden code create ediniz.
 		 
 		 */
+int kenar1 = 30;
+int kenar2 =90;
+int kenar3 = 60;
 
+        if (kenar3 == kenar1 && kenar2 == kenar3) {
+            System.out.println("Eskenar ucgen");
+        } else if (kenar3 == kenar1 || kenar2 == kenar3 || kenar2 ==kenar1) {
+            System.out.println("ikizkenar ucgen");
+        }else System.out.println("cesitkenar ucgen");
 
     }
 
