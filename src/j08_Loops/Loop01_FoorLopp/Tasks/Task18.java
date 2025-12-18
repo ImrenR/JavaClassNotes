@@ -45,8 +45,19 @@ Scanner input = new Scanner(System.in);
 
          boolean result = false;
 
+        if (num <=0) {
+            result = false;
+        }else {
+            for (;   num != 1; ) {
+                if (num % 3  !=0) {
+                    result = false;
+                    break;
+                }
+                num= num/3;
+            }
+        }
 
-
+        System.out.println(result);
 
 
 
