@@ -17,7 +17,20 @@ public class _02_arraylist2 {
          */
 
     public static void main(String[] args) {
+ Integer [] arr = {12,13,14};
+ ArrayList<Integer>list = new ArrayList<>(Arrays.asList(arr));
+
+ int toplam = getSum(list);
+        System.out.println("toplam = " + toplam);
 
 
+    }
+
+    private static int getSum(ArrayList<Integer>arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.size(); i++) {
+            sum += arr.get(i);
+        }
+        return sum;
     }
 }
