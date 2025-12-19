@@ -21,7 +21,9 @@ public class Task27 {
                           ....
          */
 
+        for (int i = 1; i <=3 ; i++) {
 
+        }
 
 
 
