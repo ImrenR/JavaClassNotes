@@ -17,8 +17,24 @@ public class Task08 {
    output:false
     */
         Scanner input = new Scanner(System.in);
+        System.out.println("Bir yil giriniz :");
+        int year = input.nextInt();
+
+        System.out.println("Leap Yeardir = " + leapYearHesaplama(year));
 
     }//main sonu
+
+    private static boolean leapYearHesaplama(int year) {
+        if(year % 4 != 0){
+            return false;
+
+        } else if ((year % 100 !=0) || (year % 400 == 0)) {
+            return true;
+
+        }else
+            System.out.println("Gecersiz islem");
+            return false;
+    }
 
 
 }//Class sonu
