@@ -13,5 +13,20 @@ public class _18_2d_array2 {
 
         //Kodu aşağıya yazınız.
 
+        int [][] arrs = {
+                {5,2,1} ,
+                {10,2,3,6} ,
+                {1,2}
+        };
+
+        int sum = 0;
+
+        for (int i = 0; i < arrs.length; i++) {
+            for (int j = 0; j < arrs[i].length; j++) {
+                sum += arrs[i][j];
+            }
+
+        }
+        System.out.println("sum = " + sum);
     }
 }
