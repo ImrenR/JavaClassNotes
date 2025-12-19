@@ -7,7 +7,7 @@ public class Task07 {
 
     public static void main(String[] args) {
         //Task-> Girilen 3  sayıdan en küçüğünü print eden METHOD  create ediniz
-        Scanner input = new Scanner(System.in);
+
 
 
     }//main sonu

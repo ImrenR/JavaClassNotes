@@ -25,7 +25,7 @@ public class Task05 {
 
     }//main sonu
 
-    private static void hesapla(int num1, int num2, char islem) {
+    static void hesapla(int num1, int num2, char islem) {
         switch (islem){
             case '+':
                 System.out.println("Sonuc :" + (num1 + num2));
