@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _17_2d_Array {
 
     public static void main(String[] args) {
@@ -11,8 +13,21 @@ public class _17_2d_Array {
          */
 
         //Kodu aşağıya yazınız.
+int arr [][] = {
+        {2, 3, 2},
+        {4, 1, 5},
+        {7, 2, 5}
+};
 
+        for (int i = 0; i < arr.length; i++) {  // 2D array in satir sayisi
+            for (int j = 0; j <arr[i].length ; j++) { // o satirdaki sutun sayisi
+                  if (arr[i][j] == 2){
+                      arr[i][j] = 6;
+                  }
+            }
 
-
+        }
+        System.out.println("Arrays.deepToString(arr) = " + Arrays.deepToString(arr));
+        // 2D array i tek satirda okunabilir sekilde yazdirir.
     }
 }
