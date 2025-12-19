@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task14 {
 
+    static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
 
     /* task->
@@ -26,13 +27,34 @@ public class Task14 {
 
     toplam = 536.0
     */
+        System.out.println("Is basi yaptiginiz saati giriniz :");
+        double isBasiSaati = input.nextDouble();
+        System.out.println("Paydos saatini giriniz :");
+        double paydosSaati = input.nextDouble();
 
+        double saatlikUcret = 40.0;
+        double fazlaMesaiSaati = 1.8;
+
+        System.out.println("Toplam Saat ucreti = " + hesaplaUcret(isBasiSaati, paydosSaati, saatlikUcret, fazlaMesaiSaati));
 
 
     }//main sonu
 
+    private static double hesaplaUcret(double isBasiSaati, double paydosSaati, double saatlikUcret, double fazlaMesaiSaati) {
 
+        double toplamSaat = paydosSaati -isBasiSaati;
+        double normalSaat = 8;
+        double fazlaMesai = toplamSaat-normalSaat;
 
+        double tt = 0;
+
+        if (toplamSaat == 8) {
+            return tt +=toplamSaat*saatlikUcret;
+        } else if (toplamSaat >8) {
+            return tt += (fazlaMesai*fazlaMesaiSaati*saatlikUcret) + (normalSaat*saatlikUcret);
+        }else System.out.println("Gecersi islem");
+        return tt;
+    }
 
 
 }//class sonu
