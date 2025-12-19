@@ -11,6 +11,8 @@ public class _09_array_second_max {
 
         // Kodu aşağıya yazınız..
 
+ int arr []= {15,25,22,18,30};
+
 
     }
 }
