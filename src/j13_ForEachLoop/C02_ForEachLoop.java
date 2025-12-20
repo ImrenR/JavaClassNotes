@@ -11,16 +11,7 @@ public class C02_ForEachLoop {
         String arr2[] = {"Sebnem", "Haluk", "Merve", "Sennur", "Ayse", "javaCAN", "javaSU" };
 // Bound bilmiyorsam bu ArrayList tir.
 
-       List<String> ortakIsimList = new ArrayList<>(); // her iki arraydan ortak isimlerin store edilecegi bos list tanimlandi
 
-for (String avuc1 : arr1){
-    for (String avuc2 : arr2){
-         if(avuc2.equals(avuc1)){
-             ortakIsimList.add(avuc1);
-         }
-    }
-}
-        System.out.println("ortakIsimList = " + ortakIsimList);
     }
 }
 
