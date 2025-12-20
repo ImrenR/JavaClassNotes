@@ -11,25 +11,26 @@ public class C07_ComparingDateTime {
         2020-05-23 >  2020-04-02   compareTo =>  1  en büyük fark ayda  olduğu için
         2020-05-23 >  2020-05-02   compareTo =>  21  en büyük fark günde olduğu için    */
 
-        LocalDate bugun = LocalDate.now();
-        LocalDate falanGun =bugun.plusDays(33);
-        LocalDate fistanGun = bugun.minusDays(66);
-        LocalDate imren = LocalDate.of(1991,1,14);
 
-        System.out.println("bugun = " + bugun); // 2025-12-17
-        System.out.println("falanGun = " + falanGun); //2026-01-19
-        System.out.println("fistanGun = " + fistanGun); //2025-10-12
-        System.out.println("imren = " + imren); // 1991-01-14
+     LocalDate bugun = LocalDate.now();
+     LocalDate alanGun =bugun.plusDays(33);
+     LocalDate fesmekanGun = bugun.minusDays(66);
+     LocalDate imren = LocalDate.of(1991,1,14);
 
-        System.out.println("falanGun.isLeapYear() = " + falanGun.isLeapYear()); //false
-        System.out.println("falanGun.isAfter(imren) = " + falanGun.isAfter(imren)); //true
+        System.out.println("bugun = " + bugun); // bugun = 2025-12-20
+        System.out.println("alanGun = " + alanGun); // alanGun = 2026-01-22
+        System.out.println("fesmekanGun = " + fesmekanGun); // fesmekanGun = 2025-10-15
+        System.out.println("imren = " + imren); // imren = 1991-01-14
 
-        System.out.println(" *******************");
+        System.out.println("alanGun.isLeapYear() = " + alanGun.isLeapYear()); // false
+        System.out.println("alanGun.isAfter(imren) = " + alanGun.isAfter(imren)); // true
+        System.out.println("imren.isBefore(fesmekanGun) = " + imren.isBefore(fesmekanGun)); //true
 
-        System.out.println("bugun.compareTo(imren) = " + bugun.compareTo(imren)); // 34 year
-        System.out.println("falanGun.compareTo(fistanGun) = " + falanGun.compareTo(fistanGun)); // 1
-        System.out.println("imren.compareTo(falanGun) = " + imren.compareTo(falanGun)); // -35 1991-20262 yapti aslinda
+        System.out.println(" ****************   ");
 
+        System.out.println("bugun.compareTo(imren) = " + bugun.compareTo(imren)); // 34
+        System.out.println("alanGun.compareTo(fesmekanGun) = " + alanGun.compareTo(fesmekanGun)); // 1
+        System.out.println("imren.compareTo(alanGun) = " + imren.compareTo(alanGun)); // -35
 
     }
 }
