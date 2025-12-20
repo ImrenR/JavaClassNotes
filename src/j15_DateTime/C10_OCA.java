@@ -11,5 +11,7 @@ public class C10_OCA {
            D. LocalDate.of(2014, 6, 21);
            F. LocalDate.of(2014, Month.JUNE, 21);
          */
+
+    //    Cevap = D
     }
 }

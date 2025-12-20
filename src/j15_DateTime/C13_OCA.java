@@ -15,15 +15,15 @@ public class C13_OCA {
         LocalDateTime d = LocalDateTime.of(2015, 5, 10, 11, 22, 33);
 
         Period p = Period.ofDays(1).ofYears(2);
-
+         // d = 2015-5-10 11:22:33
         d = d.minus(p);
-
+// d atandi : 2013-5-09
         DateTimeFormatter f = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
 
         System.out.println(d.format(f));
 
  /*
-            A. 5/9/13 11:22 -> 09.05.2013 11:22
+            A. 5/9/13 11:22 -> 09.05.2013 11:22 cevap : A dir
             B. 5/10/13 11:22 -> 10.05.2013 11:22
             C. 5/9/14 -> 09.05.2014
             D. 5/10/14 -> 10.05.2014

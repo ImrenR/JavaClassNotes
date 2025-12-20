@@ -20,5 +20,7 @@ public class C09_OCA {
          *
          * D) An exception is throw at runtime
          */
+
+    //   cevap = D
     }
 }
