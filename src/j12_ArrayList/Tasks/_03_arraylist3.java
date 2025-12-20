@@ -22,5 +22,8 @@ public class _03_arraylist3 {
     public static void main(String[] args) {
 
 
+
     }
-}
+
+
+    }

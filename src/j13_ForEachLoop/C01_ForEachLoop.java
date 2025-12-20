@@ -18,17 +18,15 @@ public class C01_ForEachLoop {
 
         System.out.println("   ***   for i   ***   ");
 
-        for (int i = 0; i <sayiList.size() ; i++) { //ArrayList oldugu icin length degil size al
-            System.out.println(sayiList.get(i));
+        for (int i = 0; i < sayiList.size(); i++) {
+            System.out.println( sayiList.get(i));
+
         }
-
-
         System.out.println("   ***   for each   ***   ");
 
-        for (Integer a : sayiList){
-            System.out.println("a = " + a);
+        for (Integer avuc : sayiList) {
+            System.out.println(avuc); // her bir elemani print eder oradaki avuc her bir elemandir.
         }
-
 
         System.out.println("   ***   Task02   ***   ");
         // task2-> sayiList tek elemanlarını ilk 3 eleman hariç print eden code create ediniz.
