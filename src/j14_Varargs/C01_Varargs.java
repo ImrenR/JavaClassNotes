@@ -29,23 +29,35 @@ public class C01_Varargs {
 
 
         // task01-> verilen 2 int variable toplamını print eden METHOD create ediniz..
+
         System.out.println("   ***  task01   ***   ");
+
         System.out.println("topla22(sayi1,sayi3) = " + topla22(sayi1, sayi3));
 
 
         // task02-> verilen 3 int variable toplamını print eden METHOD create ediniz..
+
         System.out.println("   ***  task02   ***   ");
-        System.out.println("topla32(12,sayi1,sayi2) = " + topla32(12, sayi1, sayi2));
+
+        System.out.println("topla32(12,sayi1,sayi2) = " + topla32(12, sayi1, sayi2)); // manuelde sayi girilebilir -> 12 girdik burada
+
+
 
         // task03-> verilen 5 int variable toplamını print eden METHOD create ediniz.
+
         System.out.println("   ***  task03   ***   ");
-        System.out.println("topla5(1,3,67,89,sayi4) = " + topla5(1, 3, 67, 89, sayi4));
-        System.out.println("topla(45,45,67,45,67,45,34,34) = " + topla(45, 45, 67, 45, 67, 45, 34, 34));
+
+        System.out.println("topla5( 1, 3, 67, 89, sayi4) = " + topla5(1, 3, 67, 89, sayi4));
+
+        System.out.println("topla(45, 45, 67, 45, 67, 45, 34, 34) = " + topla(45, 45, 67, 45, 67, 45, 34, 34));
 
 
         // task04-> .verilen String variable'rın  en fazla karakter bulunduranı  print eden METHOD create ediniz..
+
         System.out.println("   ***  task04   ***   ");
-enUzunString("Abuzittin","Ali", "Haluk", "Elvan");
+
+
+        enUzunString("Abuzittin","Ali", "Haluk", "Elvan");
 
 
 
@@ -58,25 +70,37 @@ enUzunString("Abuzittin","Ali", "Haluk", "Elvan");
     private static String enUzunString(String...a) {
         String uzunIsim = "";
         for (String avuc: a){
-            if(avuc.length()>uzunIsim.length()){
+            if(avuc.length()>uzunIsim.length()){ // avucun length i yukarida tanimladigin metod icindeki isimlere bak ilk isim ne : Abuzittin, uzunIsim.Length()  ise once => 0 buyuk mu evet.
+                // uzunIsim Abuzittin ile doldu. Cunku asagiya bak atama yapti = ile. sonra ali geldi. ali > abuzittinden hayir  if calismaz
+                // haluk geldi haluk => 5 , 5>9 dan degil if calismaz ve hepsini oyle kontrol ederek en buyugu atar
                 uzunIsim = avuc;
             }
         }
         return uzunIsim;
     }
 
+
+
+
     private static int topla5(int a, int b, int c, int d, int e) {
+
+
         return(a+b+c+d+e);
     }
 
     private static int topla32(int a, int b, int c) {
+
         return (a+b+c);
     }
 
     private static int topla22(int sayi1, int sayi3) {
+
         return  sayi1 + sayi3;
     }
-public static int topla(int... a){
+
+
+
+    public static int topla(int... a){ // burada varargs kullandik cunku cok fazla parametre var
         int toplam =0;
         for (int avuc : a){ // baslangic degerin ve sekronun belli degilse for each kullanilir.
             toplam += avuc;
