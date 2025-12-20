@@ -32,5 +32,7 @@ public class C07_ComparingDateTime {
         System.out.println("alanGun.compareTo(fesmekanGun) = " + alanGun.compareTo(fesmekanGun)); // 1
         System.out.println("imren.compareTo(alanGun) = " + imren.compareTo(alanGun)); // -35
 
+        System.out.println("***********");
+
     }
 }
