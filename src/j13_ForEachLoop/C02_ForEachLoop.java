@@ -12,6 +12,15 @@ public class C02_ForEachLoop {
 // Bound bilmiyorsam bu ArrayList tir.
 
 
+       List <String> doldur = new ArrayList<>(); // bos liste bu ortak elemanlari dolduracagim
+       for(String avuc1 : arr1){
+           for (String avuc2: arr2){
+              if(avuc2.equals(avuc1)){
+                 doldur.add(avuc1);
+              }
+           }
+       }
+        System.out.println("doldur = " + doldur);
     }
 }
 
