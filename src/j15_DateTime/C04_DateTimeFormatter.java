@@ -6,7 +6,16 @@ import java.time.format.DateTimeFormatter;
 public class C04_DateTimeFormatter {
     public static void main(String[] args) {
 
-        /*
+        LocalDateTime bugun = LocalDateTime.now(); // sistemden mevcut yil-ay-gun-saat-dakika-saniye datalari bugune atandi.
+        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("dd * MMM * YY"); // tarih print edecek format
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("HH * mm * ss"); // zaman print edecek format
+        DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("hh / mm / ss");
+
+
+        System.out.println("dtf1.format(bugun) = " + dtf1.format(bugun)); //  20 * Dec * 25 -> tarih
+        System.out.println("dtf2.format(bugun) = " + dtf2.format(bugun)); // 21 * 13 * 51 -> saat
+        System.out.println("dtf3.format(bugun) = " + dtf3.format(bugun)); // 09 / 13 / 51 -> saat
+        /*.
 		 format->
 		 GUN
 		 d : basta 0 varsa 0 yazmadan gun numarasi yazılır
@@ -17,11 +26,8 @@ public class C04_DateTimeFormatter {
 
 */
 
-        LocalDateTime bugun = LocalDateTime.now(); //sistemden mevcut yil-ay-gun-saat-saniye
-        DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("dd * MMM * YY"); // baridircagi sekli update edersin => tarihi print edecek format tanimlandi.
-        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("hh / mm / ss"); // zaman print edecek format format tnaimlandi
-        System.out.println("dtf2.format(bugun) = " + dtf2.format(bugun));
-        System.out.println(dtf1.format(bugun)); // format metodu ile zaman ya da date i bize verir.
+
+
         /*
 
 
