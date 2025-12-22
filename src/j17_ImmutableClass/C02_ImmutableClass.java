@@ -17,5 +17,13 @@ public class C02_ImmutableClass {
         System.out.println("Method call sonrasi = " + name); // imren => passbyvalue oldugu icin degismedi
 
 
+        System.out.println("Mutable Class");
+        ArrayList<String> isimList = new ArrayList<>(); // bos liste olusturduk
+        System.out.println("Method call oncesi isimList "+ isimList); //   []
+        isimList.add("imren");
+        isimList.add("team");
+        isimList.add("lead");
+        System.out.println("isimList = " + isimList); // isimList = [imren, team, lead]
+
     }
 }
