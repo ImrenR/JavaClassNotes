@@ -33,6 +33,10 @@ public class C01_StringBuilder {
 
         // task-> 3333 tekrarlı loop ile String variable ve StringBuilder obj run time surelerini karşılaştıran code create ediniz
 
+        String str="";
+        StringBuilder sb = new StringBuilder(); // bos stringBuilder
+
+
     }//main sonu
 
 

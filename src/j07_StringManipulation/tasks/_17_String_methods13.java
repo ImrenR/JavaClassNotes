@@ -10,8 +10,7 @@ public class _17_String_methods13 {
 
         //Kodu aşağıya yazınız.
 
-String greeting = "Thank you";
-        System.out.println("greeting = " + greeting.indexOf("y")); // 6
+
 
     }
 }

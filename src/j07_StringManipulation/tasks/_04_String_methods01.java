@@ -9,10 +9,11 @@ public class _04_String_methods01 {
 
         //Kodu aşağıya yazınız.
 
+// toplam karakteri soruyosa " length() kullanilir
 
+        String word = "I love Java";
 
-String kelime = "I love java";
-        System.out.println(kelime.length()); // 11
+        System.out.println("word.length() = " + word.length()); // Sonuc = 11
 
     }
 }
