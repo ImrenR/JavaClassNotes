@@ -13,13 +13,7 @@ public class Task11 {
         System.out.println("Enter a word:");
         String name= input.nextLine();
 
-int boslukIndex = name.indexOf(" ");
 
-String ad = name.substring(0,boslukIndex);
-String soyad = name.substring(boslukIndex + 1);
-
-        System.out.println("Ad : " + ad);
-        System.out.println("Soyad : " + soyad);
 
 
     }

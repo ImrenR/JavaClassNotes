@@ -13,9 +13,7 @@ public class Task06 {
         System.out.println("Enter your name:");
         String name= input.nextLine();
 
-       String newWord = name.substring(0,name.length()-1);
-
-        System.out.println(newWord);
+        System.out.println("Sonuc= " + name.substring(0, name.length() - 1));
 
     }
 }

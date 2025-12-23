@@ -11,16 +11,6 @@ public class Task10 {
          */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word:");
-        String name= input.nextLine();
-
-        String result = (name.length() == 3)
-                ? ((name.charAt(0) != name.charAt(1) &&
-                        name.charAt(0) != name.charAt(2) &&
-                        name.charAt(1) != name.charAt(2))
-                ? "All letters are unique"
-                : "Letters are not unique")
-                : "Name must be exactly 3 letters";
-
-
+        String name = input.nextLine();
     }
 }

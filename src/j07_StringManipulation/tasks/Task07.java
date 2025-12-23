@@ -12,22 +12,13 @@ public class Task07 {
                 System.out.println("Enter a word:");
                 String name= input.nextLine();
 
-                 System.out.println("Hangi indexteki karakteri gormek istiyorsunuz ? :");
-                 int index = input.nextInt();
+                System.out.println("Enter a index:");
+                int index = input.nextInt();
 
-               // Hata kontrolu index numarasi harf sayisindan fazla girilirse diye
-                // karakter print edilmesini istiyorsak char kullanariz
-                 if(index>=0 && index <name.length()){
-                     System.out.println(name.charAt(index));
-                 }else {
-                     System.out.println("Gecersiz index! Try again");
-                 }
+        System.out.println("name.charAt(index) = " + name.charAt(index));
 
 
-
-
-
-            }
+    }
         }
 
 

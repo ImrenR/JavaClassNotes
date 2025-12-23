@@ -16,9 +16,9 @@ public class Task05 {
         System.out.println("Enter your surname:");
         String surname = input.nextLine();
 
-        String newName = Character.toUpperCase(name.charAt(0)) + name.substring(1);
-        String newSurname = Character.toUpperCase(surname.charAt(0)) + surname.substring(1);
+       String newName = name.substring(0,1).toUpperCase();
+       String newSurname= surname.substring(0,1).toUpperCase();
 
-        System.out.println(newName +" "+ newSurname);
+        System.out.println(newName + " " + newSurname);
     }
 }

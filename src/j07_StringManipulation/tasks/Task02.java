@@ -11,28 +11,24 @@ public class Task02 {
 		 	 c)en az 6 karakter uzunlugunda olmalı
 		 */
 
-Scanner input = new Scanner(System.in);
-        System.out.println("enter a valid  password:");
-        String password = input.nextLine();
 
-        boolean ilkBuyuk = Character.isUpperCase(password.charAt(0));
-        boolean sonBuyuk = Character.isDigit(password.charAt(password.length()-1));
-        boolean uzunluk = password.length()<=6;
+              Scanner input = new Scanner(System.in);
+        System.out.println("Parolaninizin ilk karakteri buyuk harf olmali");
+        System.out.println("Son karakteri sayi olmalu");
+        System.out.println("En az 6 karakter icermeli");
+        System.out.println("Bir password giriniz");
+        String pass = input.nextLine();
 
-        if(ilkBuyuk && sonBuyuk && uzunluk) {
-            System.out.println("Password is valid");
-        }else {
-            System.out.println("Password is invalid");
-            if(!ilkBuyuk){
-                System.out.println("First character has to be capital");
-            }
-            if(!sonBuyuk){
-                System.out.println("Last character has to be a number");
-            }
-            if(!uzunluk){
-                System.out.println("Password has to be less than 6 characters");
-            }
-        }
+        char first =pass.charAt(0);
+        char last = pass.charAt(pass.length()-1);
+
+        if ( first < 'A' || first > 'Z') {
+            System.out.println("Parolanin ilk karakteri bir harf ve buyuk olmalidir");
+        }else if (last < '0' || last > '9'){
+            System.out.println("Parolanizin son karakteri bir sayi olmalidir");
+        } else if(pass.length()<6) {
+            System.out.println("Parolanizin karakter sayisi 6 dan kucuk olamaz");
+        }else System.out.println("Parolaniz basariyla olusturulmustur = " + pass);
 
     }
 }

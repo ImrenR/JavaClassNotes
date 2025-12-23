@@ -7,9 +7,10 @@ public class Task03 {
 
         String str = "Alamanya";
 
-        int ilkHarf = str.indexOf('a');
-        System.out.println(ilkHarf); // 2
-        System.out.println(str.indexOf('a', 3)); // 4
+        int firstA = str.indexOf('a');
+        System.out.println("firstA = " + firstA);
+        int secondA = str.indexOf('a', firstA + 1);
 
+        System.out.println("secondA = " + secondA);
     }
 }
