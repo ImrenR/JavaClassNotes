@@ -10,5 +10,8 @@ public class _14_String_methods11 {
 
         //Kodu aşağıya yazınız.
 
+
+        String word = "apple";
+        System.out.println("sonuc= " + word.equalsIgnoreCase("Apple")); // true
     } //true
 }

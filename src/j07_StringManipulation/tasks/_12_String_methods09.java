@@ -9,6 +9,8 @@ public class _12_String_methods09 {
 
         //Kodu buraya yazınız.
 
+String word = "apple";
 
+        System.out.println("word.contains => App = " + word.contains("App")); // false
     }
 }

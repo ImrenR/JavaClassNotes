@@ -10,7 +10,8 @@ public class _17_String_methods13 {
 
         //Kodu aşağıya yazınız.
 
-
+String word ="Thank you";
+        System.out.println("word.indexOf('y') = " + word.indexOf('y')); // 6
 
     }
 }

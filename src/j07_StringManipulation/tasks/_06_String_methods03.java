@@ -9,7 +9,8 @@ public class _06_String_methods03 {
           örn: apple > APPLE   */
 
         //Kodu aşağıya yazınız.
-
+String word = "paper";
+        System.out.println("word.toUpperCase() = " + word.toUpperCase()); // Result = PAPER
 
     }
 }

@@ -10,7 +10,8 @@ public class _19_String_methods15 {
 
         //Kodu buraya yazınız.
 
-
+String word = "Mouse";
+        System.out.println("word.charAt(2) = " + word.charAt(2)); // u
 
     }
 }

@@ -10,5 +10,8 @@ public class _13_String_methods10 {
         //Kodu aşağıya yazınız.
 
 
+          String word = "orange";
+        System.out.println("word.equals => Apple = " + word.equals("Apple")); // false
+
     }
 }

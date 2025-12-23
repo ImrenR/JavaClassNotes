@@ -9,6 +9,7 @@ public class _09_String_methods06 {
 
         //Kodu aşağıya yazınız.
 
-
+String city = "New York";
+        System.out.println("city.toLowerCase() = " + city.toLowerCase()); // new york
     }
 }

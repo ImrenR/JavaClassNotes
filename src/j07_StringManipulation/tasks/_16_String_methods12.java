@@ -9,6 +9,8 @@ public class _16_String_methods12 {
 
         //Kodu aşağıya yazınız.
 
+        String word = "Florida";
+        System.out.println("word.indexOf('o') = " + word.indexOf('o')); // 2
 
     }
 }

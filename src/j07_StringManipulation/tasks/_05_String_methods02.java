@@ -9,6 +9,10 @@ public class _05_String_methods02 {
 
         //Kodu aşağıya yazınız.
 
+// Create a String with Sprint planning => total character number => length()
 
+        String word = "Sprint planning";
+
+        System.out.println("word.length() = " + word.length()); // Result = 15
     }
 }
