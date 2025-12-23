@@ -9,8 +9,9 @@ public class _07_String_methods04 {
            örn: APPLE > apple  */
 
         //Kodu aşağıya yazınız.
-
-
+// the task asking to change it to a lowercase=> therefore we use toLowerCase() method
+String words ="OraNge";
+        System.out.println("words.toLowerCase() = " + words.toLowerCase()); // Result =orange
 
 
     }
