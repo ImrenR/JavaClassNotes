@@ -54,8 +54,18 @@ String maindekiVariable = "main Javanazdan selam";
         System.out.println("obj1.str = " + obj1.str); //  javaNur
         System.out.println("obj2.str = " + obj2.str); // = null
         System.out.println("obj3.str = " + obj3.str); //= null
+
+        obj1.nonStaticMethod(); // nonStatic method obje ile call edilir.
+        staticMethod();  // static meth static blok olan main ile dogrudan call edilir.
+      //  nonStaticMethod(); // CTE nonStatic method sadece kendi localine dogrudan call edilir.
     }//main sonu
 
+public static void  staticMethod(){ // psiz static (Gunes) => her gezegene erisim sunan method
+    System.out.println("Agana staticMethod tan selam");
+}
 
+    public void  nonStaticMethod(){ // p.siz non static => sadece localinde erisilebilen method
+        System.out.println("Agana nonstaticMethod tan selam");
+    }
 
 }//Class sonu
