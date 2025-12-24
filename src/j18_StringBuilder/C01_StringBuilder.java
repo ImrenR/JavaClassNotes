@@ -35,7 +35,23 @@ public class C01_StringBuilder {
 
         String str="";
         StringBuilder sb = new StringBuilder(); // bos stringBuilder
+        //1- string icin
+LocalTime strStart =LocalTime.now();
+        for (int i = 0; i <=3333 ; i++) {
+            str +=i;
+        }
+LocalTime strFinished =LocalTime.now();
+        System.out.println("(str run suresi =" + (strFinished.getNano() - strStart.getNano())); //str  run suresi= 14622000
 
+
+//2- String Builder icin
+
+        LocalTime sbStart =LocalTime.now();
+        for (int i = 0; i <=3333 ; i++) {
+            sb.append(i);
+        }
+        LocalTime sbFinished =LocalTime.now();
+        System.out.println("(sb run suresi =" + (sbFinished.getNano() - sbStart.getNano())); //sb run suresi =2701000
 
     }//main sonu
 
