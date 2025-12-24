@@ -3,6 +3,25 @@ package j19_Constructor;
 public class C04_Teacher { // obj create edilen kalıphane Class
     //Fields
 
+String ad;
+String soyad;
+String brans;
+int id;
+int tecrube;
+double maas;
+boolean emekli;
+
+// Constructor
+
+    public C04_Teacher(String ad, String soyad, String brans, int id, int tecrube, double maas, boolean emekli) {
+        this.ad = ad;
+        this.soyad = soyad;
+        this.brans = brans;
+        this.id = id;
+        this.tecrube = tecrube;
+        this.maas = maas;
+        this.emekli = emekli;
+    }
 
     /*
         Constructor içerisinden yukarıda(class level) tanımlanan object değişkenlerine(instance variable) erişilmek istenirse this keyword kullanılır.
