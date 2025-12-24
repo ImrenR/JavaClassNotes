@@ -18,14 +18,42 @@ public class C01_Constructor {//Class level
     /*
         1- consturctor ismi Calss name ile aynı olmalı.Cons. name Buyuk harf ile başlamalı
         2- constructor create edilirkene name den sonra () {} mutlaka kullanılmalı.
-        3- eger p'li cons. create edilirse java default cons.(p'siz) ezer(siler)
+        3- ONEMLI => eger p'li cons. create edilirse java default cons.(p'siz) ezer(siler)
         4- cons. return type olmaz method'dan ayıran en temel  özelliğidir.
         5- Class tanımlandığında java default(p'siz) cons. kendi create eder.
         6- Fields-> obj'nin uretilirken alacagı değer instance variables
         7- bir class'da bir den çok cons. tanımlanabilir.
          */
+
+    String str; // deger atanmamis instance (obj) create edildi.
+    String selam="selam javaCan imren"; // initilaze edilmis variable create edildi.
+   // C01_Constructor obj =new C01_Constructor(); // parametresiz default constructer ile obj create ettim class levela.
+
+
     public static void main(String[] args) {//main level
 
+String maindekiVariable = "main Javanazdan selam";
+        C01_Constructor obj1 =new C01_Constructor(); // psiz default const ile main lvela obj create edildi.
+        C01_Constructor obj2 =new C01_Constructor(); // psiz default const ile main lvela obj create edildi.
+        C01_Constructor obj3 =new C01_Constructor(); // psiz default const ile main lvela obj create edildi.
+        C01_Constructor obj4 =new C01_Constructor(); // psiz default const ile main lvela obj create edildi.
+
+        obj1.str="javaNur"; // deger atadim
+        obj1.selam="JavaSu"; // selam i degistirdim
+
+        obj2.selam ="JavaTar";
+        obj3.selam ="java";
+        //selam => instance variable static olmadigi icin maine call edilemez..
+        System.out.println("maindekiVariable = " + maindekiVariable); // bunu cagirabilirim cunku mainde create edildi.
+
+        System.out.println("obj1.selam = " + obj1.selam); // JavaSu
+        System.out.println("obj2.selam = " + obj2.selam); //JavaTar
+        System.out.println("obj3.selam = " + obj3.selam); //  java
+        System.out.println("obj4.selam = " + obj4.selam);//  selam javaCan imren
+
+        System.out.println("obj1.str = " + obj1.str); //  javaNur
+        System.out.println("obj2.str = " + obj2.str); // = null
+        System.out.println("obj3.str = " + obj3.str); //= null
     }//main sonu
 
 
