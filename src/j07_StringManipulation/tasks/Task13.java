@@ -12,7 +12,9 @@ public class Task13 {
         System.out.println("Bir metin giriniz:");
         String text = input.nextLine();
 
+        String newWord =text.replaceAll(" ","");
 
+        System.out.println("newWord = " + newWord.length());
 
     }
 }

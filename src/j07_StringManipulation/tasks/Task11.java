@@ -13,6 +13,20 @@ public class Task11 {
         System.out.println("Enter a word:");
         String name= input.nextLine();
 
+        int indexSpace = name.indexOf(' ');
+
+        if(indexSpace != -1){
+            String ad = name.substring(0,indexSpace);
+            String soyad = name.substring(indexSpace+1);
+
+            System.out.println(ad);
+            System.out.println(soyad);
+        }else {
+            System.out.println("Gecersiz");
+        }
+
+
+
 
 
 

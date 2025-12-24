@@ -14,6 +14,7 @@ public class Task12 {
         String name = input.nextLine();
 
 
+
 // diyelim ki Imren Rahbay Java yazacagim
     }
 }
