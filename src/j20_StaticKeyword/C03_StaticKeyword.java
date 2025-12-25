@@ -21,7 +21,10 @@ public class C03_StaticKeyword {//Class level
         C03_StaticKeyword b= new C03_StaticKeyword();
         C03_StaticKeyword c= new C03_StaticKeyword();
         C03_StaticKeyword d= new C03_StaticKeyword();
-        System.out.println("obj abcd sonrasi ogrncSayisi = " + ogrncSayisi);
-
+        System.out.println("obj abcd sonrasi ogrncSayisi = " + ogrncSayisi); //4
+        System.out.println("a.ogrenciId = " + a.ogrenciId); //1
+        System.out.println("b.ogrenciId = " + b.ogrenciId);    //1
+        System.out.println("c.ogrenciId = " + c.ogrenciId);       //1
+        System.out.println("d.ogrenciId = " + d.ogrenciId);          //1
     }//main sonu
 }//Class sonu
