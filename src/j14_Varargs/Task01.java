@@ -12,10 +12,19 @@ public class Task01 {
         output : ali
 
          */
-
+        System.out.print("Print = " + concat("h", "a", "l", "u", "k"));
 
     }// main sonu
 
+public static String concat(String...x){
 
+        String sonuc="";
+
+        for(String w: x){
+           sonuc +=w;
+        }
+
+        return sonuc;
+}
 
 }// Class sonu
