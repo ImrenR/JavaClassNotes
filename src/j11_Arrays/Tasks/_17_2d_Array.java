@@ -19,15 +19,15 @@ int arr [][] = {
         {7, 2, 5}
 };
 
-        for (int i = 0; i < arr.length; i++) {  // 2D array in satir sayisi
-            for (int j = 0; j <arr[i].length ; j++) { // o satirdaki sutun sayisi
-                  if (arr[i][j] == 2){
-                      arr[i][j] = 6;
-                  }
-            }
 
+        for (int i = 0; i <arr.length ; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if(arr[i][j] ==2){
+                   arr[i][j] =6;
+                }
+            }
         }
         System.out.println("Arrays.deepToString(arr) = " + Arrays.deepToString(arr));
-        // 2D array i tek satirda okunabilir sekilde yazdirir.
+
     }
 }

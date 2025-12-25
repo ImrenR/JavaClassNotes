@@ -13,6 +13,10 @@ public class _21_Array_reverse {
 
         //Kodu aşağıya yazınız.
 
+int sayi = 123;
+
+
+
 
     }
 }

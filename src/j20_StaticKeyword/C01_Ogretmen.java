@@ -22,4 +22,31 @@ public class C01_Ogretmen {//obj Class ->kalıphane
 
     //Fields
 
+    String name; // instance obj variable
+    int tecrube; // ins obj variable
+    static String okul; //her obj icin sabit olan class variable => gokteki gunes
+
+    public C01_Ogretmen(String name, int tecrube) { // full pli constructer
+        this.name = name;
+        this.tecrube = tecrube;
+    }
+        public static void maasHesapla(){ // static meth.
+            System.out.println("Agam maasin helali hos olsun");
+        }
+
+        public void evlilikYDonumu(){ // non-static meth.
+            System.out.println("Yengenin gymetini bilesen");
+        } // bunlar obj ile gelir static degil cunku
+
+
+//toString
+
+
+    @Override
+    public String toString() {
+        return
+                "name='" + name +
+                ", tecrube=" + tecrube
+               ;
+    }
 }

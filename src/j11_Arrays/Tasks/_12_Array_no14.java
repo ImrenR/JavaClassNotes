@@ -23,24 +23,22 @@ public class _12_Array_no14 {
 
         // code start here
 
-        Scanner scan = new Scanner(System.in);
+       int [] arr = {1,2,3,4};
+       boolean birVar = false;
+       boolean dortVar = false;
 
-        String str1 = scan.nextLine();
 
-        String[] arr1 = str1.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] == 1)
+                birVar =true;
+             if(arr[i] ==4)
+                 dortVar =true;
 
-        int[] intArr = new int[arr1.length];
 
-        int count = 0;
-
-        for (int i = 0; i < intArr.length; i++) {
-
-            int i1 = Integer.parseInt(arr1[i]);
-
-            intArr[count] = i1;
-
-            count++;
         }
+        boolean sonuc = !(birVar && dortVar);
+        System.out.println(sonuc);
+
 
         //Kod buradan başlıyor.. Yukarısını değiştirmeyiniz..
         // intArr ı kullanın.

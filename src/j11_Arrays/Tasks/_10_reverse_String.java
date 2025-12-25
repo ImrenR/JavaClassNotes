@@ -11,12 +11,10 @@ public class _10_reverse_String {
         Trick-> String split ile arraya atanmalı
          */
         String str = "Hello World";
-String[] arr = str.split("");
+        String[]arr= str.split(""); // her  bir kelimeyi indexlere ayirdik ve arr dizisine ekledik
 
-String tersStr = "";
-        for (int i = arr.length-1 ; i >= 0 ; i--) {
-            tersStr += arr[i];
+        for (int i = arr.length-1; i >=0 ; i--) {
+            System.out.print( arr[i]);
         }
-        System.out.println(tersStr);
     }
 }

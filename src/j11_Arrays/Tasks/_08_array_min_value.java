@@ -12,14 +12,15 @@ public class _08_array_min_value {
         // Kodu aşağıya yazınız..
 int[]sayilar = {14,19,5,21};
 
-int min = sayilar[0];
+int minSayi =sayilar[0];
 
-        for (int i = 0; i < sayilar.length; i++) {
-            if (sayilar[i]<min){
-                min =sayilar[i];
+
+        for (int i = 0; i <sayilar.length ; i++) {
+            if (sayilar[i] < minSayi){
+               minSayi=sayilar[i];
             }
         }
-        System.out.println("min sayi = " + min);
+        System.out.println("En kucuk sayi =" + minSayi); // 5
     }
 }
 

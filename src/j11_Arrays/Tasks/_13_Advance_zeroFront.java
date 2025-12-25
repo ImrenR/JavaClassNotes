@@ -21,28 +21,28 @@ public class _13_Advance_zeroFront {
 
         // Kodu aşağıya yazınız..
  int arr[]= {1,0,0,1,0};
- int n = arr.length;
- int result []= new int [n]; // arr eleman sayisi kadar result arrayini doldurduk.
 
-        int index =0;
+     int [] yeniArr = new int[arr.length];
 
-        // sifirlari basa yerlestir
-        for (int i = 0; i < n; i++) {
-            if(arr[i] == 0){
-                result[index]=0; //
+     int index = 0;
+
+        for (int i = 0; i < arr.length ; i++) {
+            if (arr[i] == 0){
+                yeniArr[index]=0;
                 index++;
             }
 
         }
 
-// sifir olmayanlari doldur
-        for (int i = 0; i <n ; i++) {
-            if (arr[i] != 0){ // arr in 0 a esit olmayan lemanlari
-                result[index]=arr[i]; // result in 0 indexinden sonuna kadar arr in ilk indeksinden sonuna kadar 0 olmayanlari ata
+        for (int i = 0; i < arr.length ; i++) {
+            if(arr[i] != 0){
+                yeniArr[index]=arr[i];
                 index++;
             }
 
         }
-        System.out.println(Arrays.toString(result));
+        System.out.println("Arrays.toString(yeniArr) = " + Arrays.toString(yeniArr));
+
+
     }
 }

@@ -11,6 +11,8 @@ int tecrube;
 double maas;
 boolean emekli;
 
+    public C04_Teacher() {// psiz constructor
+    }
 // Constructor
 
     public C04_Teacher(String ad, String soyad, String brans, int id, int tecrube, double maas, boolean emekli) {
@@ -21,6 +23,18 @@ boolean emekli;
         this.tecrube = tecrube;
         this.maas = maas;
         this.emekli = emekli;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "ad='" + ad +
+                ", soyad='" + soyad +
+                ", brans='" + brans +
+                ", id=" + id +
+                ", tecrube=" + tecrube +
+                ", maas=" + maas +
+                ", emekli=" + emekli ;
     }
 
     /*

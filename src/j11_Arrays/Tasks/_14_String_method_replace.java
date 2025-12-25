@@ -10,8 +10,11 @@ public class _14_String_method_replace {
         Sonuç bu şekilde olmalıdır:
         HellK WKrld
          */
-String word [] = {"Hello World"};
-word[0] = word[0].replace('o','K');
-        System.out.println(word[0]);
+String word = "Hello World";
+ word = word.replace('o', 'K');
+
+        System.out.println("word = " + word);
+
+
     }
 }

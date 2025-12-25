@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _15_Word_Count {
 
     public static void main(String[] args) {
@@ -13,10 +15,13 @@ public class _15_Word_Count {
 
 String sentence= "Removes white space from both ends of a string";
 
-String words [] =sentence.split(" ");
+String  newArray = sentence.replace(" ", "");
 
-int wordCount = words.length;
+    String []  new2Arr = newArray.split(""); // spliti array de kullaniriz
 
-        System.out.println("wordCount = " + wordCount);
+        int kelimeSyasi= new2Arr.length;
+
+        System.out.println("kelimeSyasi = " + kelimeSyasi); // 38
+
     }
 }

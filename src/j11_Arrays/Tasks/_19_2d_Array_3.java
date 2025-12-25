@@ -21,15 +21,14 @@ public class _19_2d_Array_3 {
                 {"Pittsburgh" ,"ohio","new york","ohio"} ,
                 {"ohio","new york"}
         };
-
-        for (int i = 0; i < cities.length; i++) {
-            for (int j = 0; j < cities[i].length ; j++) {
-                if (cities[i][j]=="ohio") {
-                    cities[i][j] ="Florida";
-                }
+        for (int i = 0; i < cities.length ; i++) {
+            for (int j = 0; j < cities[i].length; j++) {
+                 if (cities[i][j].equals("ohio")){
+                     cities[i][j] ="Florida";
+                 }
             }
-              }
-        System.out.println("cities = " + Arrays.deepToString(cities));
+        }
+        System.out.println("Arrays.deepToString(cities) = " + Arrays.deepToString(cities));
 
     }
 }

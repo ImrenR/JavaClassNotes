@@ -1,5 +1,7 @@
 package j11_Arrays.Tasks;
 
+import java.util.Arrays;
+
 public class _18_2d_array2 {
 
     public static void main(String[] args) {
@@ -19,14 +21,14 @@ public class _18_2d_array2 {
                 {1,2}
         };
 
-        int sum = 0;
-
+int toplam =0;
         for (int i = 0; i < arrs.length; i++) {
             for (int j = 0; j < arrs[i].length; j++) {
-                sum += arrs[i][j];
+                toplam += arrs[i][j];
             }
-
         }
-        System.out.println("sum = " + sum);
+        System.out.println("toplam = " + toplam); //32
+
+
     }
 }

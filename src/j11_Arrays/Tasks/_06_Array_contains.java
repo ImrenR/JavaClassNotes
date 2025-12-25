@@ -15,17 +15,15 @@ public class _06_Array_contains {
 
         //Kodu aşağıya yazınız..
 
-String [] elmn = {"Apple", "Orange", "Banana", "Pineapple"};
-boolean bulundu = false;
+        String[] elmn = {"Apple", "Orange", "Banana", "Pineapple"};
+         boolean bulundu =false;
 
-// For each dongusuyle check etme
-
-for (String eleman :elmn){
-    if (eleman.equals("Apple")){
-        bulundu =true;
-        break;
-    }
+        for (int i = 0; i < elmn.length; i++) {
+            if (elmn[i].contains("Apple")) {
+                bulundu =true;
+                break; // bulununca donguden cik.
+            }else System.out.println("Bulundu mu ?=" + bulundu);
         }
-        System.out.println(bulundu);
+        System.out.println("elmn dizisinde apple vardir =" + bulundu );
     }
 }
