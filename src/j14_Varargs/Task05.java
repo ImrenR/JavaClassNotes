@@ -28,6 +28,19 @@ public class Task05 {
         int tarih=2;
         int cografya=2;
 
+basari(4,2,3,3,3,2,2,2);
+
+    }
+
+    public static void basari(int...x){
+        int toplam=0;
+        for (int avuc:x) {
+            toplam += avuc;
+        }
+
+        if (toplam>12){
+                System.out.println("Agam limiti astiniz");
+            }else System.out.println("gayet basarili");
 
 
     }
