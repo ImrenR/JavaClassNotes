@@ -20,7 +20,13 @@ public class C01_InstanceVariable {//Class level
                  boolean --> default value false'dur.
                  String --> default value "null" dir.
 
+
+
  */
+        int a =31; // main levelda local create edilmis, local variable, main de acilmis cunku
+     //  static int a =31; => CTE error alir cunku static mainde not allowed der.
+        // static demek butun verilere ulasabilen deger demektir mainde kisitlanir erisilemez. Sadece class da kullanilir "Static"
+
 
 
     }//main sonu
