@@ -14,7 +14,7 @@ public class C02_Encapsulation {//pojo Class-> obj kalıphane
 
    String name="imren gunes";
    private int id =1001;
-  private   String mail="ebikgabik@gmail.com";
+   private   String mail="ebikgabik@gmail.com";
     String surname = "Jovanovic";
     // constructor
 
@@ -30,12 +30,36 @@ public class C02_Encapsulation {//pojo Class-> obj kalıphane
 
 //getter setter methodlari
 
-public String mailGoster(){
+    public int getId() {
+        return id;
+    }
+
+    public String getMail() {
         return mail;
-}
+    }
 
-public void  mailUpdate(String newMail){
-       this.mail=newMail;
-}
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+//public String mailGoster(){ //getMethod
+//        return mail;
+//}
+
+//public void  mailUpdate(String newMail){ // setMethod
+//       this.mail=newMail;
+//}
+
+    @Override
+    public String toString() {
+        return "C02_Encapsulation{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", mail='" + mail + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }
