@@ -13,7 +13,7 @@ public class C02_ImmutableClass {
        String name = "imren";
         System.out.println(" ********* immutable Class ********");
         System.out.println("Method call oncesi name : " + name); // imren
-        name.concat("developer team lead");
+        System.out.println("name.concat(\"developer team lead\") = " + name.concat(" developer team lead"));
         System.out.println("Method call sonrasi = " + name); // imren => passbyvalue oldugu icin degismedi
 
 

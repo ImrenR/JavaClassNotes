@@ -25,4 +25,27 @@ public class C01_AccessModifer {//Class level
 
      */
 
+    private int privateYas = 33;
+    int defaultYas=24; // AccMo yazilmazsa default olarak derlenir.(JVM derler)
+    protected  int protectedYas=40;
+    public int publicYas=50;
+
+    private C01_AccessModifer (){ //private psiz const.
+        System.out.println("Agam private psiz PRIVATE const. devamkee ");
+    }
+   public C01_AccessModifer (int a,int b){ //public psiz const.
+        System.out.println("Agam private psiz PUBLIC const. devamkee ");
+    }
+    protected C01_AccessModifer (int a){ //PROTECTED psiz const.
+        System.out.println("Agam private psiz PROTECTED const. devamkee ");
+    }
+
+    private static void privateMethod(){
+        System.out.println("Agama PROTECTED  method selami caktik");
+    }
+
+    protected  static void protectedMethod(){
+        System.out.println("Agama PROTECTED method selami geldiiiiii");
+    }
+
 }//Class sonu
