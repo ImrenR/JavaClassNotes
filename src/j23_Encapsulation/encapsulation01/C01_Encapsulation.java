@@ -40,7 +40,10 @@ C02_Encapsulation obj1= new C02_Encapsulation("Niko",101,"abc@gmail.com","jovano
         System.out.println("obj1.surname = " + obj1.surname);
         obj1.surname ="AslanParcasi";
         System.out.println("obj1.surname = " + obj1.surname);
-
+        System.out.println("obj1.mailGoster() = " + obj1.mailGoster()); // boylelikle maili gosterir obj1.mailGoster() = abc@gmail.com
+obj1.mailUpdate("imren@gmail.com");
+        System.out.println("obj1.mailGoster() = " + obj1.mailGoster());
+        // obj1.mailGoster() = imren@gmail.com
 
     }
 }

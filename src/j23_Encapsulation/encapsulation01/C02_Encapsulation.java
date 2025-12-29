@@ -30,5 +30,12 @@ public class C02_Encapsulation {//pojo Class-> obj kalıphane
 
 //getter setter methodlari
 
+public String mailGoster(){
+        return mail;
+}
+
+public void  mailUpdate(String newMail){
+       this.mail=newMail;
+}
 
 }
