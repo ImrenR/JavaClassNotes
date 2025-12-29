@@ -10,5 +10,25 @@ public class C02_Encapsulation {//pojo Class-> obj kalıphane
     işbirliği yapmak için kullanılırlar ve bu nedenle data aktarım objeleri (DTO) olarak da adlandırılabilirler.
     */
 
+//fields => private olmali cunku encap yapiyoruz
+
+   String name="imren gunes";
+   private int id =1001;
+  private   String mail="ebikgabik@gmail.com";
+    String surname = "Jovanovic";
+    // constructor
+
+    public C02_Encapsulation(String name, int id, String mail, String surname) {
+        this.name = name;
+        this.id = id;
+        this.mail = mail;
+        this.surname = surname;
+    }
+
+    public C02_Encapsulation() { //  psiz constructor
+    }
+
+//getter setter methodlari
+
 
 }

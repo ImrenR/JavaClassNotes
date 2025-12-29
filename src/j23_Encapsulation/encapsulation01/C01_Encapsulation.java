@@ -35,6 +35,12 @@ public class C01_Encapsulation {
 
 		 */
 
+C02_Encapsulation obj1= new C02_Encapsulation("Niko",101,"abc@gmail.com","jovanovic");
+        System.out.println("obj1.name = " + obj1.name);
+        System.out.println("obj1.surname = " + obj1.surname);
+        obj1.surname ="AslanParcasi";
+        System.out.println("obj1.surname = " + obj1.surname);
+
 
     }
 }
