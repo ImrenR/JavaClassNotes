@@ -21,32 +21,35 @@ public class C01_Ogretmen {//obj Class ->kalıphane
     */
 
     //Fields
+String isim; // instance variable => obj variable
+int tecrube;// instance var, obj var
+static String okul; // class variable // her obj icin sabit olan class variabledir
 
-    String name; // instance obj variable
-    int tecrube; // ins obj variable
-    static String okul; //her obj icin sabit olan class variable => gokteki gunes
+// constructer => obj bunu da generate ile yap
 
-    public C01_Ogretmen(String name, int tecrube) { // full pli constructer
-        this.name = name;
+    public C01_Ogretmen(String isim, int tecrube) { // full pli contructer
+        this.isim = isim;
         this.tecrube = tecrube;
     }
-        public static void maasHesapla(){ // static meth.
-            System.out.println("Agam maasin helali hos olsun");
-        }
 
-        public void evlilikYDonumu(){ // non-static meth.
-            System.out.println("Yengenin gymetini bilesen");
-        } // bunlar obj ile gelir static degil cunku
+    // method
+
+    public static void massHesapla() { // static method
+        System.out.println("Agam methodu calistirdi");
+    }
+        public void evlilikYilDonumu(){ // nonstatic method
+            System.out.println(" Yil donumu hesaplama");
+        }
 
 
 //toString
 
-
     @Override
     public String toString() {
-        return
-                "name='" + name +
-                ", tecrube=" + tecrube
-               ;
+        return "C01_Ogretmen{" +
+                "isim='" + isim + '\'' +
+                ", tecrube=" + tecrube +
+                '}';
     }
 }
+
