@@ -25,27 +25,33 @@ public class C01_AccessModifer {//Class level
 
      */
 
-    private int privateYas = 33;
-    int defaultYas=24; // AccMo yazilmazsa default olarak derlenir.(JVM derler)
+private int privateYas=33;
+int defaultYas=24; // AccMo yazilmazsa default olarak derlenir.(JVM derler)
     protected  int protectedYas=40;
-    public int publicYas=50;
+    public int publicYas = 50;
 
-    private C01_AccessModifer (){ //private psiz const.
-        System.out.println("Agam private psiz PRIVATE const. devamkee ");
+
+    private  C01_AccessModifer(){ // private psiz constructor
+        System.out.println("Private psiz default const dan selam");
+
     }
-   public C01_AccessModifer (int a,int b){ //public psiz const.
-        System.out.println("Agam private psiz PUBLIC const. devamkee ");
+    public   C01_AccessModifer(int a,int b){ // public pli constructor
+        System.out.println("Private pli PUBLIC const dan selam");
+
     }
-    protected C01_AccessModifer (int a){ //PROTECTED psiz const.
-        System.out.println("Agam private psiz PROTECTED const. devamkee ");
+    protected   C01_AccessModifer(int a,int b,int c){ // protected pli constructor
+        System.out.println("Private pli Protected const dan selam");
+
     }
 
     private static void privateMethod(){
-        System.out.println("Agama PROTECTED  method selami caktik");
+        System.out.println("Private meth tan selam");
     }
 
-    protected  static void protectedMethod(){
-        System.out.println("Agama PROTECTED method selami geldiiiiii");
+    protected static void protectedMethod(){
+        System.out.println("Protected meth tan selam");
     }
+    C01_AccessModifer obj =new C01_AccessModifer(); // privatw const call ile obj create kendi Class scope
+
 
 }//Class sonu
