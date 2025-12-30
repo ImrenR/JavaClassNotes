@@ -3,11 +3,11 @@ package j23_Encapsulation.Tasks.task01;
 public class BmiRunner {
     public static void main(String[] args) {
 
-           Bmi obj=new Bmi(35,"imren",66,167);
+           Bmi obj1=new Bmi("imren",45,40,167);
 
-        System.out.println("obj.getWeight() = " + obj.getWeight()); // obj.getWeight() = 66
-        obj.setWeight(55);
-        System.out.println("obj = " + obj);
-        //obj = Bmi{name='imren', age=35, weight=55, height=167}
+        System.out.println("obj1.getBmi() = " + obj1.getBmi());
+        System.out.println("obj1.getStatus() = " + obj1.getStatus());
+        // obj1.getBmi() = 0.0014342572340349242
+        //obj1.getStatus() = Zayıf
     }
 }

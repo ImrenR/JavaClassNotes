@@ -8,27 +8,63 @@ public class Bmi {//pojo Class
     private  int weight;
     private int height;
 
+
     //const.
 
-    public Bmi(int age, String name, int weight, int height) {
-        this.age = age;
+    public Bmi(String name, int age, int weight, int height) {
         this.name = name;
+        this.age = age;
         this.weight = weight;
         this.height = height;
+
     }
 
-    public Bmi() {
+
+
+// getter-setter
+
+    public String getName() {
+        return name;
     }
 
-    // getter-setter
+    public int getAge() {
+        return age;
+    }
 
     public int getWeight() {
         return weight;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+public double getBmi(){
+        return (double) weight/(height*height);
+}
+
+public String  getStatus(){
+        double bmi=getBmi();
+    if (bmi < 18.5) return "Zayıf";
+    else if (bmi < 25) return "Normal";
+    else if (bmi < 30) return "Kilolu";
+    else return "Obez";
+}
 //toString..
 
 
