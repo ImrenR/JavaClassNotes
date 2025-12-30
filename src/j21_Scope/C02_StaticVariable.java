@@ -23,7 +23,8 @@ public class C02_StaticVariable {//Class level
         firmaIT=true;
         System.out.println("firmaIT = " + firmaIT);//true
         // bad practice
-        C02_StaticVariable.firmaId=2023; // Class name ile statii variablee call => bad practice
+        C02_StaticVariable.firmaId=2023; // Class name ile statii variablee call =>BAD PRACTICE
+static_method(); // staci meth dogrudan static bloka (maine) dogrudan call edildi.
 
     }//main sonu
     public static  void static_method(){ // galaksi-statik mehthof
@@ -34,9 +35,11 @@ public class C02_StaticVariable {//Class level
     }
 
     public void non_static_method(){ // non-static
+        System.out.println("Atama oncesi static firmaIsim = " + firmaIsim);
         firmaIsim="IBM";
-
+        System.out.println("Atama sonrasi static firmaIsim = " + firmaIsim);
         System.out.println("Agama non-static-methodtan selamlar");
+        static_method(); // static method non-static blok a dogrudan call edilir.
     }
 
 }//Class sonu
