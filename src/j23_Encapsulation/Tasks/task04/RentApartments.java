@@ -65,7 +65,6 @@ private int rent;
         }
     }
 
-
     public int getRent(){
         return rent;
     }

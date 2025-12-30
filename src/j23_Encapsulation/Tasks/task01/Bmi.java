@@ -5,20 +5,19 @@ public class Bmi {//pojo Class
 
     private  String name;
     private  int age;
-    private  int weight;
-    private int height;
+    private  double weight;
+    private double height;
 
 
     //const.
 
-    public Bmi(String name, int age, int weight, int height) {
+    public Bmi(String name, int age, double weight, double height) {
         this.name = name;
         this.age = age;
         this.weight = weight;
         this.height = height;
 
     }
-
 
 
 // getter-setter
@@ -31,39 +30,27 @@ public class Bmi {//pojo Class
         return age;
     }
 
-    public int getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+private double getBmi(){
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    return  weight/(height*height);
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-public double getBmi(){
-        return (double) weight/(height*height);
 }
 
-public String  getStatus(){
+public String getSatus(){
         double bmi=getBmi();
-    if (bmi < 18.5) return "Zayıf";
-    else if (bmi < 25) return "Normal";
-    else if (bmi < 30) return "Kilolu";
-    else return "Obez";
+        if(bmi<18.5) return "Zayif";
+        else if (bmi<25) return "Normal";
+        else if (bmi<30) return "Kilolu";
+        else if (bmi>30) return "Obez";
+        else return "gecersiz bir rakam girdiniz";
 }
 //toString..
 
@@ -75,6 +62,8 @@ public String  getStatus(){
                 ", age=" + age +
                 ", weight=" + weight +
                 ", height=" + height +
+                ", bmi=" + getBmi() +
+                ", status='" + getSatus()+ '\'' +
                 '}';
     }
 }//Class sonu
