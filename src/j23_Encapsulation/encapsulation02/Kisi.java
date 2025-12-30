@@ -23,7 +23,7 @@ private int yas;
 
     public Kisi(String ad, int yas, String password, String soyad) {
         this.ad = ad;
-        this.yas =Math.abs(yas);
+        setYas(yas);
         this.password = password;
         this.soyad = soyad;
     }
@@ -52,7 +52,7 @@ private int yas;
     }
 
     public void setYas(int yas) {
-        this.yas = yas;
+        this.yas = Math.abs(yas);
     }
 
     public void setSoyad(String soyad) {

@@ -21,5 +21,9 @@ public class C03_AccessModiferRunner {
         //protected e erisemedim cunku farkli dosyalarda
         // default a zaten erisemem cunku farkli apartmanlardayim
         // sadece public e erisebilirim burada
+        C03_AccessModiferRunner obj4 =new C03_AccessModiferRunner();
+        System.out.println("obj4.defaultName = " + obj4.defaultName); // ayni packagetan cagirdik o yuzden geldiler
+        System.out.println("obj4.privateName = " + obj4.privateName);
+        System.out.println("obj4.protectedName = " + obj4.protectedName);
     }
 }

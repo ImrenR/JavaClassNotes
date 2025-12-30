@@ -56,6 +56,7 @@ public class Arac {//pojo Class
             this.yil = Math.abs(yil);
         }else
             System.out.println("Hatali bir yil girdiniz");
+        this.yil=yil;
 
     }
 
@@ -64,7 +65,7 @@ public class Arac {//pojo Class
            this.motorHacmi = Math.abs(motorHacmi);
        }else
            System.out.println("Motor hacmi 1000 cc ve alti olmalidir!");
-
+this.motorHacmi=motorHacmi;
 
     }
 //toString
