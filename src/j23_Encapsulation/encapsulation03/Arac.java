@@ -11,18 +11,71 @@ public class Arac {//pojo Class
       */
 
     // fields->private
-
-
-
+    private String model;
+    private  String renk;
+    private int yil;
+    private int motorHacmi;
     // const
 
 
+    public Arac() {
+
+    }
+
+    public Arac(String renk, String model) {
+        this.renk = renk;
+        this.model = model;
+    }
+
+    public Arac(String model, String renk, int motor, int motorHacmi, int yil) {
+
+        this.model = model;
+        this.renk = renk;
+
+        setMotorHacmi(motorHacmi);
+        setYil(yil);
+
+
+    }
 
 
 
     // getter-setter
 
-    //toString
+    public int getYil() {
+        return yil;
+    }
+
+    public int getMotorHacmi() {
+        return motorHacmi;
+    }
+
+    public void setYil(int yil) {
+        if (yil >=1960 && yil<=2026){
+
+            this.yil = Math.abs(yil);
+        }else
+            System.out.println("Hatali bir yil girdiniz");
+
+    }
+
+    public void setMotorHacmi(int motorHacmi) {
+       if(motorHacmi<1000){
+           this.motorHacmi = Math.abs(motorHacmi);
+       }else
+           System.out.println("Motor hacmi 1000 cc ve alti olmalidir!");
 
 
+    }
+//toString
+
+
+    @Override
+    public String toString() {
+        return
+                "model='" + model +
+                ", renk='" + renk +
+                ", yil=" + yil +
+                ", motorHacmi=" + motorHacmi ;
+    }
 }
