@@ -62,7 +62,7 @@ Scanner input = new Scanner(System.in);
 
 
 
-        // task06->girilen pozitif  tamsayıya kadar sayıların toplamını  print eden code create ediniz
+        // j23_Encapsulation.Tasks.task06->girilen pozitif  tamsayıya kadar sayıların toplamını  print eden code create ediniz
         // System.out.println("   ***   Task06   ***   ");
 
 

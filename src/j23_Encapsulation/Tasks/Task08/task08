@@ -1,0 +1,35 @@
+📌 Gereksinimler
+
+Weather ve WeatherRunner class’ları create ediniz.
+
+Weather class:
+
+Encapsulated fields:
+
+double temperatureCelsius
+
+Kurallar
+
+getTemperatureFahrenheit() → return
+
+getWeatherStatus()
+
+< 0 → "Freezing"
+
+0–15 → "Cold"
+
+16–25 → "Mild"
+
+25 → "Hot"
+
+İPUCU
+
+Fahrenheit saklanmalı mı?
+
+Status field mı?
+
+🎯 HEDEF
+
+Her task’ta kendine şunu sor:
+
+“Bu değer STATE mi, HESAP mı?”

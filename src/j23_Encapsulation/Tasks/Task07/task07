@@ -1,0 +1,30 @@
+📌 Gereksinimler
+
+BankAccount ve AccountRunner class’ları create ediniz.
+
+BankAccount class:
+
+Encapsulated fields:
+
+String ownerName
+double balance
+
+Kurallar
+
+deposit(double amount) → bakiye artırır
+
+withdraw(double amount) → bakiye azaltır
+
+getBalance() → bakiyeyi döndürür
+
+Negatif para çekilemez
+
+Kritik Soru ❗
+
+balance FIELD mi olmalı, METHOD mu?
+
+balance = STATE
+çünkü kullanıcı para yatırır veya çeker
+nesne durumu değişir
+FIELD olmalı, METHOD değil
+deposit / withdraw → STATE değiştirir, HESAP yapmaz (sadece artırır / azaltır)

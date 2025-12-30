@@ -1,0 +1,44 @@
+Course class:
+
+Encapsulated fields:
+
+String courseName
+double price
+boolean hasCertificate
+
+Kurallar
+
+Eğer hasCertificate == true → fiyata 300 ekle
+
+Course oluşturulduğunda final price hazır olmalı
+
+Final price saklanmalı
+
+İpuçları
+
+Field mı method mu? 🤔
+
+Constructor’da ne yapılmalı?
+
+bunu sormalisin =>
+
+“Bir değer constructor’da mı hazırlanmalı,
+yoksa setter ile sonradan mı değişmeli?”
+
+“Final price bir STATE mi, HESAP mı?”
+
+1️⃣ Final price course’un bir özelliği mi?
+→ Evet
+➡️ FIELD
+
+2️⃣ Course oluşturulduğunda fiyat hazır mı olmalı?
+→ Evet
+➡️ CONSTRUCTOR
+
+Sertifika fiyatı etkiliyor mu?
+→ Evet
+➡️ constructor içinde hesaplanmalı
+
+STATE olan değer constructor’da hazırlanır
+Setter sadece state değiştirir
+Hesap tek yerde yapılır

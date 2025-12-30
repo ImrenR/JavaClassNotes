@@ -1,7 +1,6 @@
 package j33_Lambda.lambdaTutorial;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class C10_LambdaObject {
     /*
@@ -50,7 +49,7 @@ public class C10_LambdaObject {
 //task05-> universite'leri notOrt gore  b->k siralayip ilk 3 'unu print eden code create ediniz...
 
 
-//task06-> ogrc sayisi en az olan 2. universite'yi  print eden code create ediniz...
+//j23_Encapsulation.Tasks.task06-> ogrc sayisi en az olan 2. universite'yi  print eden code create ediniz...
 
 
 //task07-> notOrt 63 'den buyuk olan universite'lerin ogrc sayilarini toplamini print eden code create ediniz...
