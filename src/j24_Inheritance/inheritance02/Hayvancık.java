@@ -11,4 +11,8 @@ int a; // inst non initial var
     public Hayvancık() {
         System.out.println("Psiz constructer");
     }
+
+    public void mM(){ //Child class ezilen
+        System.out.println("Hayvancik Class meth. call...");
+    }
 }//Class sonu
