@@ -35,12 +35,13 @@ public class C01_ArithmeticException {//Class level
        } catch (ArrayIndexOutOfBoundsException ebik){
            System.out.println("2. catch= almayan aray elemani istiyorsun" + ebik.getMessage());
        }catch (Exception falan){ // Exception class => grand Parent (tum exceptionlari kapsayan exception class => Tavsiye edilmez bad practice
-           System.out.println("3.catch" + falan.getMessage());
-       }
+           System.out.println("3.catch" + falan.getStackTrace()); // tum exception aciklama referansini verir
+       }// hata ya da istisna yakalandiginda aksiyon alacak.
 
 // Ben nerden bilicem hangi exception oldugunu nasil tahmin edicem ?
         // Exception son ctachdeki hepsini kapsar
-        //
+        // Spesifik data kullanmak application i hizlandirir. yani ArithmeticExpcetions gibi bunlar spesific datalardir.
+        // sondaki catch i de garanti olsun diye yaptik bilemedigimizden
 
 
 
