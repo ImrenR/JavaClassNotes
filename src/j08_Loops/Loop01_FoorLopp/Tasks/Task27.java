@@ -22,7 +22,13 @@ public class Task27 {
          */
 
         for (int i = 1; i <=3 ; i++) {
+            System.out.println("IT:" + i);
+            for (int j = 1; j < 4; j++) {
 
+                System.out.println("QA :" +j);
+
+            }
+            System.out.println("....");
         }
 
 
