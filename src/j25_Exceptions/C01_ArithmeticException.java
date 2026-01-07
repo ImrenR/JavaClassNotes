@@ -23,11 +23,29 @@ public class C01_ArithmeticException {//Class level
         int num2= input.nextInt();
 
 
-        int bolum=num1/num2;
-        System.out.println("bolum = " + bolum);
+       try{ // hatanin olma ihtimaliniin oldugu kisim
+           int bolum=num1/num2;
+           System.out.println("bolum = " + bolum);
+           System.out.println("Try calisti hem de catch e hic girmeden :) ");
+       }
+       catch (ArithmeticException e){ // try blockda denenen istisnai durum gerceklesirsa handling block
+           System.out.println("1.catch = Sayi 0 ile bolunemez num2 ye baska bir deger veriniz" + e.getMessage());
+           // getmessage() metoidu ile / by zero bize cikti da geldi
+           // cikti =>  Sayi 0 ile bolunemez num2 ye baska bir deger veriniz/ by zero
+       } catch (ArrayIndexOutOfBoundsException ebik){
+           System.out.println("2. catch= almayan aray elemani istiyorsun" + ebik.getMessage());
+       }catch (Exception falan){ // Exception class => grand Parent (tum exceptionlari kapsayan exception class => Tavsiye edilmez bad practice
+           System.out.println("3.catch" + falan.getMessage());
+       }
+
+// Ben nerden bilicem hangi exception oldugunu nasil tahmin edicem ?
+        // Exception son ctachdeki hepsini kapsar
+        //
 
 
-        System.out.println("Bu print okunuyorsa application calismistir");
+
+
+
     }// main sonu
 
 
