@@ -13,7 +13,13 @@ public class Task12 {
         System.out.println("Enter a word:");
         String name = input.nextLine();
 
+String []words= name.split(" ");
 
+if(words.length==3){
+    System.out.println(
+            words[0].charAt(0) + "." + words[1].charAt(0) + "." + words[2].charAt(0) + "."
+    );
+}else System.out.println("3 kelimelik bir sey yaziniz");
 
 // diyelim ki Imren Rahbay Java yazacagim
     }
