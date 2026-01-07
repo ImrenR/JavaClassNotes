@@ -24,7 +24,24 @@ public class C02_FileInputStreamException01 {
                  Class'inin parent class Hz.Adem
          */
    // public static void main(String[] args) throws FileNotFoundException {//main meth signature level exception(throws) zorunlu tanımlandı
+
     public static void main(String[] args) throws IOException {//main meth signature level exception(throws) zorunlu tanımlandı
 
+        FileInputStream fis=new FileInputStream("/Users/imrenrahbay/IdeaProjects/JavaClassNotes/src/j25_Exceptions/ebikGabık");
+
+// fis => file path(dosya kaynak yolu) verilen file a erisim saglayan obj.
+        //FileNotFoundException=> erisilmesi gereken file path istisna hata exception
+
+/*
+Eğer bir method'da Checked (CTE riski olan excp.) exception varsa method signature(method name'den sonraki bölüm) hata uyarısı altı kırmızı çizgi verir
+komutun derlenmesine izin vermez ve kod üzerine gelidiğinde Add...  exception handle etme tavsiye eder otamatih throws excp eklenir.
+Bu şekilde methodu call eden komutlat try-catch alınması garanti edilmiş olur.
+ */
+
+int k;
+while ((k=fis.read()) !=-1){
+    System.out.print((char)k);
+        }
+        System.out.println("bu printi okuduysan devam et");
     }
 }
