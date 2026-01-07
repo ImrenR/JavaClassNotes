@@ -8,8 +8,9 @@ public class C02_FileInputStreamException02 {
     public static void main(String[] args) {
         FileInputStream fis= null;
         try { //outer try blok
-            fis = new FileInputStream("/Users/imrenrahbay/IdeaProjects/JavaClassNotes/src/j25_Exceptions/ebikGabık");
+            fis = new FileInputStream("/Users/imrenrahbay/IdeaProjects/JavaClassNotes/src/j25_Exceptions/ebikGabı"); // dosya yanlis verildi => HATA ALDI
             int k;
+            // dolasiyla inner da yazilan butun try catchler ezildi ve okunmadi, outer catch e direkt gidildi
             try{ // inner try blok
                 while ((k=fis.read()) !=-1){
                     System.out.print((char)k);
@@ -21,7 +22,7 @@ public class C02_FileInputStreamException02 {
             }
 
         } catch (FileNotFoundException e) { // outer catch block
-            System.out.println("Dosyaya erisilemedi");
+            System.out.println("Dosyaya erisilemedi"); // Dosya hatali verildigi icin direkt buradan sonrakiler calismis oldu ve cikti alindi
             System.out.println("outer catch blok calisti");
         }
 
