@@ -10,6 +10,15 @@ public class Task02 {
 
          */
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("bir kelime giriniz:");
+        String a= input.nextLine();
+
+        if(a.length()==3){
+           if(a.charAt(0) == a.charAt(2) && a.charAt(0) != a.charAt(1)){
+               System.out.println("girdiginiz kelime polindromedur = " + a);
+           }else System.out.println("girdiginiz kelime polindrome degildir = "+ a);
+        }else System.out.println("3 harflik bir kelime giriniz.");
 
     }
 
