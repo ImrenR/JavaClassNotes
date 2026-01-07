@@ -6,11 +6,20 @@ public class Task10 {
     public static void main(String[] args) {
 
         /* TASK :
-         * Girilen  isim sadece 3 harfli olmalidir ternary
-         * kullanarak harflerin unique(farkli) olmasını control eden code create ediniz
+         * Girilen  isim sadece 3 harfli olmalidir
+         * ternary kullanarak harflerin unique(farkli) olmasını control eden code create ediniz
          */
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a word:");
         String name = input.nextLine();
+
+        String result =
+                name.length() !=3
+                ? "Isim 3 harfli olmalidir"
+                : name.charAt(0) != name.charAt(1) && name.charAt(0) != name.charAt(2) && name.charAt(1) != name.charAt(2)
+                ? "Harfler unique"
+                        :"Harfler unique degil";
+
+        System.out.println("result = " + result);
     }
 }

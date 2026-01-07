@@ -23,6 +23,19 @@ public class C07_IllegalArgumantException {
         // ornek : yas datası için negatif değer girilidğinde pr kırılmadan run olması ama girilen değer için excp fırlatması için kullanılır..
 
 
+        Scanner input=new Scanner(System.in);
+        System.out.println("Yasinizi giriniz :");
+        int yas =input.nextInt();
+try{
+    if(yas<0){
+        throw new IllegalArgumentException("yas negatif olamaz !");
+    }
+    System.out.println(yas);
+
+}catch (IllegalArgumentException e){
+    System.out.println("e.getMessage() = " + e.getMessage());
+}
+
     }//main sonu
 
 
