@@ -13,7 +13,23 @@ public class C01_ArithmeticException {//Class level
             hata alınır ama finaly tanımlanırsa catch çalışmasa bile
             pr akışı devam eder.finally block hata olsa da olmasa da calışır.
             Cloud database ortamlarında bağlantı kesmek için kullanılır.cloud ile connection yazdıgınızda code
-            başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
-             */
-     }// main sonu
+//            başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
+//             */
+
+        Scanner input =new Scanner(System.in);
+        System.out.println("1. sayiyi giriniz: ");
+        int num1= input.nextInt();
+        System.out.println("2. sayiyi giriniz: ");
+        int num2= input.nextInt();
+
+
+        int bolum=num1/num2;
+        System.out.println("bolum = " + bolum);
+
+
+        System.out.println("Bu print okunuyorsa application calismistir");
+    }// main sonu
+
+
+
 }//Class sonu

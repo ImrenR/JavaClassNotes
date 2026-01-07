@@ -12,7 +12,7 @@ Kedicik k1=new Kedicik();
         System.out.println("     ****************    ");
 
         Mammal k2=new Mammal();
-        k2.
+
 
 
     }
