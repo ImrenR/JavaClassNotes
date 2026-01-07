@@ -15,6 +15,13 @@ public class C01_ArithmeticException {//Class level
             Cloud database ortamlarında bağlantı kesmek için kullanılır.cloud ile connection yazdıgınızda code
 //            başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
 //             */
+/*
+    1- try-catch kullanıldıgında try block hatasız çalışırsa catch block asla çalışmaz.catch block try block exception yakalarsa calışır
+    2- try block catch veya finally block olmadan CTE verir. try block'tan sonra birden fazla catch block tanımlanabilir.
+       aynıa anda  sadece bir catch block çalışabilir hiç bir catch block çalışmaya da bilir
+    3- parent - child ilişkisi olan catch'lerde child önce yazılmalı aksi halde CTE
+
+     */
 
         Scanner input =new Scanner(System.in);
         System.out.println("1. sayiyi giriniz: ");
@@ -38,6 +45,18 @@ public class C01_ArithmeticException {//Class level
            System.out.println("3.catch" + falan.getStackTrace()); // tum exception aciklama referansini verir
        }// hata ya da istisna yakalandiginda aksiyon alacak.
 
+
+        finally {
+           System.out.println("finally den selam");
+
+           /*
+    try - catch içinde yapılan işlemlerden sonra mutlaka çalışması gereken block varsa finally  blok tanımlanır.
+    hata alınır ama finaly tanımlanırsa catch çalışmasa bile
+    pr akışı devam eder.finally block hata olsa da olmasa da calışır.
+    Cloud database ortamlarında bağlantı kesmek için kullanılır.cloud ile connection yazdıgınızda code
+    başarılı bir şekilde çalışırsa işlem bitiiğinde finally block ile connection kapanmazsa maliyet pahalı olur :(
+     */
+       }
 // Ben nerden bilicem hangi exception oldugunu nasil tahmin edicem ?
         // Exception son ctachdeki hepsini kapsar
         // Spesifik data kullanmak application i hizlandirir. yani ArithmeticExpcetions gibi bunlar spesific datalardir.
