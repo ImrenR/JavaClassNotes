@@ -7,7 +7,7 @@ public class Task01 {
 
     //custom checked exception
     static class PasswordException extends Exception{
-        public PasswordException(String message){
+        public PasswordException(String message){ // onstructor
             super(message);
         }
     }
