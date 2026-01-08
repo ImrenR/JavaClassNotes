@@ -11,7 +11,12 @@ public class Task31 {
 
          */
 
-
+        for (int i = 1; i <=4 ; i++) { // satir
+            for (int j = 1; j <=i ; j++) { // kolon
+                System.out.print(j + " ");
+            }
+            System.out.println(); //alt satira gecer
+        }
 
     }
 }
