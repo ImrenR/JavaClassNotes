@@ -21,16 +21,20 @@ public class C07_IllegalArgumantException {
 
         // IllegalargumentException -> kullanılmasını istenmeyen değerlerde pr hata vermesi isteniyorsa bu excp fırlatılıer
         // ornek : yas datası için negatif değer girilidğinde pr kırılmadan run olması ama girilen değer için excp fırlatması için kullanılır..
+//if we are trying to illegal values for some methods in java,we will get IAE
+
+ // Thread t=new Thread();
+  // t.setPriority(11); // IAE
+      //  System.out.println("t = " + t);
+        //  System.out.println("t.getPriority() = " + t.getPriority()); // 5 => however I dont want this priority want to change it
 
 
-        Scanner input=new Scanner(System.in);
-        System.out.println("Yasinizi giriniz :");
-        int yas =input.nextInt();
-try{
-    if(yas<0){
-        throw new IllegalArgumentException("yas negatif olamaz !");
-    }
-    System.out.println(yas);
+        //FIX =>
+        int value=0;
+try {
+    if (value >= 1) {
+        throw new IllegalArgumentException("0 is not bigger than 1");
+    } else System.out.println("Array size cant be negative");
 
 }catch (IllegalArgumentException e){
     System.out.println("e.getMessage() = " + e.getMessage());
