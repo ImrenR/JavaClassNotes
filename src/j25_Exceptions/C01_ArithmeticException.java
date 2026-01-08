@@ -69,5 +69,24 @@ public class C01_ArithmeticException {//Class level
     }// main sonu
 
 
+    public static class C09_CheckedExceptionCreate1 {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }//Class sonu
