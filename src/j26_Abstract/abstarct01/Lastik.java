@@ -1,6 +1,6 @@
 package j26_Abstract.abstarct01;
 
-public abstract class  Lastik extends Honda { //asbtract parent Honda classtan extend child  abstract
+public abstract class  Lastik extends Honda { //abstract parent Honda classtan extend child  abstract
 
     // abs child Class abs. parent child dan implement etme zorunlulugu  yoktur.
     // melekler birbirine miras birakmak zorunda degildir! abstract class actigimiz icin override zorunlulugumuz yok

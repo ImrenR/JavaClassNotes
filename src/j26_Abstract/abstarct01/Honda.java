@@ -21,7 +21,7 @@ public abstract class Honda { // => Abstract  => parent class
     // final abstract void finalAbsMEthod(); => final abs method create edilemez.
     // private abstract void privateMEthod(); => private abs meth create edilemez.
 
-    //  staatic void staticMetod(); static concrete meth body siz olamaz
+    //  static void staticMetod(); static concrete meth body siz olamaz
     // static abstract void staticAbstract (); => static abs meth olamaz
 
     //Honda h1=new Honda(); => abs class obj create edemez=> melekler doguramaz
