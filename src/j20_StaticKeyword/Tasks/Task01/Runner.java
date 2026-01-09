@@ -10,6 +10,9 @@ public class Runner {
 
     public static void main(String[] args) {
 
+Rectangle r1=new Rectangle(5,10);
 
+        System.out.println("r1.alanHesapla() = " + r1.alanHesapla());
+        System.out.println("r1.cevreAlan() = " + r1.cevreAlan());
     }
 }
