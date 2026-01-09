@@ -1,10 +1,10 @@
 package j26_Abstract.abstarct01;
 
-public class Civic extends Honda{
+public class Civic extends Lastik{
    // public class abstract Civic extends Lastik extends Honda {} CTE verir cunku abs birden fazla extends edemez
     // concrete Class abs method create edemez. 6. satirdaki ornekte aciklandi
     //public abstract void absMethod();
-
+   // Trick => child concrete class parent abs classdan abs met implement etmek zorunda=> CTE
 
     @Override
     public void motor() {
@@ -19,5 +19,10 @@ public class Civic extends Honda{
     @Override
     void koltuk() {
         System.out.println("Koltuklar saglammmm he");
+    }
+
+    @Override
+    public void lastikEbat() {
+        System.out.println("21 inc lastik more than enough");
     }
 }
