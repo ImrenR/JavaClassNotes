@@ -5,8 +5,11 @@ public abstract class Honda { // => Abstract  => parent class
     public abstract void motor(); // bstract metod => zorunlu implement=> bodsiz method (soyut)
 
     abstract void kapi();
+
     abstract  void koltuk();
-     void sunroof() { //  concrete metod => bodyli somut metod=> can be
+
+
+    void sunroof() { //  concrete metod => bodyli somut metod=> can be
          System.out.println("Bodyli concrete metod");
     }
     // abs. class concrete variable create eder mi = > evet eder. => onunde abstract yazmayan her sey somuttur
