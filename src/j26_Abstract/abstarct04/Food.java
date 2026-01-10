@@ -1,8 +1,8 @@
 package j26_Abstract.abstarct04;
 
-public abstract class Food {
+public abstract class Food { // ABSTRACT class actik
 
-    public abstract void madeIn();
+    public abstract String madeIn(); // abstract method => zorunlu
 
-    public abstract String taste();
+    public abstract String taste(); // abstract method => cocuklarin kullanacagi zorunlu method
 }
