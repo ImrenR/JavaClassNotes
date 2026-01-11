@@ -1,10 +1,10 @@
 package j11_Arrays.Tasks;
 
-import java.util.Arrays;
-
 public class _20_Arrayboth_Ends {
 
-    public static void main(String[] args) {
+    static void main() {
+
+
 
      /*
      Oluşturacağınız int array'ini, length'i(eleman sayısı) 2 olan ve
@@ -16,6 +16,6 @@ public class _20_Arrayboth_Ends {
     Sonuç bu şekilde olmalıdır. [1, 4]
       */
         //Kodu aşağıya yazınız..
-
     }
+
 }
