@@ -11,6 +11,7 @@ public class Task03 {
         output [2, 3, 1]
         */
 
+        int[] arr = {1, 2, 3};
     }
 
 }
