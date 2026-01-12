@@ -7,17 +7,19 @@ public class C01_Interface {
 
         			INTERFACE ASLA BİR CLASS DEGİLDİR. INTERFACE INTERFACE'dir.
 
-        1) Interface yapilarda concrete method asla creat! edilemezdi java 8' e kadar . sadece  abstract method'lar creat edilir.
+        1) Interface yapilarda concrete method asla creat! edilemezdi java 8' e kadar .
+        sadece  abstract method'lar creat edilir.
         TRICK :)
-            JAVA 8’e kadar interface’de  “body’li concrete method” tanımlanamazdı. JAVA 8 ile bu özellik update edildi.
-              Method access modifier public olduğu halde “default”  keyword method type olarak kullanılmaz ise CTE verir.
+    JAVA 8’e kadar interface’de  “body’li concrete method” tanımlanamazdı. JAVA 8 ile bu özellik update edildi.
+      Method access modifier public olduğu halde “default”  keyword method type olarak kullanılmaz ise CTE verir.
 
-        TRICK :)
-             Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de “static” keyword
-             birlikte kullanılamaz… Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki başka class’dan class
-             name ile method call edilemez. Default veya static keyword’u ile tanımlanan method’lar concrete olduğu için override yapılması zorunlu değildir.
+    TRICK :)
+  Concrete method’da “default”  keyword yerine “static” keyword de kullanılabilir ama hem “default” hem de “static” keyword
+birlikte kullanılamaz… Buradaki “static” keyword interface özel bir keyword’dur aynı package’deki başka class’dan class
+   name ile method call edilemez. Default veya static keyword’u ile tanımlanan method’lar concrete olduğu için
+   override yapılması zorunlu değildir.
 
-        TRICK :)  Concrete method’da “default method”  obje ile “static method”  method name ile call edilir
+   TRICK :)  Concrete method’da “default method”  obje ile “static method”  method name ile call edilir
 
 
         2) Java multiple inheritance desteklemez . Ancak interface parent'ler multiple inheritance'i destekler
@@ -27,19 +29,19 @@ public class C01_Interface {
           ayni isimli methodlar birbiriyle tamamen ayni oldugu icin secim soz konusu olmaz ve child class parent
           inteface'den  ayni isimli methodlardan birini override ederek bu sorun  cozulur
 
-          Ahan da trick : Parent ınterface'lerde ayni isimli fakat farkli return type'li methodlar child class'ta CTE verir.
+ Ahan da trick : Parent ınterface'lerde ayni isimli fakat farkli return type'li methodlar child class'ta CTE verir.
 
-        4) Interface yapilarda tum body'siz methodlar abstract olmak zorunda oldugundan method signiture "abstract"
+   4) Interface yapilarda tum body'siz methodlar abstract olmak zorunda oldugundan method signiture "abstract"
            keywordu yazilmayabilir.
 
 
             public abstract void koltuk();-->abstract method abstract keyword kullanilmis
         	public void ayna();           -->abstract method abstract keyword kullanilmamis
 
-        5) Interface'lerdeki tum member'lar public oldugu icin  AccesModifier  yazilmasa da public ile ayni islemi yapar.
+ 5) Interface'lerdeki tum member'lar public oldugu icin  AccesModifier  yazilmasa da public ile ayni islemi yapar.
            public void ayna(); <-->  void ayna();  ---> ayni islemi yaparlar.
 
-          Trick :  normal class'larda AccMod yazilmazsa default olur.Ancak Interface'lerde AccMod yazilmazsa public olur
+   Trick :  normal class'larda AccMod yazilmazsa default olur.Ancak Interface'lerde AccMod yazilmazsa public olur
 
         6) Interface'ler kendi arasinda parent child (extends) iliskisi kurabilir.
            Interface'leri bir class'a parent yapmak icin "implements" keywordu kullanilir.
