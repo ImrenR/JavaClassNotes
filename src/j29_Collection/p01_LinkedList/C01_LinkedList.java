@@ -19,6 +19,27 @@ public class C01_LinkedList {
          // LinkedList print ->
          // LinkedList add()->
 
+    LinkedList<String> ll1=new LinkedList<>(Arrays.asList("balcan kebap","ciger sis","cop sis","kilis tava","kusleme"));
+    //LinkedList print =>
+        System.out.println("ll1 = " + ll1);//
+        //LinkedList add =>
+        ll1.add("kagit kebabi");//
+        System.out.println("ll1 add sonrasi = " + ll1);//
+        ll1.add(2,"kagit kebap"); //
+        System.out.println("ll1 add index saonrasi = " + ll1);//
+        ll1.addFirst("kuyu buryan"); //
+        System.out.println("addFrist sonrasi ll1 = " + ll1);
+        ll1.addLast("adana kebap");
+        System.out.println("ll1 = " + ll1);//
+
+        LinkedList<String> ll2= new LinkedList<>(Arrays.asList("baklava","tirlece","kunefe","sutlac"));
+        System.out.println("ll2 = " + ll2);
+        ll2.addAll(ll1);
+        System.out.println("ll2 addAll saonrasi= " + ll2);//
+
+        ll1.addAll(3,ll2);
+       // ll1.addAll((3,"falan"));// CTE parametre coll dan baskasi olamaz
+        System.out.println("ll1 addAll sonrasi= " + ll1);
 
 
     }

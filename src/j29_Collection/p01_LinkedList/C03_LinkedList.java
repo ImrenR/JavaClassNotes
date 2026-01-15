@@ -14,5 +14,6 @@ public class C03_LinkedList {
 
 
         // remove() meth parametre integer alırsa List data Type integer oldugunda meth parametre obj değil index tanımlar.
-     }
+
+    }
 }

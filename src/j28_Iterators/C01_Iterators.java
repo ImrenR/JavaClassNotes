@@ -82,6 +82,7 @@ MUTLAKA KESİNLİKLE hasNext() ve next();method'lari calistirilarak cursor(point
 
         System.out.println("   ***   task05   ***   ");
         //Task05-> l1 her bir elemanlarını silip  print eden code create ediniz.
+
          System.out.println("   ***   j23_Encapsulation.Tasks.task06   ***   ");
         //Task06-> l2  elemanlarını :-) update edip  print eden code create ediniz.
 
