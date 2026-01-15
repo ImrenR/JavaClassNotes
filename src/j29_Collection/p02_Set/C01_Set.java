@@ -53,12 +53,51 @@ public class C01_Set {
         HashSet<String> hs2 = new HashSet<>(Arrays.asList("javaCAN", "javaSU", "javaHAN", "javaNAZ", "javaZADE", "javvaNUR", "javiDAN", "javFER"));
 
         // set print ->
-         // set add()-> eleman ekleme
-         // set'e tekrarlı eleman ekleme
+        System.out.println("hs1 = " + hs1);// []
+
+        // set add()-> eleman ekleme
+
+        hs2.add("imren");
+
+        System.out.println("hs2 = " + hs2);// add sonrasi imren araya girer random sekilde
+        // set'e tekrarlı eleman ekleme
+
+        hs2.add("javaCAN");
+        System.out.println("hs2 tekrarli eleman add sonrasi= " + hs2);//
+
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        System.out.println("hs2 null add sonrasi= " + hs2);
+
+        HashSet<String> hs3 = new HashSet<>(Arrays.asList("gullac","kazanDibi","profiterol","sutlac"));
+        System.out.println("hs3 = " + hs3);
+        hs2.addAll(hs3);
+        System.out.println("hs2 = " + hs2);
 
         //set remove()->eleman silme
+hs2.remove(null);
+        System.out.println("hs2 = " + hs2);
+
+//set contains() => eleman varligi kontrol
+
 
         // set retainAll()->kesişen ortak eleman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
