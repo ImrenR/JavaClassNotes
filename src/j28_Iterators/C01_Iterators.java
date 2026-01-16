@@ -140,13 +140,40 @@ MUTLAKA KESİNLİKLE hasNext() ve next();method'lari calistirilarak cursor(point
         System.out.println("remove sonrasi" +l1); // [] cikti
         System.out.println("   ***   j23_Encapsulation.Tasks.task06   ***   ");
 
-        //Task06-> l2  elemanlarını :-) update edip  print eden code create ediniz.
+        //Task06-> l2  elemanlarını :-) update edip  print eden code create ediniz.\
+
         List<String> l2 = new ArrayList<>(Arrays.asList("JavaCAN","JavaTAR","Başarı","Gayrete","Aşıktır"));
+        System.out.println("l2 :=) oncesi = " + l2);
+        // l2 :=) oncesi = [JavaCAN, JavaTAR, Başarı, Gayrete, Aşıktır]
+        //step 1=>
+        ListIterator<String> itr2= l2.listIterator();
+        //step 2 =>
+        while (itr2.hasNext()){
+         itr2.set(itr2.next() + ":-)");
+         }
+
+        System.out.println("l2 :=) sonrasi = " + l2);
+        // l2 :=) sonrasi = [JavaCAN:-), JavaTAR:-), Başarı:-), Gayrete:-), Aşıktır:-)]
 
 
 
-         System.out.println("   ***   task07   ***   ");
+        System.out.println("   ***   task07   ***   ");
         //Task07-> l3  elemanlarını ilk harfi buyuk kalan harfleri *** ile update edip  print eden code create ediniz.
 
-    }List<String> l3 = new ArrayList<>(Arrays.asList("Küşleme","kokerec","kuzugerdan","havuç dilimi"));
-}
+        List<String> l3 = new ArrayList<>(Arrays.asList("Küşleme","kokerec","kuzugerdan","havuç dilimi"));
+        System.out.println("l3 update oncesi = " + l3);
+        //step 1 =>
+        ListIterator<String> itr3=l3.listIterator();
+
+        //step2=>
+        while (itr3.hasNext()){
+            itr3.set(itr3.next().substring(0,1).toUpperCase() + "***");
+        }
+
+        System.out.println("l3 update sonrasi = " + l3); // l3 update sonrasi = [K***, K***, K***, H***]
+
+
+
+    }
+    }
+
