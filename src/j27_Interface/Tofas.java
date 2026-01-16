@@ -1,15 +1,12 @@
 package j27_Interface;
 
-public abstract class Tofas { // parent abs class
+public abstract class Tofas { // parent abstract class
 
-    public abstract void motor();
+    public abstract void motor(); // abst method
     public abstract void yakit();
-
-    public void sunRoof(){
-        System.out.println("Gunesli havada sunroof acarsan iyi olur");
+    public void sunroof(){ // concrete metod
+        System.out.println("gunesli havada kullan");
     }
 
-    public abstract void kaporta();
-
-
+    public abstract void kaporta(); // abst method
 }

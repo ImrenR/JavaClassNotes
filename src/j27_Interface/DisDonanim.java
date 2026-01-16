@@ -1,19 +1,19 @@
 package j27_Interface;
 
 public interface DisDonanim {
-    void kapi(); // public abstract method
-    public void kaporta();
-    //String renk; initalize edilmeyen var CTE
-    String RENK="Kirmizi";
+
+    void kapi(); // abstract method=> abstract default olarak vardir
+    public void kaporta(); //public abst method
+    // String renk; variable initialize edilmek zorundadir yoksa=> CTE verir
+String RENK="lila";
     public default String sisLamp(){ // public default concrete method
-        return "Sislamp sisli havada kulanilir";
-    };
+        return "sisli havada kullan";
+    }
 
-    //public  static void main(){ => bad practice interface main blok tanimlanabilir ama runner da yapariz
+    public static String anten(){ // public static concrete method
+        return "anten gereklidir";
+    }
 
-   // }
-public  static void anten(){
-    System.out.println("Anten var");
-}
+    //DisDonanim obj=new DisDonanim(); => interface obj create edilemez.
 
 }

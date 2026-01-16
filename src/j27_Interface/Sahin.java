@@ -1,24 +1,25 @@
 package j27_Interface;
 
-public class Sahin extends Tofas implements Lastik,DisDonanim,IcDonanim{
+public class Sahin extends Tofas implements Lastik,IcDonanim,DisDonanim{ // concrete child class
+
     @Override
     public void kapi() {
-        System.out.println("Arabanin 4 kapisi var");
+        System.out.println("4 kapilidir bu arkadas");
     }
 
     @Override
     public void motor() {
-        System.out.println("1.6 motoru mevcut");
+        System.out.println("1.6 li motor");
     }
 
     @Override
     public void yakit() {
-        System.out.println("Tup tak");
+        System.out.println("Tup tak cok yakmasin");
     }
 
     @Override
     public void kaporta() {
-        System.out.println("Kaportasi var");
+        System.out.println("Kaportasi iyidir");
     }
 
     @Override
@@ -28,16 +29,16 @@ public class Sahin extends Tofas implements Lastik,DisDonanim,IcDonanim{
 
     @Override
     public void klima() {
-        System.out.println("Klimasi var");
+        System.out.println("Klimasi vardi");
     }
 
     @Override
     public void ebat() {
-        System.out.println("15 inc lastik ebati var");
+        System.out.println("15 inch ebata sahip");
     }
 
     @Override
     public void jant() {
-        System.out.println("Burasi jant alani :)");
+        System.out.println("4 kapilidir bu arkadas");System.out.println("janti var");
     }
 }

@@ -1,9 +1,10 @@
 package j27_Interface;
 
 public interface IcDonanim {
-    void koltuk(); // abs method
-    void klima(); // abs method
-    final String MUSIC="arizona kertenkele STYLE";
+
+    void koltuk();
+    void klima();
+    final String MUSIC="underground";
     public static final String KUMAS="kadife";
-    public static final String RENK="sari";
+    String RENK="kirmizi";
 }
