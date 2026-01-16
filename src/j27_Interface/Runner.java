@@ -14,10 +14,10 @@ public class Runner {
         s1.ebat();
         s1.kapi();
         s1.kaporta();
-        s1.klima();
+        s1.klima(); // => obj ile cagirilirlar
         s1.sunroof();
         DisDonanim.anten();
-        System.out.println("DisDonanim.RENK = " + DisDonanim.RENK);
+        System.out.println("DisDonanim.RENK = " + DisDonanim.RENK); //=> variablar Class la cagirilirlar
         System.out.println("IcDonanim.RENK = " + IcDonanim.RENK);
         System.out.println("IcDonanim.MUSIC = " + IcDonanim.MUSIC);
         System.out.println("IcDonanim.KUMAS = " + IcDonanim.KUMAS);
