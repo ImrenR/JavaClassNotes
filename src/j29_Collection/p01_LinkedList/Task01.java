@@ -15,6 +15,17 @@ public class Task01 {
          */
         LinkedList<String > strList = new LinkedList<>(Arrays.asList("Murat","javaCAN","javaTAR","Musa bey"));
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Bir isim giriniz: ");
+        String aranan = sc.nextLine();
 
+        if (strList.contains(aranan)) {
+            strList.remove(aranan);
+            System.out.println("Agam eleman halledildi");
+        } else {
+            System.out.println("Agam aradığınız kişiye ulaşılamadı");
+        }
+
+        System.out.println(strList);
     }
 }
