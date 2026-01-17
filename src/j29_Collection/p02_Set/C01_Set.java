@@ -8,15 +8,21 @@ import java.util.Set;
 public class C01_Set {
     public static void main(String[] args) {
         /*
-     Set :  1) unique(benzersiz tek) elemanlardan olusur, Set'lerin icinde bir eleman sadece bir kere kullanilabilir. mükerrer(duplicate) eleman olmaz.
-            2) sadece bir null değeri alabilir.(treeSet hariç).Java elementleri unique yapmak icin HASH ALGORITMASI kullanir.
-                 Java her data icin hashing teknigini kullanarak bir code uretir.Bu code'u almak icin hashCode() methodu kullanilir.
-                 Hashing, farklı büyüklükteki girdilerden sabit büyüklükte bir çıktı oluşturma sürecine verilen isimdir.
-                 Universitelerdeki ogrenci numaralari gibi bir ogrenci ismi soruldugunda numarasini bulursaniz onunla ilgili tum datalara ulasilabilir.
+     Set :  1) unique(benzersiz tek) elemanlardan olusur, Set'lerin icinde bir eleman sadece
+     bir kere kullanilabilir. mükerrer(duplicate) eleman olmaz.
+            2) sadece bir null değeri alabilir.(treeSet hariç).
+            Java elementleri unique yapmak icin HASH ALGORITMASI kullanir.
+                 Java her data icin hashing teknigini kullanarak bir code uretir.
+                 Bu code'u almak icin hashCode() methodu kullanilir.
+                 Hashing, farklı büyüklükteki girdilerden sabit büyüklükte bir çıktı
+                 oluşturma sürecine verilen isimdir.
+                 Universitelerdeki ogrenci numaralari gibi bir ogrenci ismi soruldugunda
+                 numarasini bulursaniz onunla ilgili tum datalara ulasilabilir.
 
 
             Set     --> HashSet         : 1) HashSet, duplication’a(tekrarlı eleman) izin vermez.
-                                            Eger bir elemani tekrar HashSet’e eklemek isterseniz eski olan silinip, yeni olan uzerine yazilir.
+                                            Eger bir elemani tekrar HashSet’e eklemek isterseniz eski olan silinip,
+                                             yeni olan uzerine yazilir.
                                           2) Haset'ler Set'ler arasinda en hizli olanıdir. bir algoritmaya göre kayit eder.
                                            değerlerin giriş sırasına dikkat edilmez. (LinkedHashSet hariç)
                                           3) HashSet "null" object'ini eleman olarak kullanabilir.
@@ -49,55 +55,65 @@ public class C01_Set {
 
      */
 
-        HashSet<String> hs1 = new HashSet<>();//bos hashSet tanımlandı->decleration
+        HashSet<String> hs1 = new HashSet<>(); // bos hashSet declare edildi
         HashSet<String> hs2 = new HashSet<>(Arrays.asList("javaCAN", "javaSU", "javaHAN", "javaNAZ", "javaZADE", "javvaNUR", "javiDAN", "javFER"));
 
         // set print ->
-        System.out.println("hs1 = " + hs1);// []
+
+        System.out.println("hs1 her seyin oncesi= " + hs1); // []
+        System.out.println("hs2 her seyin oncesi = " + hs2); // [javvaNUR, javaNAZ, javaHAN, javaCAN, javaSU, javFER, javiDAN, javaZADE]
 
         // set add()-> eleman ekleme
 
         hs2.add("imren");
+        System.out.println("Add imren sonrasi hs2 = " + hs2); // [javvaNUR, javaNAZ, javaHAN, javaCAN, javaSU, javFER, javiDAN, imren, javaZADE] =>imreni kafasina gore ekler
 
-        System.out.println("hs2 = " + hs2);// add sonrasi imren araya girer random sekilde
         // set'e tekrarlı eleman ekleme
 
         hs2.add("javaCAN");
-        System.out.println("hs2 tekrarli eleman add sonrasi= " + hs2);//
+        System.out.println("Tekrarli eleman add sonrasi hs2 = " + hs2); //= [javvaNUR, javaNAZ, javaHAN, javaCAN, javaSU, javFER, javiDAN, imren, javaZADE]
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
 
-        hs2.add(null);
-        hs2.add(null);
-        hs2.add(null);
-        System.out.println("hs2 null add sonrasi= " + hs2);
+        System.out.println("hs2 add(null) sonrasi = " + hs2);
+        // = [null, javvaNUR, javaNAZ, javaHAN, javaCAN, javaSU, javFER, javiDAN, imren, javaZADE]
 
-        HashSet<String> hs3 = new HashSet<>(Arrays.asList("gullac","kazanDibi","profiterol","sutlac"));
-        System.out.println("hs3 = " + hs3);
-        hs2.addAll(hs3);
-        System.out.println("hs2 = " + hs2);
+
+        HashSet<String> hs3 = new HashSet<>(Arrays.asList("güllaç", "kazanDibi", "profetorol", "sumuhallebisi", "sütlaç", "hoşaf", "reyhan şerbeti"));//
+        System.out.println("hs3 = " + hs3); //[profetorol, kazanDibi, sütlaç, sumuhallebisi, hoşaf, reyhan şerbeti, güllaç]
+       hs2.addAll(hs3);
+        System.out.println("hs2 addAll sonrasi = " + hs2);
+        //[null, javvaNUR, profetorol, javaNAZ, kazanDibi, javaCAN, javaSU, hoşaf, javiDAN, imren, güllaç, javaHAN, sütlaç, sumuhallebisi, javFER, reyhan şerbeti, javaZADE]
+       // kafasina gore yerlestirdi butun hs2 and hs3 elementlerini bir sirasi yok
+
 
         //set remove()->eleman silme
-hs2.remove(null);
-        System.out.println("hs2 = " + hs2);
 
-//set contains() => eleman varligi kontrol
-
-
-        // set retainAll()->kesişen ortak eleman
-
-
-
-
+        System.out.println("hs2.remove(null) = " + hs2.remove(null)); // true
+        System.out.println("hs2 = " + hs2); // [javvaNUR, profetorol, javaNAZ, kazanDibi, javaCAN, javaSU, hoşaf, javiDAN, imren, güllaç, javaHAN, sütlaç, sumuhallebisi, javFER, reyhan şerbeti, javaZADE]
+        hs2.removeAll(hs3);
+        System.out.println("hs2 = " + hs2);//[javvaNUR, javaNAZ, javaCAN, javaSU, javiDAN, imren, javaHAN, javFER, javaZADE]
+        System.out.println("hs2.size() = " + hs2.size()); // 9
+        System.out.println("hs2.isEmpty() = " + hs2.isEmpty()); // false
+        hs2.clear();
+        System.out.println("hs2 clear sonrasi = "+hs2); // []
 
 
+        //set contains() => eleman varligi kontrol
+
+        System.out.println(hs3.contains("kazandibi")); //false
+        System.out.println(hs3.contains("kazanDibi"));// true (sensetive case tir)
 
 
+        // set retainAll()->kesişen ortak eleman varligini kontrol eder :
+
+        Set<Integer> hs5 = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5)); // int[] dizi = {1,2,3} bunun gibi
+        Set<Integer> hs6 = new HashSet<>(Arrays.asList(4, 5, 6, 7, 8));
 
 
-
-
-
-
-
+        System.out.println(hs5.retainAll(hs6)); // true
 
 
     }
