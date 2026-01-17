@@ -4,3 +4,19 @@
 Kare, Dikdortken, ve cember Class'larından oluşacak bir geometri app. için
     ayrı ayrı , fakat ortak metodlarının (cevresi() ve alani() )zorunlu kılan
     gerekli mimari create edip  ve obj ile değerleri  print ediniz....
+
+
+    NOT =>>
+    Interface nasil yapilacagini degil
+    ne yapilacagini soyle!
+    Bunlari yapacaksin ama nasil yapacagin beni ilgilendirmez !
+
+
+    Classlarda constructorlar actim -->> neden ?
+    Objeyi olustururken, o objenin sahip olmasi gereken zorunlu bilgileri verip, objeyi gecerli ve tutarli bir durumda baslatmakti
+
+    constructer acilmasaydi ne olurdu ?
+    Runner da obje acildiginda default olarak var olan class constructorlari bos obje acmami saglardi
+    bos obje ise variablesizdir. hic atama yapmaz.
+
+
