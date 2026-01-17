@@ -43,7 +43,7 @@ public class TechnoCafe {
                 case 0:
                     devam = false;
                     System.out.println("Siparis alimi tamamlandi");
-                    continue;
+                    continue;// dongunun geri kalanini atla
 
                 default:
                     System.out.println("Hatali secim!");
