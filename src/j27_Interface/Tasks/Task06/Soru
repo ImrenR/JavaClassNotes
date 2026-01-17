@@ -11,8 +11,10 @@
     Palov: fry(), boil()
 
     3.Bölüm
-    TechnoCafe isimli bir classdaki bir main metodunda kullanıcıya menüyü sunarak
-    kullanıcı tamam  seçemeğini seçene kadar yemek siparişi alınız.
+    TechnoCafe isimli bir classdaki bir main metodunda
+    kullanıcıya menüyü sunarak
+    kullanıcı tamam  seçemeğini seçene kadar
+    yemek siparişi alınız.
 
     4. Bölüm
     Verilen siparişleri main de bir döngü vasıtasıyla TechnoKitchen isimli
