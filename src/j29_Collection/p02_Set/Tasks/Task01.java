@@ -30,8 +30,11 @@ public class Task01 {
 
     }//main sonu
     //Array => Array Liste cevir
+
+                     //DataType       //MethodName      //Array elemanlari
     private static ArrayList<String> arrayToArrayList(String[] arr) {
-        return new ArrayList<>(Arrays.asList(arr)); // Arrayi liste cevirir.
+
+        return new ArrayList<>(Arrays.asList(arr)); //=> Arrayi liste cevirir.
     }
 
 
