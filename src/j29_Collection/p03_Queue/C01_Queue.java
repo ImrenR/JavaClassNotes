@@ -44,7 +44,11 @@ q1.clear();
        // System.out.println("q1.element() = " + q1.element()); => clearledigimiz icin CTE verir cunku eleman yok
 
 // ahan da Trick kösesinde bugun : offer()-> queue coll. eleman eklemek için kullanılır.
-// queue'de eleman kısıtlaması varsa add() meth. rte
+// queue'de eleman kısıtlaması varsa add() meth.=> rte
 // fırlatırken offer() true-false return eder.
+
+        q1.offer("javFer");
+        System.out.println("q1.element() = " + q1.element()); // javFer
+        System.out.println("q1 = " + q1); // [javFer]
     }
 }
