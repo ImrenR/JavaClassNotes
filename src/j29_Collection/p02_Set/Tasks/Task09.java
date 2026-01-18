@@ -1,9 +1,8 @@
 package j29_Collection.p02_Set.Tasks;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import j102_OCA.Q041.A;
+
+import java.util.*;
 
 public class Task09 {
     /* TASK:
@@ -18,6 +17,22 @@ public class Task09 {
      */
 
     public static void main(String[] args) {
+
+    ArrayList<Integer> list = new ArrayList<>();
+    Random rnd=new Random();
+        for (int i = 0; i < 30; i++) {
+            list.add(rnd.nextInt(11)); // 0-10 dahil
+            
+        }
+        System.out.println("list = " + list);
+        
+        ArrayList<Integer> uniqueList = removeDuplicateWithSet(list);
+        System.out.println("uniqueList = " + uniqueList);
+    }
+
+    private static ArrayList<Integer> removeDuplicateWithSet(ArrayList<Integer> list) {
+   Set<Integer>set=new HashSet<>(list); // duplicati otomatik oalrak sil
+   return new ArrayList<>(set); // tekrar attay liset cevirdik
 
     }
 
