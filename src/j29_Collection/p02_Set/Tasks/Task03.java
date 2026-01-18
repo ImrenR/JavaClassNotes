@@ -17,42 +17,28 @@ public class Task03 {
     çıktı:  "Germany" , "Brazil" ,"USA"
     ArrayListi print eden method create ediniz.
      */
-        HashSet<String> hash1=new HashSet<>();
-hash1.add("Germany");
-        hash1.add("England");
-        hash1.add("South Africa");
-        hash1.add("Brasil");
-        hash1.add("USA");
 
-        HashSet<String> hash2=new HashSet<>();
-        hash2.add("Germany");
-        hash2.add("China");
-        hash2.add("Brasil");
-        hash2.add("France");
-        hash2.add("USA");
+        HashSet<String> hash1= new HashSet<>(Arrays.asList("Germany","England","South Africa" , "Brazil" , "USA"));
+        HashSet<String> hash2= new HashSet<>(Arrays.asList("Germany" , "China" , "Brazil" , "France" ,  "USA"));
 
-     ArrayList<String>ortaklar=commonValues(hash1,hash2);
-printArrayList(ortaklar);
-
+         ArrayList<String> newArr = ortakElemanlar(hash1,hash2);
+         arrayListiYazdir(newArr);
     }//main sonu
 
-    private static void printArrayList(ArrayList<String> ortaklar) {
-        System.out.println("ortaklar = " + ortaklar);
+    private static void arrayListiYazdir(ArrayList<String> newArr) {
+        System.out.println(newArr); //[USA,Brasil,Germany]
     }
 
-    private static ArrayList<String> commonValues(HashSet<String> hash1, HashSet<String> hash2) {
-        ArrayList<String> ortakListe=new ArrayList<>();
+    private static ArrayList<String> ortakElemanlar(HashSet<String> hash1, HashSet<String> hash2) {
+HashSet<String> ortakSet = new HashSet<>(hash1); // hash1 in kopyasini aliriz seti bozmak istemiyoruz cunku
+        ortakSet.retainAll(hash2); // ortak degerler
 
-            for (String each: hash1) {
-                if(hash2.contains(each)){
-                    ortakListe.add(each);
-                }
-
-
-        }
-            return ortakListe;
+        //=. set to arraylist
+        return new ArrayList<>(ortakSet);
     }
 
 
 }
-// CIKTI => ortaklar = [Brasil, USA, Germany]
+
+
+
