@@ -13,19 +13,16 @@ public class Task01 {
         yoksa "Agam aradığınız kişiye ulaşılamadı" print eden code create ediniz.
 
          */
-        LinkedList<String > strList = new LinkedList<>(Arrays.asList("Murat","javaCAN","javaTAR","Musa bey"));
+       LinkedList<String> liste=new LinkedList<>(Arrays.asList("Murat","javaCAN","javaTAR","Musa beycigim"));
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Bir isim giriniz: ");
-        String aranan = sc.nextLine();
+       Scanner input= new Scanner(System.in);
+        System.out.println("Bir string degeri giriniz :");
+        String a=input.nextLine();
 
-        if (strList.contains(aranan)) {
-            strList.remove(aranan);
-            System.out.println("Agam eleman halledildi");
-        } else {
-            System.out.println("Agam aradığınız kişiye ulaşılamadı");
-        }
+          if(liste.remove(a)){
+              System.out.println("Agam eleman halledildi");
+          }else System.out.println("Aradiginiz kisiye su anda ulasilamiyor");
 
-        System.out.println(strList);
+
     }
 }
