@@ -30,10 +30,11 @@ public class Task03 {
     }
 
     private static ArrayList<String> ortakElemanlar(HashSet<String> hash1, HashSet<String> hash2) {
-HashSet<String> ortakSet = new HashSet<>(hash1); // hash1 in kopyasini aliriz seti bozmak istemiyoruz cunku
-        ortakSet.retainAll(hash2); // ortak degerler
+      HashSet<String> ortakSet = new HashSet<>(hash1); // hash1 in kopyasini aliriz seti bozmak istemiyoruz cunku
+  // hash1 in orjinali bozulmasin diye
+        ortakSet.retainAll(hash2); // ortak degerler.
 
-        //=. set to arraylist
+        //=> set converted to arraylist
         return new ArrayList<>(ortakSet);
     }
 

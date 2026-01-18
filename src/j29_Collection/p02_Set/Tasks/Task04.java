@@ -1,5 +1,8 @@
 package j29_Collection.p02_Set.Tasks;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class Task04 {
     /*
     Create a method totalCount()
@@ -13,9 +16,17 @@ public class Task04 {
     cevap: 5
      */
 
-
     public static void main(String[] args) {
 
 
+        HashSet<Integer> hashSet= new HashSet<>(Arrays.asList(4,2,3,1,7));
+        int result=totalCount(hashSet);
+
+        System.out.println("result = " + result); // 5
+
+
+    }
+    private static int totalCount(HashSet<Integer> hashSet) {
+        return hashSet.size();
     }
 }
