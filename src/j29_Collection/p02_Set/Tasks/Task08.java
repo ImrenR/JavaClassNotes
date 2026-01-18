@@ -15,6 +15,28 @@ public class Task08 {
      */
     public static void main(String[] args) {
 
+HashSet<Double> hashSet=new HashSet<>();
 
+hashSet=setOlustur(hashSet);
+  double sonuc =toplaminiAl(hashSet);
+        System.out.println("sonuc = " + sonuc); // Sonuc 44.69
+    }
+
+    private static double toplaminiAl(HashSet<Double> hashSet) {
+        double toplam=0;
+        for (Double avuc:hashSet){
+            toplam+=avuc;
+
+        }
+return toplam;
+    }
+
+    private static HashSet<Double> setOlustur(HashSet<Double> hashSet) {
+        hashSet.add(3.23);
+        hashSet.add(3.10);
+        hashSet.add(5.12);
+        hashSet.add(10.12);
+        hashSet.add(23.12);
+        return hashSet;
     }
 }
