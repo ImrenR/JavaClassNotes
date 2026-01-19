@@ -9,6 +9,18 @@ public class Task09 {
         // task-> istenilen kadar tamsayının toplamını print eden code create ediniz
 
 
-     }
+        Scanner input = new Scanner(System.in);
+
+
+        int sayac=1;
+        int toplam=0;
+        while(sayac<=5){
+            System.out.println(sayac + ". sayiyi giriniz :");
+            int sayi= input.nextInt();
+            sayac++;
+            toplam+=sayi;
+        }
+        System.out.println("toplam = " + toplam);
+    }
 
 }
