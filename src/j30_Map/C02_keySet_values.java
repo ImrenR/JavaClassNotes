@@ -19,5 +19,21 @@ public class C02_keySet_values {
 
          // task-> hm key ve value'ları aynı satırda (satır-satır) print eden code create ediniz
 
+        System.out.println("hm.keySet() = " + hm.keySet());// [Apple, Saturn, Teknosa, Media Markt, Amazon, Vatan]
+        System.out.println("hm.values() = " + hm.values()); // [450 Euro, 200 Euro, 333 Euro, 444 Euro, 296 Euro, 111 Euro]
+
+
+        System.out.println( "******************* ");
+
+        for (String avuc:hm.keySet()){
+            System.out.print(avuc + " "); // Apple Saturn Teknosa Media Markt Amazon Vatan (elemanlari koseliden kurtararak yazdirdik)
+
+
+
+            }
+        System.out.println();
+        for (String avuc: hm.values()){
+            System.out.print(avuc + " "); // 450 Euro 200 Euro 333 Euro 444 Euro 296 Euro 111 Euro
+        }
     }
 }
