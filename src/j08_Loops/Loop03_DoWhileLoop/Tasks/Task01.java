@@ -11,12 +11,15 @@ public class Task01 {
 
         Scanner input = new Scanner(System.in);
 
+         int toplam=0;
+         int sayi;
 
-
-
-
-
-
+         do {
+             System.out.println("Bir sayi giriniz :");
+             sayi=input.nextInt();
+             toplam+=sayi;
+         }while (sayi !=0);
+        System.out.println("toplam = " + toplam);
 
 
     }
