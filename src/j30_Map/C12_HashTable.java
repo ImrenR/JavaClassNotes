@@ -1,5 +1,6 @@
 package j30_Map;
 
+import java.util.HashMap;
 import java.util.Hashtable;
 
 public class C12_HashTable {
@@ -15,5 +16,13 @@ public class C12_HashTable {
          */
 
 
+        HashMap<String, String> hm = new HashMap<>();//bos hm tanımlandı
+        hm.put("Amazon", "296 Euro");
+        hm.put("Saturn", "200 Euro");
+        hm.put("Vatan", "111 Euro");
+        hm.put("Apple", "450 Euro");
+        hm.put("Teknosa", "333 Euro");
+        hm.put("Media Markt", "444 Euro");
+        System.out.println("hm = " + hm);
     }
 }
