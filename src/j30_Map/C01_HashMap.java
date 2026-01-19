@@ -16,9 +16,25 @@ public class C01_HashMap {
                     HashMap'ler "thread safe" degildir.
          */
         // map tanımlanma
+
+        HashMap<String,String> hashMap=new HashMap<>(); // bos non initialize hashmap objesi olusturuldu.
+
+
+
          // map.put()-> girilen key, value map'e elaman(entry) olarak atanır.
 
+        hashMap.put("Amazon","296 euro");
+        hashMap.put(null,"220 euro");
+        hashMap.put(null,"296 euro");
+        hashMap.put("Ebay",null);
+        hashMap.put("Apple","450 euro");
+        hashMap.put("Apple","550 euro");
+        hashMap.put("Teknosa","330 euro");
+        hashMap.put("Media Markt","444 euro");
+
         // map print -> sout(map)
+        System.out.println("hashMap = " + hashMap);
+        // hashMap = {null=296 euro, Apple=550 euro, Ebay=null, Teknosa=330 euro, Media Markt=444 euro, Amazon=296 euro}
 
 
 
