@@ -12,8 +12,8 @@ public class Task06 {
         tahmin sayısını print eden  code create ediniz.
          */
 
-        Scanner input=new Scanner(System.in);
-        Random sayi=new Random();
+        Scanner input=new Scanner(System.in); // tahmini girebilmek icin
+        Random sayi=new Random(); // pcnin random sayisi icin
 
         int pcSayisi= sayi.nextInt(100) +1; // 1-100 arasinda bir sayi verecek pc
         int tahmin = 0; // benim tahminim
