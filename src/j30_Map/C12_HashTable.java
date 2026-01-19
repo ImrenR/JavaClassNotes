@@ -12,17 +12,10 @@ public class C12_HashTable {
         olan bir map'e ihityaç oldugundan Hashtable tanımlanmıştır.
         2-HashTable HashMap'e göre daha yavaştır
         3-HashTable key ve value'lerda null değere izin vermez.
-        4-HashTable eleman ataması yapılırken  HashMap randum(rastgele: hurra )  yapar.
+        4-HashTable eleman ataması yapılırken  HashMap random(rastgele: hurra )  yapar.
          */
 
 
-        HashMap<String, String> hm = new HashMap<>();//bos hm tanımlandı
-        hm.put("Amazon", "296 Euro");
-        hm.put("Saturn", "200 Euro");
-        hm.put("Vatan", "111 Euro");
-        hm.put("Apple", "450 Euro");
-        hm.put("Teknosa", "333 Euro");
-        hm.put("Media Markt", "444 Euro");
-        System.out.println("hm = " + hm);
+
     }
 }
