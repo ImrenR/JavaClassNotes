@@ -15,7 +15,7 @@ public class Task13 {
 char ch;
 
         do {
-            ch=input.next().charAt(0);
+            ch=input.next().charAt(0); // sadece ilk karakteri al
 
             if(ch == 'x'){
                 System.out.println("javaTAR");
