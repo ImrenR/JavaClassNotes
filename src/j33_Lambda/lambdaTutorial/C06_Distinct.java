@@ -12,6 +12,7 @@ public class C06_Distinct {
 
         System.out.println("   *** task01 ***   ");
          System.out.println("\n   *** task02 ***   ");
+
          System.out.println("\n   *** task03 ***   ");
          System.out.println("\n   *** task04 ***   ");
          System.out.println("\n   *** task05 ***   ");
