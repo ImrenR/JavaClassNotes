@@ -35,4 +35,8 @@ public class SeedMethods {
 
         return a%2==1;
     }
+    public  static boolean den58By(int a){
+
+        return a>58;
+    }
 }
