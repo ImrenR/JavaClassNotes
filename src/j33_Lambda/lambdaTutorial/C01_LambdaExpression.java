@@ -45,12 +45,21 @@ public class C01_LambdaExpression {
     */
     public static void main(String[] args) {
 
+        List<Integer> sayiList = new ArrayList<>(Arrays.asList(7, 58, 17, 54, 33, 3, 13, 35, 65, 18, 61, 46, 25, 16, 6));
+        System.out.println("   **Task01***  ");
+        printElStructured(sayiList);
+
     }//main sonu
 
 
 
 
-    //task 01->  "Structured Programming"--> AMELE Programming kullanarak list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.
+    //task 01->  "Structured Programming"--> !!AMELE Programming kullanarak!!! list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.
+    private static void printElStructured(List<Integer> a){
+        for(int avuc:a){
+            System.out.print(avuc + " ");  //7 58 17 54 33 3 13 35 65 18 61 46 25 16 6
+        }
+    }
 
 
     //task 02->  "Functional Programming"--> CINCIX Programming kullanarak list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.

@@ -42,12 +42,15 @@ tm.put(105, null);
 
       //  TreeMap<String, String> tm2 =hm; // CTE-> dataTYpe MissMatch
         //map.ceilingKey();-> girilen key map'de varsa return eder yoksa parametre girilen keyden buyuk en kucuk key return eder
+
         //map.ceilingKey();-> en kucuk abi-abla(en yakın buyuk) varsa return eder yoksa null atar
 
         //map.floorKey();-> girilen key map'de varsa return eder yoksa parametre girilen keyden kucuk en buyuk key return eder
+
         //map.floorKey();-> en buyuk kardes(en yakın kardes) varsa return eder yoksa null atar
 
         // descendingKeySet()->azalan sıralama
+
         // ascendingKeySet()->artan sıralama :NT->kck->byk
     }
 }
