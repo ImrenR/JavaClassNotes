@@ -106,6 +106,7 @@ public static void printElFunctional2(List<Integer> sayi) {
         sayi. //kaynagi verdik = sayiListim
                 stream().// akisa girdim
                 forEach(SeedMethods::intYazdir);
+        //method refernce -> meth source (ClassName= SeedMethodds) :: method call edilir
     } // seed ten hazir metodu al ve yazdir (intyazdir)
 
 

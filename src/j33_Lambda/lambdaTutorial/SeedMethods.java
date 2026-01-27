@@ -13,6 +13,7 @@ public class SeedMethods {
     }
 
     public  static boolean ciftMi(int a){
+
         return a%2==0;
     }
 
@@ -22,13 +23,16 @@ public class SeedMethods {
         return x<35 && x%2==0;
     }
     public  static  int kareAl(int t){
+
         return t*t;
     }
 
     public  static int minBul(int a,int b){
+
         return  a<b?a:b;
     }
     public  static boolean tekMi(int a){
+
         return a%2==1;
     }
 }
