@@ -48,7 +48,12 @@ public class C01_LambdaExpression {
         List<Integer> sayiList = new ArrayList<>(Arrays.asList(7, 58, 17, 54, 33, 3, 13, 35, 65, 18, 61, 46, 25, 16, 6));
         System.out.println("   **Task01***  ");
         printElStructured(sayiList);
-
+        System.out.println("\n   **Task02***  ");
+        printElFunctional(sayiList);
+        System.out.println("\n   **Task03***  "); //758175433313356518614625166
+        printElFunctional2(sayiList);
+        System.out.println("\n   **Task04***  "); //7 58 17 54 33 3 13 35 65 18 61 46 25 16 6
+        printElFunctional3(sayiList);
     }//main sonu
 
 
@@ -63,10 +68,15 @@ public class C01_LambdaExpression {
 
 
     //task 02->  "Functional Programming"--> CINCIX Programming kullanarak list elemanlarını aynı satırda aralarında bosluk olacak şekilde print ediniz.
-
+    private static void printElFunctional(List<Integer> sayiList) {
+sayiList. // actiona girecek akis kaynagi -collection elemanlar-call edildi
+        stream(). // call edilen collec tion elemanlari akisa alindi
+        forEach(t-> System.out.print(t + " ")); // akistaki her bir collection elemani print actiona alindi
+    }
 
 /*
-        stream() : datalari yukaridan asagiya akis sekline getirir. Stream bir interface olduğundan dolayı doğrudan nesne almaz.
+        stream() : datalari yukaridan asagiya akis sekline getirir.
+        Stream bir interface olduğundan dolayı doğrudan nesne almaz.
         forEach() :datanin parametresine gore her bir elemanı isler
         t-> : Lambda operatoru
          Lambda Expression-->(parameter list) -> {action body}
@@ -87,7 +97,16 @@ public class C01_LambdaExpression {
         */
 
 
-
+public static void printElFunctional2(List<Integer> sayi) {
+    sayi.
+            stream().
+            forEach(System.out::print); //758175433313356518614625166 // Akistaki her bir collection elemani method refere edilerek print aksiyona alindi ama bitisik yazar
+    }//system clasindan print metodunu refere ederek her bir elemani yazdir ama bosluksuz yapar
+    public static void printElFunctional3(List<Integer> sayi) {
+        sayi. //kaynagi verdik = sayiListim
+                stream().// akisa girdim
+                forEach(SeedMethods::intYazdir);
+    } // seed ten hazir metodu al ve yazdir (intyazdir)
 
 
 }//class sonu

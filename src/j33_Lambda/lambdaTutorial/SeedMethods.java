@@ -3,14 +3,19 @@ package j33_Lambda.lambdaTutorial;
 public class SeedMethods {
 
     public static  void intYazdir(int a){// seed->tohum meth...Allahın gundi methodu
+
         System.out.print(a+" ");// parametredeki int deger bir boşluk ile print edilir
     }
+
     public static  void strYazdir(String  a){// seed->tohum meth...Allahın gundi methodu
+
         System.out.print(a+" ");// parametredeki str deger bir boşluk ile print edilir
     }
+
     public  static boolean ciftMi(int a){
         return a%2==0;
     }
+
     public  static boolean cift35Kck(int x){
 
 
