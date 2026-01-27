@@ -17,8 +17,8 @@ public class C11_putIfAbsent {
         hm.put("Media Markt", "444 Euro");
         System.out.println("hm putIfAbsent oncesi= " + hm);
 
-        System.out.println("hm.putIfAbsent(\"Amazon\",\"imren\") = " + hm.putIfAbsent("Amazon", "imren"));
-        System.out.println("hm.putIfAbsent(\"olmayanKey\", \"haluk\") = " + hm.putIfAbsent("olmayanKey", "haluk"));
+        System.out.println("hm.putIfAbsent oncesi= " + hm.putIfAbsent("Amazon", "imren"));
+        System.out.println("hm.putIfAbsent sirasinda = " + hm.putIfAbsent("olmayanKey", "haluk"));
 // bunu ekleyecek cunku oyle bir key ve value yok
         System.out.println("hm putIfAbsent sonrasi= " + hm);
         //hm putIfAbsent sonrasi= {Apple=450 Euro, Saturn=200 Euro, Teknosa=333 Euro, Media Markt=444 Euro, Amazon=296 Euro, olmayanKey=haluk, Vatan=111 Euro}

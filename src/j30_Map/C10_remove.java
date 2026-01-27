@@ -14,13 +14,15 @@ public class C10_remove {
         hm.put("Apple", "450 Euro");
         hm.put("Teknosa", "333 Euro");
         hm.put("Media Markt", "444 Euro");
-        System.out.println("hm remove oncesi= " + hm);
+
+        System.out.println("hm remove oncesi= " + hm); //hm remove oncesi= {Apple=450 Euro, Saturn=200 Euro, Teknosa=333 Euro, Media Markt=444 Euro, Amazon=296 Euro, Vatan=111 Euro}
 
         System.out.println("hm.remove(\"Apple\",\"450 Euro\") = " + hm.remove("Apple", "450 Euro")); //true
 
         System.out.println("hm.remove(\"Amazon\",\"ebikGabik\") = " + hm.remove("Amazon", "ebikGabik")); //false => olmayan bir sey
 
         System.out.println("hm.remove(\"Teknosa\") = " + hm.remove("Teknosa")); // 333 euroyu sildm
+
         System.out.println("hm.remove(\"haluk\") = " + hm.remove("haluk")); // null
 
         System.out.println("hm remove sonrasi= " + hm); // {Saturn=200 Euro, Media Markt=444 Euro, Amazon=296 Euro, Vatan=111 Euro}

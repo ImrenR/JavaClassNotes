@@ -15,7 +15,15 @@ public class C12_HashTable {
         4-HashTable eleman ataması yapılırken  HashMap random(rastgele: hurra )  yapar.
          */
 
-
+        Hashtable<String, String> hm = new Hashtable<>();//bos hm tanımlandı
+        hm.put("Amazon", "296 Euro");
+        hm.put("Saturn", "200 Euro");
+        hm.put("Vatan", "111 Euro");
+        hm.put("Apple", "450 Euro");
+        hm.put("Teknosa", "333 Euro");
+        hm.put("Media Markt", "444 Euro");
+        System.out.println("hm putIfAbsent oncesi= " + hm);//
+        System.out.println("hm.put(\"Samsung\", null) = " + hm.put("Samsung", null));//RTE
 
     }
 }

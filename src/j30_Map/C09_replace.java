@@ -13,11 +13,12 @@ public class C09_replace {
         hm.put("Apple", "450 Euro");
         hm.put("Teknosa", "333 Euro");
         hm.put("Media Markt", "444 Euro");
-        System.out.println("hm replace oncesi= " + hm);
+        System.out.println("hm replace oncesi= " + hm);//{Apple=450 Euro, Saturn=200 Euro, Teknosa=333 Euro, Media Markt=444 Euro, Amazon=296 Euro, Vatan=111 Euro}
 
-        System.out.println("hm.replace(\"Amazon\",\"haluk\") = " + hm.replace("Amazon", "haluk")); // brda amazon value nun yerine haluk atandi
+        System.out.println("hm.replace sonrasi " + hm.replace("Amazon", "haluk")); // brda amazon value nun yerine haluk atandi => 296
 
-        System.out.println("hm = " + hm);
+        System.out.println("hm replace sonrasi = " + hm); //hm = {Apple=450 Euro, Saturn=200 Euro, Teknosa=333 Euro, Media Markt=444 Euro, Amazon=haluk, Vatan=111 Euro}
 
+        System.out.println("hm.replace(\"imren\",\"naber\") = " + hm.replace("imren", "naber")); // => null verir cunku oyle bir key yok
     }
 }

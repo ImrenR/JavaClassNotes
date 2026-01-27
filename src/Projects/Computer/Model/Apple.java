@@ -3,7 +3,6 @@ package Projects.Computer.Model;
 import Projects.Computer.Enumlar.Color;
 import Projects.Computer.Enumlar.Ram;
 import Projects.Computer.Enumlar.Size;
-import day31.Ebruhnm.AdresMap;
 
 public class Apple extends DataAll implements Computer {
 

@@ -16,6 +16,12 @@ public class C08_getOrDefault {
         hm.put("Media Markt", "444 Euro");
         System.out.println("hm getOrDefault oncesi= " + hm);
 
-        System.out.println("hm.getOrDefault(\"Apple\",\"javaSu\") = " + hm.getOrDefault("Apple", "javaSu"));
+        System.out.println("hm.getOrDefault(\"Apple\",\"javaSu\") = " + hm.getOrDefault("Apple", "javaSu")); // 450 Euro
+        System.out.println("hm.getOrDefault(\"olmayanKey\",\"haluk\") = " + hm.getOrDefault("olmayanKey", "haluk")); // haluk
+        System.out.println("hm.getOrDefault(\"Vatan\",\"111 Euro\") = " + hm.getOrDefault("Vatan", "111 Euro")); // 111 Euro
+
+
+        System.out.println("hm default sonrasi= " + hm);
+
     }
 }

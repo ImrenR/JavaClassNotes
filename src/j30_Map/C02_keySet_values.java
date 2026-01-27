@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class C02_keySet_values {
     public static void main(String[] args) {
         //map.keySet()-> map key değerlerini Set'e(coll.) atayıp return eder
-        //map.values()-> map value değerlerini coll.  atayıp return ede
+        //map.values()-> map value değerlerini coll.  atayıp return eder
 
         HashMap<String, String> hm = new HashMap<>();//bos hm tanımlandı
 

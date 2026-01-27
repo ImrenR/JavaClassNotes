@@ -16,7 +16,7 @@ public class C06_putAll {
         hm1.put("Apple", "450 Euro");
         hm1.put("Teknosa", "333 Euro");
         hm1.put("Media Markt", "444 Euro");
-        System.out.println("hm = " + hm1);
+        System.out.println("hm1 putAll oncesi = " + hm1);
 
 
         HashMap<String, String> hm2 = new HashMap<>();//bos hm tanımlandı
@@ -27,7 +27,7 @@ public class C06_putAll {
         hm2.put("javaNUR", "tulin");
         hm2.put("javaTAR", "mehmet");
 
-        System.out.println("hm2 = " + hm2);//
+        System.out.println("hm2 putAll oncesi = " + hm2);//hm2 = {javaNAZ=elvan, javaTAR=mehmet, javaCAN=imren, javaSU=haluk, javaNUR=tulin}
         hm1.putAll(hm2);
         System.out.println("hm1 putAll sonrasi= " + hm1);
         System.out.println("hm2 putAll sonrasi = " + hm2);
