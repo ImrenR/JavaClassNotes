@@ -9,6 +9,20 @@ public class Task05 {
 
 Scanner input = new Scanner(System.in);
 
+        String kelime;
+        char ch;
+        do {
+            System.out.println("Bir isim giriniz :");
+            kelime=input.nextLine();
+            ch=kelime.charAt(0); // ilk harfi all
+
+            if(Character.isUpperCase(ch)){
+                System.out.println("Ilk harfi buyuk =" + ch);
+                break; // Ilk harf buyukse donguyu sonlandir
+            }else {
+                System.out.println("Ilk harfi kucuk, lutfen tekrar giriniz");
+            }
+        }while(true); // sonsuz dongu, kosul saglanana kadar devam eder
 
     }
 }
