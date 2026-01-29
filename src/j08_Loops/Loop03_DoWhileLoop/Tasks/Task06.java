@@ -18,14 +18,6 @@ public class Task06 {
         * */
         Scanner input = new Scanner(System.in);
 
-        String cumle;
 
-        do {
-            System.out.println("Bir cumle giriniz :");
-            cumle= input.nextLine();
-
-
-        }while (!Character.isUpperCase(cumle.charAt(0)) || cumle.charAt(cumle.length()-1) != '.');
-        System.out.println("Cumle kurallara uygun");
     }
 }

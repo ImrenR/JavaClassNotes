@@ -11,16 +11,6 @@ public class Task04 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Ondalik bir sayi giriniz :");
-        double sayi=input.nextDouble();
 
-        String sayiStr = String.valueOf(sayi); // sayiyi stringe cevir
-        int noktaIndex = sayiStr.indexOf('.'); // noktanin indexi
-        int toplam=0;
-
-        for (int i = noktaIndex; i < sayiStr.length(); i++) {
-            toplam  += Character.getNumericValue(sayiStr.charAt(i));
-
-        }
-        System.out.println("toplam = " + toplam);
     }
 }

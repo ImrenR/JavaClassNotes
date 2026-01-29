@@ -10,17 +10,15 @@ public class Task01 {
    */
 
         Scanner input = new Scanner(System.in);
+        System.out.println("Bir sayi giriniz :");
+        int sayi;
+        int toplam=0;
+        do {
+            System.out.println("Cikmak icin 0 a basiniz yoksa bir sayi giriniz");
+            sayi=input.nextInt();
+            toplam+=sayi;
 
-         int toplam=0;
-         int sayi;
-
-         do {
-             System.out.println("Bir sayi giriniz :");
-             sayi=input.nextInt();
-             toplam+=sayi;
-         }while (sayi !=0);
+        }while (sayi != 0);
         System.out.println("toplam = " + toplam);
-
-
     }
 }

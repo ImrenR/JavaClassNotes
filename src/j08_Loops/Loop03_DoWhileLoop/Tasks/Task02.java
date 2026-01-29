@@ -12,18 +12,6 @@ public class Task02 {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Baslangic karakterini giriniz : ");
-        char start = input.next().charAt(0);
-
-        System.out.println("Bitis karakterini giriniz : ");
-        char end = input.next().charAt(0);
-
-        char ch=start;
-
-        do {
-            System.out.print(ch+ " ");
-            ch++;
-        }while (ch<=end);
 
     }
 }
