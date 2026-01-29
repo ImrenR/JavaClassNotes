@@ -11,6 +11,17 @@ public class Task04 {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Ondalik bir sayi giriniz :");
+        double sayi=input.nextDouble();
+
+
+        int toplam=0;
+        int ondalikKisim = (int) ((sayi - (int)sayi)* 10000);
+
+        do {
+           toplam +=ondalikKisim % 10; // ondalik kisim 5673%10 = 3 son basamak => 567%10 => son basamak 7
+           ondalikKisim /= 10; // 5673/10 = 567 => 56
+        }while (ondalikKisim>0);
+        System.out.println(toplam);
 
     }
 }
