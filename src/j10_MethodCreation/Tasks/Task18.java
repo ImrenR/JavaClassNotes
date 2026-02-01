@@ -19,6 +19,22 @@ public class Task18 {
         dik üçgen değildir.*/
 
         Scanner input = new Scanner(System.in);
+        System.out.println("1. tam girinz");
+int a = input.nextInt();
+        System.out.println("ikinci tamsayiyi giriniz"
+        );
+int b= input.nextInt();
+        System.out.println("3. tamsayiyi giriniz");
+int c= input.nextInt();
+        dikUCgenMi(a,b,c);
+
+    }
+
+    private static void dikUCgenMi(int a, int b, int c) {
+       int sonuc = (a*a)+ (b*b );
+      if(sonuc == c*c) {
+          System.out.println("Dikkucgendir");
+      }else System.out.println("Dikucgen degildir");
 
     }
 }
