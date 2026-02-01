@@ -6,12 +6,12 @@ public class Q008 {
         String [] [] arr = {{"A", "B", "C","Z"}, {"D", "E"},{"G","B","R"}};
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j]+ " " );
+                System.out.print(arr[i][j]+ " " ); // A B C Z D E G B R
                 if (arr[i][j].equals("B")) {
                     break; //bir etkisi yok
                 }
             }
-            continue;
+            continue; // Cevap D burada kullanilmaz
         }
 
     }
@@ -26,6 +26,18 @@ public class Q008 {
         continue; cannot be used outside of a loop
         break; can be used outside of a loop
         */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
