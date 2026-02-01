@@ -11,18 +11,17 @@ public class App {
     }
 
 }
+
+// i = 10 kalir
+// j ye i eklenir 30
+// k = 30/5 = 6dir
+// (j + = i atanma vardir j = 30 dur)
+
+// 10 - 30 -6
     /* What is the result?
         A.	10 : 30 : 6
         B.	10 : 22 : 22
         C.	10 : 22 : 20
         D.	10 : 22 : 6
-
-
-
-
-
-
-
-
 
  A       */
