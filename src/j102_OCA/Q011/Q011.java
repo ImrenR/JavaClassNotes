@@ -1,9 +1,11 @@
 package j102_OCA.Q011;
 
 public class Q011 {
+
 	public static void main(String[] args) {
 		String[] strs = {"A", "B"};
 		int idx = 0;
+
 		for (String s : strs) {
 			strs[idx].concat(" element " + idx);
 			idx++;
@@ -21,6 +23,21 @@ public class Q011 {
 //C.	A NullPointerException is thrown at runtime.
 //D.	A 0
 //		B 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

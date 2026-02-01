@@ -45,11 +45,3 @@ public class TestScope {
 
 
 
-
-// Cevap C
-
-
-
-
-
-// Cevap A

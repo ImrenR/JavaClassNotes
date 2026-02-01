@@ -27,7 +27,9 @@ public class SumTest {
  	
  B. int sum is 30
  	double sum is 30.0
- 	
+
+//Dogru sik B
+
 C. Integer sum is 30
  	double sum is 30.0
  	
