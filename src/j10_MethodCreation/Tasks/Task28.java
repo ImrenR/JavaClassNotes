@@ -1,5 +1,6 @@
 package j10_MethodCreation.Tasks;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Task28 {
@@ -15,7 +16,14 @@ public class Task28 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        int max=100;
+        int randomNumber= randomNum(max);
+        System.out.println("randomNumber = " + randomNumber);
 
+    }
+
+    public static int randomNum(int max){
+        Random random =new Random();
+        return random.nextInt(max + 1);
     }
 }

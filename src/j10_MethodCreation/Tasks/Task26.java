@@ -25,7 +25,7 @@ String result =tekrarliKarakterleriAvoidEt(kelime);
 
         LinkedHashSet<Character> charSet = new LinkedHashSet<>(); // duplicate kabul etmezler
 
-        for (char ch:str.toCharArray()) {
+        for (char ch:str.toCharArray()) { //her karakteri set e ekle
             charSet.add(ch);
         } // butun karakterleri charsete ekledik
 
