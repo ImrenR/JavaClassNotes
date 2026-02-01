@@ -57,8 +57,10 @@ public class Task16_KelimeOyunu01 {
 
 if(oyuncu1Sirada){
     puan1+=kelime.length();
+    System.out.println("puan1 = " + puan1);
 }else {
     puan2 += kelime.length();
+    System.out.println("puan2 = " + puan2);
 }
         System.out.print("Oyuna devam etmek istiyor musunuz? (E/H): ");
         String devam = input.nextLine();
