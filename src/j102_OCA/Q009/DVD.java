@@ -8,9 +8,10 @@ class CD{
 
     }
 }
-class DVD extends CD{
+class DVD extends CD{ // DVD child class
     int c;
     int a;
+
     DVD(int a, int c){
 
         // line n1
@@ -28,6 +29,7 @@ class DVD extends CD{
 // DVD dvd = new DVD(10,  20);
 /*
 Which code fragment should you use at line n1 to instantiate the dvd object successfully?
+
 A. super.r = r;		// super.r is not correct way to call parent class's constructor
 	this.c = c;
 
@@ -43,7 +45,7 @@ D. this.c = r;
 */
 
 
-
+//Cevap C dir
 
 
 // Answer C
