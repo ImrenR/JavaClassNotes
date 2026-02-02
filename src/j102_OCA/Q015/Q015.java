@@ -5,13 +5,18 @@ public class Q015 {
 	public static void main(String[] args) {
 	StringBuilder sb1 = new StringBuilder("Duke");
 	StringBuilder sb2= new StringBuilder("Duke");
+
 	String x=new String("Asya");
 	String y=new String("Asya");
+
 		System.out.println("x.equals(y) = " + x.equals(y));
+
 		String str1 = sb1.toString();
+
 //		sb1.append("al");
 //		sb1.reverse();
 //		sb1.insert(1,"W");
+
 		System.out.println("sb1 = " + sb1);
 		System.out.println("str1.equals(sb1) = " + str1.equals(sb1));// false
 		String str2=str1;
