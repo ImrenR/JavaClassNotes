@@ -12,6 +12,21 @@ public class Task03 {
         */
 
         int[] arr = {1, 2, 3};
+        
+        int [] newArray = new int[arr.length]; // arr uzunlugunda bos  array olusturduk
+
+        // shift elements
+
+        for (int i = 0; i < arr.length-1; i++) {
+            newArray[i] =arr[i+1];
+            
+        }
+
+        newArray[arr.length-1] = arr[0];
+
+        for (int num:newArray){
+            System.out.println(num + " ");
+        }
     }
 
 }
