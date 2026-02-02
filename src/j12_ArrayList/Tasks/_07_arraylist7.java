@@ -2,6 +2,7 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _07_arraylist7 {
 
@@ -22,7 +23,19 @@ public class _07_arraylist7 {
      */
 
     public static void main(String[] args) {
+      List<Integer> list1 = new ArrayList<>(Arrays.asList(8,7,9,6,7));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(6,7,12,3,1));
+        List<Integer> result = common_values(list1,list2);
+        System.out.println("result = " + result);
+    }
 
-
+    private static List<Integer> common_values(List<Integer> list1, List<Integer> list2) {
+        List<Integer> ortaskDegerler = new ArrayList<>();
+       for(Integer avuc: list1) {
+           if(list2.contains(avuc) && !ortaskDegerler.contains(avuc)) {
+               ortaskDegerler.add(avuc);
+           }
+       }
+return ortaskDegerler;
     }
 }
