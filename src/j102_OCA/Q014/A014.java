@@ -1,9 +1,13 @@
 package j102_OCA.Q014;
 
 public class A014 {
+
+
 	public static void main(String[] args) {
+
 		String str = " Sweet Sweat";
 		String str2 = str.trim().charAt(6) + " " + str.lastIndexOf("Sw");
+
 		System.out.println(str2);
 	}
 }
@@ -12,7 +16,12 @@ public class A014 {
 // str.indexOf("Sw", 1); means return the index numver of characters "Sw" but start to count from 1
 
 //What is the result?
-//A.	S 6
+//A.	S 7
 //B.	S 5
+
+
+
 //C.	s-1
 //D.	w 7
+
+/// CEVAP A

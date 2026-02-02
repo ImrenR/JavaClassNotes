@@ -1,6 +1,6 @@
 package j102_OCA.Q013;
 
-class Vehicle{
+class Vehicle{ // parent class
 	int x;
 
 	@Override
@@ -15,15 +15,18 @@ class Vehicle{
 
 		System.out.println("Süper constructor parametresiz");// line n1
 	}
+
 	Vehicle(int x){
 		System.out.println("Süper constructor parametreli");
 
 		this.x= x;
 	}
+
 }
- class Car extends Vehicle{
+ class Car extends Vehicle{ // Car child class
 	int y;
-	Car(){
+
+    Car(){
 
 		super(10);
 		System.out.println("Parametresiz child");// line n2
