@@ -2,6 +2,7 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _04_arraylist4 {
 
@@ -21,7 +22,20 @@ public class _04_arraylist4 {
      */
 
     public static void main(String[] args) {
+List<String> arr = new ArrayList<>(Arrays.asList("yellow" , "red" , "blue" , "red" , "blue"));
+String s1= "blue";
+String s2= "yellow";
+        List<String> changedList = changeInArraylist(arr,s1,s2);
+        System.out.println("changedList = " + changedList);
+    }
 
+    private static List<String> changeInArraylist(List<String> arr, String s1, String s2) {
+        for (int i = 0; i <arr.size() ; i++) {
+            if(arr.get(i).equals(s1)){
+                arr.set(i,s2);
+            }
+        }
+    return arr;
 
     }
 }

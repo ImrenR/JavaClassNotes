@@ -1,7 +1,6 @@
 package j12_ArrayList.Tasks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class _03_arraylist3 {
 
@@ -20,10 +19,19 @@ public class _03_arraylist3 {
      */
 
     public static void main(String[] args) {
+List<String> arr= new ArrayList<>(Arrays.asList("New jersey", "New york", "Ohio", "Florida", "Boston"));
+List<Integer> result = getLength(arr);
+        System.out.println("result = " + result);
 
+    }
 
-
+    private static List<Integer> getLength(List<String> arr) {
+        List<Integer>lengths = new ArrayList<>();
+        for(String str:arr){
+            lengths.add(str.length()); // her stringin uzunlugunu al
+        }
+        return lengths;
     }
 
 
-    }
+}
