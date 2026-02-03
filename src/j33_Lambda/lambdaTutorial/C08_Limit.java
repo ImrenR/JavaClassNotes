@@ -22,7 +22,50 @@ public class C08_Limit {
     }//main sonu
 
     // Task-> list elemanlarının karakter sayısı en buyuk olanı print code create ediniz...
+public static void printMaxCharsay(List<String> yemahhh){
+    System.out.println(" ********* version1 **********");
+    System.out.println( yemahhh.stream().sorted(Comparator.comparing(String::length).reversed())
+            .limit(1));
 
+
+
+    System.out.println(" ********* version2 **********");
+   Stream<String> maxCarhsay = yemahhh
+           .stream()
+                   .sorted(Comparator.comparing(String::length).reversed())
+                           .limit(1); // En buyuk uzunluktaki elemani ver
+
+    System.out.println(" ********* version3 **********");
+    Stream<String> maxCarhsay3 = yemahhh
+            .stream()
+            .sorted(Comparator.comparing(String::length).reversed())
+            .limit(1);
+    System.out.println(Arrays.toString(maxCarhsay3.toArray()));
+    System.out.println(" ********* version4 **********");
+
+    System.out.println(yemahhh
+            .stream()
+            .sorted(Comparator.comparing(String::length).reversed())
+            .findFirst());
+
+
+    System.out.println(" ********* version5 **********");
+    yemahhh
+            .stream()
+            .sorted(Comparator.comparing(String::length).reversed())
+            .limit(1)
+                    .forEach(SeedMethods::strYazdir);
+
+    System.out.println(" ********* version6 **********");
+    System.out.println(yemahhh
+            .stream()
+            .sorted(Comparator.comparing(String::length).reversed())
+            .limit(1)
+            .collect(Collectors.toList()) // akistaki elemanlar listeye atandi
+            .toString());
+
+
+}
          /*
         limit(a)-> return typ bir Stream oldg için yani yeni bir eleman akışı oldg için birden çok eleman return edebilir.
         dolayısıyla limit() meth. çıktısı doğrudan sout parametre olamaz(print edilemez) .

@@ -19,7 +19,22 @@ public class _12_array1 {
          */
 
     public static void main(String[] args) {
+           int[] arr1 = {1,2,3,1};
+           int[] arr2 = {1,2,3,4};
 
+        System.out.println(duplicate(arr1));
+        System.out.println(duplicate(arr2));
 
+    }
+
+    private static boolean duplicate(int[] arr) {
+        for (int i = 0; i < arr.length ; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                       if(arr[i] == arr[j])    {
+                           return true;
+                       }
+            }
+        }
+        return false;
     }
 }

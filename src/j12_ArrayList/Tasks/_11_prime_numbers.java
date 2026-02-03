@@ -16,7 +16,26 @@ public class _11_prime_numbers {
      */
 
     public static void main(String[] args) {
+int n= 20;
+int count =0;
 
+        for (int i = 2; i <=n; i++) {
+            if(isPrime(i)) {
+                count ++;
+            }
+        }
+        System.out.println(count); // 20 icin = 8
+    }
+
+    private static boolean isPrime(int num) {
+        if (num <2)
+            return false; // 0 ve 1 asal degil
+        for (int i = 0; i < Math.sqrt(num) ; i++) {
+            if(num%i == 0) {
+                return  false; // bolunuyorsa asal degil
+            }
+        }
+    return true;
 
     }
 }
