@@ -4,9 +4,10 @@ import java.util.stream.IntStream;
 
 public class C13_Stream_iterator {
     public static void main(String[] args) {
-        System.out.println("TASK01--> amele topla : "  ); //
+        System.out.println("TASK01--> amele topla : " + ameleTopla(10) ); // 55
         System.out.println("   ***   ");
-        System.out.println("TASK01--> cincix topla : "  ); //
+
+        System.out.println("TASK01--> cincix topla : " + cincixCode(10) ); // 55
         System.out.println("   ***   ");
 
         System.out.println("TASK02--> cincix çift topla : "  ); //
@@ -30,16 +31,31 @@ public class C13_Stream_iterator {
         System.out.println("task08 -- > : ");
 
 
-    }//main sonu
+    }///
 
-    //TASK 01 --> Structured Programming ve Functional Programming ile 1'den x'e kadar tamsayilari toplayan bir code create ediniz.
+    //TASK 01 --> Structured Programming(lambda olmayan) ve Functional Programming ile 1'den x'e kadar tamsayilari toplayan bir code create ediniz.
 
     //Structured Programming(Amele coding...)
 
+    // main disinda oldugumuz icin methoda yaptiricaz
+    public static int ameleTopla(int x ){
+        int toplam = 0;
+        for (int i = 0; i <=x ; i++) {
+            toplam += i;
+        }
+
+
+
+        return toplam;
+    }
 
     //Functional Programming(cincix code...)
 
-
+public static int cincixCode(int a) {
+        return IntStream
+                .range(1,a+1)
+                .sum();
+}
 
     //TASK 02 --> 1'den x'e kadar cift tamsayilari toplayan bir code create ediniz
 
@@ -62,4 +78,4 @@ public class C13_Stream_iterator {
     //TASK 08 --> Istenilen bir sayinin  x. kuvvetini print eden code  create ediniz.
 
 
-}
+} //  class sonu
