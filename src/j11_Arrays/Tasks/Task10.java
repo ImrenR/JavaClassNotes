@@ -11,6 +11,20 @@ public class Task10 {
         output :-1,-2,3,-4,5,6
 
          */
+int [] sayilar = {1, 2, -3, 4, -5, 6};
 
+      isaretDegistir
+              (sayilar);
+
+
+
+    }
+
+    private static void isaretDegistir(int[] sayilar) {
+        for (int i = 0; i < sayilar.length; i++) {
+            sayilar[i]= -sayilar[i];
+
+        }
+        System.out.println(Arrays.toString(sayilar));
     }
 }
