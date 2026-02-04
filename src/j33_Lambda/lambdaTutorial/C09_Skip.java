@@ -39,7 +39,7 @@ public static void print2CharHaricSonHarfSirali(List<String> yemahhh){
 
     yemahhh.stream()
             .sorted(Comparator.comparing(t->t.charAt(t.length()-1)))
-            .skip(2)
+            .skip(2);
     System.out.println("\n ********* version4 **********");
 
 }
