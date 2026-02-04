@@ -15,8 +15,18 @@ public class Task22 {
        output: maximumCounts occurring character is : a
         */
         Scanner scan = new Scanner(System.in);
+        System.out.print("Bir metin giriniz: ");
+        String input = scan.nextLine();
 
+        input = input.toLowerCase();
+
+        char maxChar = ' ';
+        int maxCount = 0;
+
+
+
+        }
 
     }
-}
+
 
