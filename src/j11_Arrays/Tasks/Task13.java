@@ -14,8 +14,20 @@ public class Task13 {
 
         int[] arr = new int[8];
         Scanner scan = new Scanner(System.in);
+        int count = 0;
 
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println((i +1) + ". sayiyi giriniz :");
+            arr[i] = scan.nextInt();
+        }
 
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]%3==0){
+                count++;
+            }
+
+        }
+        System.out.println("count = " + count);
     }
 
 }

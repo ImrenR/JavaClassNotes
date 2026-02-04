@@ -119,7 +119,7 @@ public class C13_Stream_iterator {
     }
 
 
-        //TASK 08 --> Istenilen bir sayinin  x. kuvvetini print eden code  create ediniz.
+ //TASK 08 --> Istenilen bir sayinin  x. kuvvetini print eden code  create ediniz.
 
 
 
