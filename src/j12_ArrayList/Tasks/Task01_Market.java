@@ -2,6 +2,7 @@ package j12_ArrayList.Tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Task01_Market {
@@ -26,5 +27,9 @@ public class Task01_Market {
 
     public static void main(String[] args) {
 
+List<String> gunler = new ArrayList<>(Arrays.asList("PAzartes"));
+
     }
+
+
 }
