@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+
+
 public class Task01_Market {
     /* TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
@@ -27,7 +29,66 @@ public class Task01_Market {
 
     public static void main(String[] args) {
 
-List<String> gunler = new ArrayList<>(Arrays.asList("PAzartes"));
+List<String> gunler = new ArrayList<>(Arrays.asList("Pazartesi", "Sali", "Carsamba", "Persembe","Cuma","Cumartesi","Pazar"));
+List<Double> gunlukKazanclar= new ArrayList<>();
+
+Scanner scan= new Scanner(System.in);
+
+// 3. Adim Kullanicidan 7 gunluk kazanci al
+        
+        int i=0;
+        while (i < gunler.size()) {
+            System.out.println( gunler.get(i) + ". kazancini giriniz :" );
+            gunlukKazanclar.add(scan.nextDouble());
+            i++;
+        }
+        
+        // Ortalama
+        
+        double ortalama = getOrtalamaKazancin(gunlukKazanclar);
+        System.out.println("ortalama = " + ortalama);
+        // Ortalamanin ustu 
+
+        System.out.println( "Ortalamanin ustunde kazanc olan gunler: " + getOrtalamaninUstundeKAzancGunler(gunler,gunlukKazanclar,ortalama));
+    // ortalamanin alti
+
+        System.out.println( "Ortalama" + getOrtalamaninAltiKAzancGunleri(gunler,gunlukKazanclar,ortalama));
+
+
+
+    }
+
+    private static List<String> getOrtalamaninAltiKAzancGunleri(List<String> gunler, List<Double> gunlukKazanclar, double ortalama) {
+List<String> result = new ArrayList<>();
+
+        for (int i = 0; i < gunlukKazanclar.size(); i++) {
+            if (gunlukKazanclar.get(i)< ortalama) {
+                result.add(gunler.get(i));
+            }
+        }
+return result;
+    }
+
+    private static List<String> getOrtalamaninUstundeKAzancGunler(List<String> gunler, List<Double> gunlukKazanclar, double ortalama) {
+    List<String> result = new ArrayList<>();
+        for (int i = 0; i < gunlukKazanclar.size(); i++) {
+            if(gunlukKazanclar.get(i) > ortalama) {
+                result.add(gunler.get(i));
+            }
+
+        }
+        return result;
+
+
+    }
+
+    private static double getOrtalamaKazancin(List<Double> gunlukKazanclar) {
+    double toplam =0;
+    for (double each:gunlukKazanclar) {
+        toplam +=each;
+    }
+
+   return toplam/gunlukKazanclar.size();
 
     }
 
