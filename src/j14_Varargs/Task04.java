@@ -9,5 +9,19 @@ public class Task04 {
         String strArr2[] = {"a", "l", "i"};
         int sayi = 3;
 
+
+        ilkHarfleriYazdir(sayi,strArr1,strArr2);
+    }
+
+    private static void ilkHarfleriYazdir(int sayi, String[]... stringDizileri) {
+
+        for (String[] dizi : stringDizileri) {
+            System.out.print("[");
+            for (int i = 0; i < sayi && i < dizi.length; i++) {
+                System.out.print( dizi[i]);
+
+            }
+            System.out.print("]");
+        }
     }
 }

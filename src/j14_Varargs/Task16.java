@@ -16,7 +16,20 @@ public class Task16 {
         int toplam=0;
     int maxNum=0;
     int minNum=0;
-     
-
+     for (int avuc: x) {
+         toplam+=avuc;
+         if(avuc > maxNum) {
+             maxNum = avuc;
+         }
+         if(avuc <minNum) {
+             minNum = avuc;
+         }
+     }
+double ortalama = (double) toplam / x.length;
+        System.out.println("ortalama = " + ortalama); // Average
+        System.out.println("maxNum = " + maxNum); // Max num
+        System.out.println("minNum = " + minNum); // Min num
+        System.out.println("toplam = " + toplam); // Sum
+        System.out.println("x.length = " + x.length); // total count numbers
     }
 }
