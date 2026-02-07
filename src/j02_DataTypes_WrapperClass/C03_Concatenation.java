@@ -10,7 +10,9 @@ public class C03_Concatenation {// Class level
              ii)Birlestirme Islemi(Concatenation)
            Java "+" sembolu  once toplama yapmaya calisir, yapamazsa birlestirme islemi yapılır aksi halde CTE verir.
   */
-    public static void main(String[] args) {        String ad = "Furkan ";
+    public static void main(String[] args) {
+
+        String ad = "Furkan ";
         String soyad = "Ekinci";
         /*
         Birden çok string variable ile farklı data btype variable'lar + ile işlem alınırsa

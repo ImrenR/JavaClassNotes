@@ -11,7 +11,9 @@ public class C02_TypeCasting {
 
         boolean basarili = true;
         System.out.println("basarili = " + basarili);// true
+
         String success = String.valueOf(basarili);//Wrapper Class method.
+
         System.out.println("success = " + success);// true
         // success =basarili;//doğal data type uyum olmadıgı  için CTE
 

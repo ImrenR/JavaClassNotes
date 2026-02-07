@@ -37,7 +37,7 @@ public class C04_WrapperClass {
         /*
         non-primitive data turleri data depolamak yaninda kullanışlı birçok method'a sahiptir
 ancak primitive data turlerinin boyle bir ozelligi yoktur
-primitive data turleri sadece degerleri saklarlar (container) ve hwerhangi bir özellik(method) vs bulundurmaz.
+primitive data turleri sadece degerleri saklarlar (container) ve herhangi bir özellik(method) vs bulundurmaz.
 Ancak primitive data turleri icin de bazi işlemler için (String'den tamsayı çekme) method'lar ihtiyaç
 olduğunda Java her bir primitive data turunu, non-primitive  Wrapper Class  oluşturarak ilgili methodlarla
 ara çözüm imkanı sunmuştur.
