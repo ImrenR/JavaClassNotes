@@ -14,10 +14,30 @@ public class Task05 {
         Ex : Input : {{Ali,Veli,Ayse},{Hasan,Can},{Suzan}}
            Output:[Ali, Ayse, Can, Hasan, Suzan, Veli]
          */
-        String isimArr[][] = {{"Ali", "Veli", "Ayse" }, {"Hasan", "Can" }, {"Suzan" }};
-
-
+        String isimArr[][] = {
+                {"Ali", "Veli", "Ayse" },
+                {"Hasan", "Can" }, 
+                {"Suzan" }
+        };
+        ///  1. Cozum =>
+       List<String> sonuc = arrayiListeCevirVeSirala(isimArr);
+        System.out.println("sonuc = " + sonuc);
     }//main sonu
+
+    private static List<String> arrayiListeCevirVeSirala(String[][] isimArr) {
+        List<String> list = new ArrayList<>();
+
+        // 2 boyutlu array dolasma
+        for (int i = 0; i < isimArr.length; i++) {
+            for (int j = 0; j <isimArr[i].length ; j++) {
+                list.add(isimArr[i][j]);
+
+            }
+
+        }
+        Collections.sort(list);
+        return list;
+    }
 
 
 }
