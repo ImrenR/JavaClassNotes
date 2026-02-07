@@ -17,6 +17,16 @@ public class Task10 {
          * OUTPUT : [1,2,3,4,5,6,7,8,9]
          */
 
+int[] arr = {1,2,2,3,1,4,2,5,6,8,7,5,9,1};
+
+List<Integer> tekrarsizListe = new ArrayList<>();
+
+for(int sayi: arr){
+    if(!tekrarsizListe.contains(sayi)){
+        tekrarsizListe.add(sayi);
+    }
+}
+        System.out.println("tekrarsizListe = " + tekrarsizListe);
 
     }
 
