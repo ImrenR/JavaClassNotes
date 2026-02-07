@@ -13,8 +13,29 @@ public class Task13 {
 
         int arr[] = {3, 5, 1, 2, 7, 9, 2, 3, 5, 7};
         // 3, 5+1, 2+7+9, 2+3+5+7
+        List<Integer> sonuc = ardisiktoplam(arr); // method
+        System.out.println("sonuc = " + sonuc);
 
     } // main sonu
+
+    private static List<Integer> ardisiktoplam(int[] arr) {
+
+        List<Integer> list = new ArrayList<>();
+        int index= 0;
+        int grupBoyutu= 1;
+
+        while (index< arr.length) {
+            int toplam=0;
+            for (int i = 0; i <grupBoyutu && index <arr.length ; i++) {
+                toplam += arr[index];
+                index++;
+
+            }
+            list.add(toplam);
+            grupBoyutu++;
+        }
+        return list;
+    }
 
 
 }
