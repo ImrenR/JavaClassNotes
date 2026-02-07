@@ -15,7 +15,7 @@ public class C01_SwitchCase {
     Coklu koşul içeren durumlarda switch-case blok if statement'e göre app. hızı açısından daha avantajlıdır.(Best Practice)
      Switch-Case ile if statement arasında önemli bir performans farklılığı yoktur.
 
-      ahan da CISSS TRICK-> Switch Statement'de long,double,float ve boolean asla KULLANILMAZZZ..
+      ahan da CISSS TRI3CK-> Switch Statement'de long,double,float ve boolean asla KULLANILMAZZZ..
 
       Switch de sadece int, byte, short, char, String data type  kullanilabilir
       Eger 3 den fazla durum varsa switch() tercih edilir.
