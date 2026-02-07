@@ -11,6 +11,23 @@ public class Task03 {
 
         ArrayList<Integer> sayiList=new ArrayList<>(Arrays.asList(1,3,6,78,94,23,54,4,89,34));
         Scanner input=new Scanner(System.in);
+        System.out.println("Bulmak istediginiz sayiyi giriniz :");
+        int istenenSayi= input.nextInt();
+///  1. cozum :
+      //  boolean sayiBulundu = sayiList.contains(istenenSayi);
+       // System.out.println(sayiBulundu ?
+          //      "Girilen sayi listede var" :"Listede yok");
 
+        ///  2. cozum : Uzun yol
+boolean sayiBulundu =false;
+        for(int avuc:sayiList) {
+            if(avuc == istenenSayi) {
+            sayiBulundu=true;
+            break;
+            }
+        }
+        if (sayiBulundu) {
+            System.out.println("Sayi listede var");
+        }else System.out.println("Sayi listede yok");
     }
 }
