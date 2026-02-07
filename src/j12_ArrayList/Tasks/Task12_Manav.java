@@ -8,12 +8,10 @@ import java.util.Scanner;
 public class Task12_Manav {
 
 
-
-
     static List<String> urunListesi = new ArrayList<>(Arrays.asList("domat - urun kodu : 1", "elma - urun kodu : 2", "muz - urun kodu : 3",
             "biber - urun kodu : 4", "balcan - urun kodu : 5"));//urunlerin atanacagi bos list
     static List<Double> urunFiyatlari = new ArrayList<>(Arrays.asList(5.0, 7.5, 1.3, 8.7, 9.2));//urun fiyatlarinin atanacagi bos list
-    static double toplamOdenecekTutar;
+    static double toplamOdenecekTutar = 0;
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -28,10 +26,37 @@ public class Task12_Manav {
          * 4. Adim : Alisveris bitince toplam odemesi gereken tutari goster.
          *
          * */
+        boolean devam = true;
+
+        while (devam) {
+            System.out.println("\n --- Urun Listesi ----");
+            for (int i = 0; i < urunListesi.size(); i++) {
+                System.out.println((i + 1) + "-" + urunListesi.get(i) + "(" + urunFiyatlari.get(i) + "TL)");
+
+            }
+            System.out.println("urun kodu seciniz :");
+            int urunNo = scan.nextInt();
+
+            System.out.println("Kac kilo alacaksiniz : ");
+            double kilo = scan.nextDouble();
+
+            double urunTutari = urunFiyatlari.get(urunNo - 1) * kilo;
+            toplamOdenecekTutar += urunTutari;
+
+            System.out.println("toplamOdenecekTutar = " + toplamOdenecekTutar);
+
+            System.out.println("Alisverise devam etmek istiyor musunuz ? (E/H)");
+            char cevap = scan.next().toUpperCase().charAt(0);
+
+            if (cevap == 'H') {
+                devam = false;
+
+            }
+            System.out.println("toplam odenecek tutar =" + toplamOdenecekTutar);
+
+        }
 
 
     }
 
-
 }
-
