@@ -12,7 +12,16 @@ public class C07_NestedTernaryOperator {
          */
 
 
+Scanner input = new Scanner(System.in);
+        System.out.println("Bir pozitif sayi giriniz :");
+        int sayi = input.nextInt();
 
+       String sonuc = (sayi >=1000 && sayi<= 9999)
+               ? "4 basamakli bir sayi girdiniz"
+               : (sayi%2 ==0 )
+               ? "4 basamkli olmayan cift sayi"
+               : "4 basamakli tek sayi";
+        System.out.println("sonuc = " + sonuc);
     }
 
 

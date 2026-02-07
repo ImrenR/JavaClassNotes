@@ -14,6 +14,15 @@ public class C06_NestedTernaryOperator {
         */
 
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Bir tam sayi girinz :");
+        int sayi = input.nextInt();
+
+        if(sayi>=0) {
+            if(sayi<10) {
+                System.out.println("Rakam");
+            }else System.out.println("Pozitif sayi");
+        }else System.out.println("Negatif sayidir");
 
         // ahan da TRICK -> Agam ne kaaa küfte  O kaa ekmek -> ne kdar ? varsa o kadar : olmalı.
           /*
