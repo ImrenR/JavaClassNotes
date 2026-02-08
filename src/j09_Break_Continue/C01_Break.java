@@ -26,7 +26,7 @@ Scanner input = new Scanner(System.in);
             if (emailS.charAt(i)== '@') {
                 break;
             }
-            System.out.println(emailS.charAt(i) + " ");
+            System.out.print(emailS.charAt(i) + " ");
         }
 
 

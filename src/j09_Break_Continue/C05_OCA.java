@@ -8,7 +8,8 @@ public class C05_OCA {
 
             for (int col = 1; col <= 2; col++) {
 
-                if (row * col % 2 == 0) continue;
+                if (row * col % 2 == 0)
+                continue;
                 count++;
             }
         }

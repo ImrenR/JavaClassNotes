@@ -15,7 +15,7 @@ public class C02_Continue {
         Scanner input = new Scanner(System.in);
         System.out.println("bir email adresi giriniz");
         String email = input.nextLine();
-       String yeniMail = "";
+        String yeniMail = "";
 
         for (int i = 0; i < email.length(); i++) {
             if(email.charAt(i)== ' '){
