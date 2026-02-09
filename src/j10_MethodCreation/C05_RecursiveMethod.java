@@ -28,19 +28,13 @@ public class C05_RecursiveMethod {
     }// main sonu
 
 public static int faktoriyelHesaplama(int sayi){
-
-
-
 if (sayi>=1){
     return sayi * faktoriyelHesaplama(sayi-1); // 35 in yaninda olan simge recursive dir
 }else{
     return 1;
 }
 
-
-}
-
-
+    }
 }// Class sonu
 
 

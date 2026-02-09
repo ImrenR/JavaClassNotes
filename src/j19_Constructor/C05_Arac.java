@@ -25,8 +25,6 @@ int maxHiz;
     }
 
     public C05_Arac(int maxHiz, String model) {
-
-
         this.maxHiz = maxHiz;
         this.model = model;
         System.out.println("Agam bu yaziyi okuduysan tumparametreli const call edildi");

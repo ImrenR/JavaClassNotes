@@ -34,7 +34,9 @@ public class C01_Constructor {//Class level
 
 
     public static void main(String[] args) {//main level
-String maindekiVariable = "mainden selam";
+
+
+        String maindekiVariable = "mainden selam";
 
         C01_Constructor obj1 = new C01_Constructor();// psiz default const ile main level a obj create edildi
         C01_Constructor obj2 = new C01_Constructor();// psiz default const ile main level a obj create edildi

@@ -12,7 +12,9 @@ Bike bike1 = new Bike(); // default constructirimiz. ancak
 
         System.out.println("bike1.age = " + bike1.age); // bike claasindaki degerleri public yapinca degerlere ulasabildim
        // deger atamadigim icin default degerine ulastim
-bike1.age =15; // atama yapip degistirebiliriz degeri
+
+
+        bike1.age =15; // atama yapip degistirebiliriz degeri
         System.out.println("bike1.age = " + bike1.age);
 
 

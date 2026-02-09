@@ -14,8 +14,10 @@ public class C01_Varargs {
 
         }
 
-	        1) Method parametre parantezi icinde birden çok parametre varsa, varargs daima en sona tanımlanmalıdır .CISSS -> Diva en son sahne alır
-		    2) Method parametre parantezi icinde 1'den fazla varargs ifade TANIM-LA-NA-MAZZZ :CISS -> diva tek olur.iki diva bir ipte yurumez
+	        1) Method parametre parantezi icinde birden çok parametre varsa,
+	        varargs daima en sona tanımlanmalıdır .CISSS -> Diva en son sahne alır
+		    2) Method parametre parantezi icinde 1'den fazla varargs ifade TANIM-LA-NA-MAZZZ
+		    :CISS -> diva tek olur.iki diva bir ipte yurumez
 
            Gunun TRICK'i  köşesinde böyün :
            Method'da  argument sayisi sabitse standart normal  method tanımlanmalı..

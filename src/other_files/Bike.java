@@ -1,6 +1,7 @@
 package other_files;
 
 public class Bike {
+
     public String color; // default degeri null
    public int age; // default degeri 0 dir
   public   boolean isFast; // default degeri false tur.
