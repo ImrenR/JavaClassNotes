@@ -52,8 +52,8 @@ public class Arac {//pojo Class
 
     public void setYil(int yil) {
         if (yil >=1960 && yil<=2026){
-
             this.yil = Math.abs(yil);
+
         }else
             System.out.println("Hatali bir yil girdiniz");
         this.yil=yil;

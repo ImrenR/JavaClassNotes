@@ -8,7 +8,7 @@ public class C01_Encapsulation {
 		 	2) Basarili bir Encapsulation için :
 		 		a)Nasil kullanilacagi ve hedefi net olmalidir.(Direksiyon gibi)
 		 		b)Kodun karmasikligi kullanimin karmasikligina sebep olmamalidir.Yani cok
-		     	karmasik kodlardan olusan bir yapi basit bir sekilde kullanilabilmelidir.
+		     n 	karmasik kodlardan olusan bir yapi basit bir sekilde kullanilabilmelidir.
 		 		c)Bir bolumun hata vermesi diger bolumlerin hatasına sebep olmamalidir.
 
 		 	3) Encapsulation yapısı  tanımlanması için
@@ -17,7 +17,6 @@ public class C01_Encapsulation {
 		 	    update edilebilmeli(setter)	.
 		 	    c) uygun constructor tanımlanmalı.
 		 	    d) toString() method tanımlanmalı
-
 
 		 	4) Encapsulation'in faydalari
 		 		a) Esneklik(Flexibility). Field'lar setter() methodunu ile istenildiği kadar update edilebilir

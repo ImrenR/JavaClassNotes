@@ -17,16 +17,20 @@ public class C01_AccessModifer {//Class level
 
              4) public class member'lara herkes her yerden erişebilir.(farkli java projesi disinda).
 
-             5) "protected" class member'lara ayni package'dan erişilebilir. Farkli package
-              için : a)Child class erişebilir. 	b)Child class degil ise erişilemez.
+             5) "protected" class member'lara ayni package'dan erişilebilir.
+
+             Farkli package için :
+
+               a)Child class erişebilir.
+               b)Child class degil ise erişilemez.
 
              6) Class'lar için  sadece "public" ve "default" access modifier kullanilir.
               Class tanımlanırken "private" veya "protected" access modifier kullanilmaz.
 
      */
 
-private int privateYas=33;
-int defaultYas=24; // AccMo yazilmazsa default olarak derlenir.(JVM derler)
+    private int privateYas=33;
+    int defaultYas=24; // AccMo yazilmazsa default olarak derlenir.(JVM derler)
     protected  int protectedYas=40;
     public int publicYas = 50;
 
