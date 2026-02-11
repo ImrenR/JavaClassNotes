@@ -5,17 +5,16 @@ public class It {
     //fields
 
     private String ad;
-   private String soyad;
+    private String soyad;
     private int yas;
+    //constructor
 
-//Constructer
-
-
-    public It(String ad, int yas, String soyad) {
+    public It(String ad, String soyad, int yas) {
         this.ad = ad;
-        this.yas = yas;
         this.soyad = soyad;
+        this.yas = yas;
     }
+
 
     //getter setter
 
@@ -23,25 +22,29 @@ public class It {
         return ad;
     }
 
-    public String getSoyad() {
-        return soyad;
-    }
-
-    public int getYas() {
-        return yas;
-    }
-
     public void setAd(String ad) {
         this.ad = ad;
+    }
+
+    public String getSoyad() {
+        return soyad;
     }
 
     public void setSoyad(String soyad) {
         this.soyad = soyad;
     }
 
+    public int getYas() {
+        return yas;
+    }
+
     public void setYas(int yas) {
         this.yas = yas;
     }
+
+
+    //  toString
+
 
     @Override
     public String toString() {
