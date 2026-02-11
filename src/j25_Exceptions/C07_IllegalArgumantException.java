@@ -19,8 +19,9 @@ public class C07_IllegalArgumantException {
          */
 
 
-        // IllegalargumentException -> kullanılmasını istenmeyen değerlerde pr hata vermesi isteniyorsa bu excp fırlatılıer
-        // ornek : yas datası için negatif değer girilidğinde pr kırılmadan run olması ama girilen değer için excp fırlatması için kullanılır..
+        // IllegalargumentException -> kullanılmasını istenmeyen değerlerde pr hata vermesi isteniyorsa bu excp fırlatılıer.
+
+        // ornek : yas datası için negatif değer girildiğinde pr kırılmadan run olması ama girilen değer için excp fırlatması için kullanılır..
 //if we are trying to illegal values for some methods in java,we will get IAE
 
  // Thread t=new Thread();
