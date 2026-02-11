@@ -28,7 +28,7 @@ while(litr1.hasPrevious()){
 
 
         System.out.println("   ***   task02   ***   ");
-        // Task02-> l1son elemanını :-) ile update edip print eden code create ediniz.
+        // Task02-> l1 son elemanını :-) ile update edip print eden code create ediniz.
 
         List<String> l2 = new ArrayList<>(Arrays.asList("Imren", "Haluk", "Tulin", "Erdem", "Mehmet", "Ali Haydar", "Hidayet"));
 ListIterator<String> litr2=l2.listIterator();
@@ -36,7 +36,7 @@ ListIterator<String> litr2=l2.listIterator();
 while(litr2.hasNext()){
     litr2.next();
     if(litr2.hasNext()==false){ // elemanin sonuna geldim demektir.elemanin sonuindadir cursorum
-litr2.previous(); // cursor son elemanin onunde
+    litr2.previous(); // cursor son elemanin onunde
         litr2.set((litr2.next() + ":-)")); // onunde bulundugun elemanin icine gir
     }
 }
