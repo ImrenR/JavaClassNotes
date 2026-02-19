@@ -16,7 +16,7 @@ public class C01_Queue {
       Elemen en sona eklenir enbaştan silinir.
        */
          // queue print->sout(q);
-         //  queue eleman ekleme-> add();
+         // queue eleman ekleme-> add();
 
   /*
      peek()-> copy-paste gibi ilk elemanı return eder ama silmez :gözetleme

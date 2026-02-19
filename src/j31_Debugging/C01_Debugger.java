@@ -16,14 +16,40 @@ public class C01_Debugger {
  */
 
     public static void main(String[] args) {
-
+method01();
     }//main sonu
 
     public static void method01() {
-
-
+        for (int i = 0; i < 10 ; i++) {
+            System.out.println(" **** method-01 START **** "); // meth entry
+            System.out.print(i + " ");
+        }
+        System.out.println(); // dumy
+        System.out.println(" **** method-02 CALL EDILDI **** ");
+        method02();
+        System.out.println(" **** method-03 CALL EDILDI **** ");
+        method03();
+        System.out.println(" **** method-01 FINISHED **** "); // meth exit
     }
-}
+
+    public static void method02() {
+        for (int x = 0; x < 7 ; x++) {
+            System.out.println(" **** method-02 START **** ");
+            System.out.println(x + " ");
+        }
+        System.out.println(); // dumy
+        System.out.println(" **** method-02 FINISHED **** ");
+    }
+
+    public static void method03() {
+        for (int y = 0; y < 5 ; y++) {
+            System.out.println(" **** method-03 START **** ");
+            System.out.println(y + " ");
+        }
+        System.out.println(); // dumy
+        System.out.println(" **** method-03 FINISHED **** ");
+    }
+} // class sonu
 
 
 
