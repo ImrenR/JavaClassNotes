@@ -7,6 +7,9 @@ public class SeedMethods {
         System.out.print(a+" ");// parametredeki int deger bir boşluk ile print edilir
     }
 
+
+
+
     public static  void strYazdir(String  a){// seed->tohum meth...Allahın gundi methodu
 
         System.out.print(a+" ");// parametredeki str deger bir boşluk ile print edilir
@@ -25,6 +28,14 @@ public class SeedMethods {
     public  static  int kareAl(int t){
 
         return t*t;
+    } public  static  int kupAl(int t){
+
+        return (t*t*t) + 1;
+    }
+
+    public  static  double karaKokAl(int t){
+
+        return Math.sqrt(t);
     }
 
     public  static int minBul(int a,int b){
@@ -36,4 +47,7 @@ public class SeedMethods {
         return a%2==1;
     }
 
+    public static void doubleYazdir(Double a) {
+        System.out.print(a+" ");
+    }
 }
