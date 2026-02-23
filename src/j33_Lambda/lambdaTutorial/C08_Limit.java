@@ -21,10 +21,17 @@ public class C08_Limit {
 
     }//main sonu
 
+
     // Task-> list elemanlarının karakter sayısı en buyuk olanı print code create ediniz...
+
 public static void printMaxCharsay(List<String> yemahhh){
-    System.out.println(" ********* version1 **********");
-    System.out.println( yemahhh.stream().sorted(Comparator.comparing(String::length).reversed())
+
+        System.out.println(" ********* version1 **********");
+
+    System.out.println(
+            yemahhh
+                    .stream().
+                    sorted(Comparator.comparing(String::length).reversed())
             .limit(1));
 
 
@@ -36,11 +43,14 @@ public static void printMaxCharsay(List<String> yemahhh){
                            .limit(1); // En buyuk uzunluktaki elemani ver
 
     System.out.println(" ********* version3 **********");
+
     Stream<String> maxCarhsay3 = yemahhh
             .stream()
             .sorted(Comparator.comparing(String::length).reversed())
             .limit(1);
+
     System.out.println(Arrays.toString(maxCarhsay3.toArray()));
+
     System.out.println(" ********* version4 **********");
 
     System.out.println(yemahhh
