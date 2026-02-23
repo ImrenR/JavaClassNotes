@@ -93,6 +93,7 @@ public class TaskProject {
 
     }
 
+
     private static void cıkıs() {
         System.out.println("cıksınız yapılmıştır selametle ...");
     }
