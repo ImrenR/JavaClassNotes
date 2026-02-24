@@ -31,7 +31,7 @@ matBolumuVar(unv);
         System.out.println("   task04  ");
         System.out.println(ogrenciSayilariBuyuktenKucge(unv));
         System.out.println("   task05  ");
-
+        notOrtBKeSirala(unv);
         System.out.println("   task06  ");
 
         System.out.println("   task07  ");
@@ -44,6 +44,7 @@ matBolumuVar(unv);
 
 
     }//main sonu
+
 
 
 
@@ -86,7 +87,15 @@ private static void matBolumuVar(List<C10_University> unv) {
 
 //task05-> universite'leri notOrt gore  b->k siralayip ilk 3 'unu print eden code create ediniz...
 
+    private static List<C10_University> notOrtBKeSirala(List<C10_University> unv) {
 
+
+        return unv.stream()
+                .sorted(Comparator.comparing(C10_University::getNotOrt).reversed())
+                .limit(3)
+                .collect(Collectors.toList()); // elemanlari toplayip liste attik
+
+    }
 //j23_Encapsulation.Tasks.task06-> ogrc sayisi en az olan 2. universite'yi  print eden code create ediniz...
 
 

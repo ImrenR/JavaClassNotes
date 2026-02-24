@@ -10,7 +10,7 @@ public class C13_Stream_iterator {
         System.out.println("TASK01--> cincix topla : " + cincixCode(10)); // 55
         System.out.println("   ***   ");
 
-        System.out.println("TASK02--> cincix çift topla : " ); //30
+        System.out.println("TASK02--> cincix çift topla : " + ciftTopla(10)); //30
         System.out.println("   ***   ");
 
         System.out.println("TASK03--> cincix ilk 10 çift topla : "  + ilkCiftTopla(10));// 110
@@ -55,7 +55,7 @@ public class C13_Stream_iterator {
     //Functional Programming(cincix code...)
 
     public static int cincixCode(int a) {
-        return IntStream
+        return IntStream // integerlari akit
                 // .range(1,a+1) // end is exclusive with range
                 .rangeClosed(1, a) // both inlusive  with rangeClosed
                 .sum();
@@ -66,6 +66,13 @@ public class C13_Stream_iterator {
 
     //TASK 02 --> 1'den x'e kadar cift tamsayilari toplayan bir code create ediniz
 
+    public static int ciftTopla(int a) {
+        return IntStream // integerlari akit
+                // .range(1,a+1) // end is exclusive with range
+                .rangeClosed(1, a) // 1 den a ya kadar tamsayilar akisa alindi (1 den 10 kadar olan cift sayilari topladik)
+                .filter(SeedMethods::ciftMi)
+                .sum();
+    }
 
 
         //TASK 03 --> Ilk x pozitif cift tam sayiyi toplayan code  create ediniz.
@@ -75,14 +82,14 @@ public class C13_Stream_iterator {
                 .iterate(2,t->t+2) //  iterate tekrar demek = 2 den baslyaip surekli 2 arttiran tekrar tanimlandi
                 .limit(a)
                 .sum();
-
+//iteratordeki seed baslangic degerdir limite 5 dediysek 5.elemanda duracak
     }
 
  //TASK 04 --> Ilk X pozitif tek tamsayiyi toplayan programi  create ediniz.
 
     public static int ilkTekTopla(int a) {
         return IntStream
-                .iterate(1,t->t+2) //  iterate tekrar demek = 2 den baslyaip surekli 2 arttiran tekrar tanimlandi
+                .iterate(1,t->t+2) //  iterate tekrar demek = 1 den baslyaip surekli 2 arttiran tekrar tanimlandi
                 .limit(a)
                 .sum();
 
@@ -110,13 +117,6 @@ public class C13_Stream_iterator {
 
         //TASK 07 --> Istenilen bir sayinin faktoriyelini hesaplayan code  create ediniz.
 
-    public static void istenenIlkXKuvvetPrin(int istenenSayi, int kuvvet) {
-        IntStream
-                .iterate(istenenSayi,t->t*istenenSayi) //
-                .limit(kuvvet)
-                .forEach(SeedMethods::intYazdir);
-
-    }
 
 
  //TASK 08 --> Istenilen bir sayinin  x. kuvvetini print eden code  create ediniz.

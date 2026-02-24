@@ -32,7 +32,10 @@ buda lines altinda kirmizi uyari veriyor uzerine tiklayinca kendiliginden oluyor
         System.out.println("\n task 01 --> haluk dosyasini okuyunuz");
 
 Path erisilecekFile=Path.of("/Users/imrenrahbay/IdeaProjects/JavaClassNotes/src/j33_Lambda/lambdaTutorial/HalUk");// erisilecek dosya yolu tanimlandi.
-Stream<String> dosyaAkisi = Files.lines(erisilecekFile); // lines in altini cizer bizde burda exception throw ete tiklariz, maine ekler otomatik olarak
+
+        Stream<String> dosyaAkisi =
+
+        Files.lines(erisilecekFile); // lines in altini cizer bizde burda exception throw ete tiklariz, maine ekler otomatik olarak
 
    //  dosyaAkisi.forEach(System.out::println);
      dosyaAkisi.forEach(SeedMethods::strYazdir);
