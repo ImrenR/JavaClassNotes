@@ -16,9 +16,9 @@ public enum Aylar {
     ARALIK;
 
 
-    static void main() { // bad practice
-        System.out.println("Enumdan sevgiler");
-    }
+    //static void main() { // bad practice
+    //    System.out.println("Enumdan sevgiler");
+   // }
 
 
 
