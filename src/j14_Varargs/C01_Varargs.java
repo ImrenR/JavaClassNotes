@@ -64,14 +64,11 @@ public class C01_Varargs {
 
 
 
-
-
-
     }// main sonu
 
     private static String enUzunString(String...a) {
         String uzunIsim = "";
-        for (String avuc: a){
+        for (String avuc: a){ //foreach
             if(avuc.length()>uzunIsim.length()){ // avucun length i yukarida tanimladigin metod icindeki isimlere bak ilk isim ne : Abuzittin, uzunIsim.Length()  ise once => 0 buyuk mu evet.
                 // uzunIsim Abuzittin ile doldu. Cunku asagiya bak atama yapti = ile. sonra ali geldi. ali > abuzittinden hayir  if calismaz
                 // haluk geldi haluk => 5 , 5>9 dan degil if calismaz ve hepsini oyle kontrol ederek en buyugu atar

@@ -20,6 +20,7 @@ public class Bmi {//pojo Class
     }
 
 
+
 // getter-setter
 
     public String getName() {
@@ -28,14 +29,6 @@ public class Bmi {//pojo Class
 
     public int getAge() {
         return age;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public double getHeight() {
-        return height;
     }
 
 private double getBmi(){
@@ -52,6 +45,7 @@ public String getSatus(){
         else if (bmi>30) return "Obez";
         else return "gecersiz bir rakam girdiniz";
 }
+
 //toString..
 
 
